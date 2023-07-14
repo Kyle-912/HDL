@@ -30,7 +30,7 @@ begin
         
             when TOP_LEFT =>
                 
-            when others =>
+            when others => null;
         
         end case;
     end process;
