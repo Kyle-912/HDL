@@ -30,11 +30,11 @@ begin
                         state <= CHECK;
                     end if;
                 when CHECK =>
-                    if unsigned(input) = to_unsigned(0, input'length) then
+                    if unsigned(input_r) = to_unsigned(0, input'length) then
+                        done  <= '1';
                         state <= DONE;
                     end if;
                 when DONE =>
-                    done <= '1';
                     if go = '0' then
                         done  <= '0';
                         state <= IDLE;
