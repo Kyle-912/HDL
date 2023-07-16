@@ -35,13 +35,12 @@ begin
                         state <= DONE;
                     end if;
                 when DONE =>
-                    -- if go = '0' then
-                    --     done  <= '0';
-                    --     state <= IDLE;
-                    -- end if;
-                    wait;
+                    if go = '0' then
+                        done  <= '0';
+                        state <= IDLE;
+                    end if;
                 when others => null;
             end case;
         end if;
     end process;
-end architecture; --edit
+end architecture;
