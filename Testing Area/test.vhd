@@ -37,7 +37,7 @@ begin
                 when DONE =>
                     if go = '0' then
                         done  <= '0';
-                        state <= IDLE;
+                        state <= IDLE; --edit
                     end if;
                 when others => null;
             end case;
