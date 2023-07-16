@@ -43,4 +43,4 @@ begin
             end case;
         end if;
     end process;
-end architecture;--edit
+end architecture; --edit
