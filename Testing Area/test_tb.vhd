@@ -23,7 +23,7 @@ begin
     DUT : entity work.test(rtl)
     port map (
         clk => clk,
-        rst => rst,
+        rst => rst
         
     );
 
