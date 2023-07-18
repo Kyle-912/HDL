@@ -3,11 +3,11 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity test is
     port (
-        clk   : in  std_logic;
-        rst   : in  std_logic;
-        go    : in  std_logic;
-        input : in  std_logic_vector(7 downto 0);
-        done  : out std_logic
+        clk      : in  std_logic;
+        rst      : in  std_logic;
+        go       : in  std_logic;
+        input    : in  std_logic_vector(7 downto 0);
+        done_out : out std_logic
     );
 end test;
 architecture bhv of test is
@@ -18,9 +18,9 @@ begin
     TEST_PROC : process (clk, rst)
     begin
         if rst = '1' then
-            input_r <= (others => '0');
-            state   <= IDLE;
-            done    <= '0';
+            input_r  <= (others => '0');
+            state    <= IDLE;
+            done_out <= '0';
         elsif rising_edge(clk) then
             input_r <= input;
             case state is
@@ -29,14 +29,14 @@ begin
                         state <= CHECK;
                     end if;
                 when CHECK =>
-                    if unsigned(input_r) = to_unsigned(0, input'length) then
-                        done  <= '1';
-                        state <= DONE;
+                    if unsigned(input_r) = to_unsigned(0, input_r'length) then
+                        done_out <= '1';
+                        state    <= DONE;
                     end if;
                 when DONE =>
                     if go = '0' then
-                        done  <= '0';
-                        state <= IDLE;
+                        done_out <= '0';
+                        state    <= IDLE;
                     end if;
                 when others => null;
             end case;

@@ -4,61 +4,67 @@ use ieee.numeric_std.all;
 entity test_tb is
 end test_tb;
 architecture test_arch of test_tb is
-    component test is
+    component test
         port (
-            clk   : in  std_logic;
-            rst   : in  std_logic;
-            go    : in  std_logic;
-            input : in  std_logic_vector(7 downto 0);
-            done  : out std_logic
+            clk      : in  std_logic;
+            rst      : in  std_logic;
+            go       : in  std_logic;
+            input    : in  std_logic_vector(7 downto 0);
+            done_out : out std_logic
         );
     end component;
-    signal clk   : std_logic                    := '0';
-    signal rst   : std_logic                    := '1';
-    signal go    : std_logic                    := '0';
-    signal input : std_logic_vector(7 downto 0) := (others => '0');
-    signal done  : std_logic;
+    signal clk_tb      : std_logic                    := '0';
+    signal rst_tb      : std_logic                    := '0';
+    signal go_tb       : std_logic                    := '0';
+    signal input_tb    : std_logic_vector(7 downto 0) := (others => '0');
+    signal done_out_tb : std_logic;
 begin
-    DUT : test
-    port map
-    (
-        clk   => clk,
-        rst   => rst,
-        go    => go,
-        input => input,
-        done  => done
+    uut : test
+    port map(
+        clk      => clk_tb,
+        rst      => rst_tb,
+        go       => go_tb,
+        input    => input_tb,
+        done_out => done_out_tb
     );
-    -- Clock generation process
     clk_process : process
     begin
-        while now < 1000 ns loop
-            clk <= not clk;
-            wait for 5 ns;
-        end loop;
-        wait;
+        clk_tb <= '0';
+        wait for 5 ns;
+        clk_tb <= '1';
+        wait for 5 ns;
     end process;
-    -- Test cases
-    test_cases : process
+    stimulus_process : process
     begin
-        -- Positive test case: go = '1', input = "00000001"
-        go    <= '1';
-        input <= "00000001";
+        -- Positive test case: go = '1' and input = "00000000"
         wait for 10 ns;
-        assert done = '0' report "Test case 1 failed" severity error;
+        go_tb    <= '1';
+        input_tb <= "00000000";
         wait for 10 ns;
-        assert done = '1' report "Test case 1 failed" severity error;
+        assert done_out_tb = '1' report "Positive test case failed for go = '1' and input = 00000000" severity error;
+        -- Negative test case: go = '1' and input = "11111111"
         wait for 10 ns;
-        assert done = '0' report "Test case 1 failed" severity error;
-        -- Negative test case: go = '0', input = "00000000"
-        go    <= '0';
-        input <= "00000000";
+        go_tb    <= '1';
+        input_tb <= "11111111";
         wait for 10 ns;
-        assert done = '0' report "Test case 2 failed" severity error;
+        assert done_out_tb = '0' report "Negative test case failed for go = '1' and input = 11111111" severity error;
+        -- Positive test case: go = '0'
         wait for 10 ns;
-        assert done = '0' report "Test case 2 failed" severity error;
+        go_tb <= '0';
         wait for 10 ns;
-        assert done = '0' report "Test case 2 failed" severity error;
-        -- Add more test cases here
+        assert done_out_tb = '0' report "Positive test case failed for go = '0'" severity error;
+        -- Negative test case: go = '1' and input = "01010101"
+        wait for 10 ns;
+        go_tb    <= '1';
+        input_tb <= "01010101";
+        wait for 10 ns;
+        assert done_out_tb = '0' report "Negative test case failed for go = '1' and input = 01010101" severity error;
+        -- Positive test case: go = '1' and input = "00000001"
+        wait for 10 ns;
+        go_tb    <= '1';
+        input_tb <= "00000001";
+        wait for 10 ns;
+        assert done_out_tb = '0' report "Positive test case failed for go = '1' and input = 00000001" severity error;
         wait;
     end process;
 end test_arch;
