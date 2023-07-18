@@ -1,10 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 entity mux4x1 is
-    port
-    (
+    port (
         input0 : in  std_logic_vector(31 downto 0);
         input1 : in  std_logic_vector(31 downto 0);
         input2 : in  std_logic_vector(31 downto 0);
@@ -13,10 +11,9 @@ entity mux4x1 is
         output : out std_logic_vector(31 downto 0)
     );
 end mux4x1;
-
 architecture BHV of mux4x1 is
 begin
-    process(input0, input1, input2, input3, sel)
+    process (input0, input1, input2, input3, sel)
     begin
         case (sel) is
             when "00" =>

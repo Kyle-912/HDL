@@ -1,19 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 entity sign_extend is
-    port
-    (
+    port (
         input    : in  std_logic_vector(15 downto 0);
         IsSigned : in  std_logic;
         output   : out std_logic_vector(31 downto 0)
     );
 end sign_extend;
-
 architecture BHV of sign_extend is
 begin
-    process(input, IsSigned)
+    process (input, IsSigned)
         variable MSB : std_logic;
     begin
         if (IsSigned = '1') then

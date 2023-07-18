@@ -1,7 +1,7 @@
 -- megafunction wizard: %ROM: 1-PORT%
 -- GENERATION: STANDARD
 -- VERSION: WM1.0
--- MODULE: altsyncram 
+-- MODULE: altsyncram
 
 -- ============================================================
 -- File Name: vga_rom3.vhd
@@ -16,15 +16,13 @@
 --
 -- 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 -- ************************************************************
-
-
 --Copyright (C) 2019  Intel Corporation. All rights reserved.
---Your use of Intel Corporation's design tools, logic functions 
---and other software and tools, and any partner logic 
---functions, and any output files from any of the foregoing 
---(including device programming or simulation files), and any 
---associated documentation or information are expressly subject 
---to the terms and conditions of the Intel Program License 
+--Your use of Intel Corporation's design tools, logic functions
+--and other software and tools, and any partner logic
+--functions, and any output files from any of the foregoing
+--(including device programming or simulation files), and any
+--associated documentation or information are expressly subject
+--to the terms and conditions of the Intel Program License
 --Subscription Agreement, the Intel Quartus Prime License Agreement,
 --the Intel FPGA IP License Agreement, or other applicable license
 --agreement, including, without limitation, that your use is for
@@ -32,58 +30,44 @@
 --Intel and sold by Intel or its authorized distributors.  Please
 --refer to the applicable agreement for further details, at
 --https://fpgasoftware.intel.com/eula.
-
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-
-LIBRARY altera_mf;
-USE altera_mf.altera_mf_components.all;
-
-ENTITY vga_rom3 IS
-	PORT
-	(
-		address		: IN STD_LOGIC_VECTOR (13 DOWNTO 0);
-		clock		: IN STD_LOGIC  := '1';
-		q		: OUT STD_LOGIC_VECTOR (11 DOWNTO 0)
-	);
-END vga_rom3;
-
-
-ARCHITECTURE SYN OF vga_rom3 IS
-
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (11 DOWNTO 0);
-
-BEGIN
-	q    <= sub_wire0(11 DOWNTO 0);
-
-	altsyncram_component : altsyncram
-	GENERIC MAP (
-		address_aclr_a => "NONE",
-		clock_enable_input_a => "BYPASS",
-		clock_enable_output_a => "BYPASS",
-		init_file => "C:/Users/kdt91/OneDrive/Documents/Digital_Design/Lab6/Lab6_Quartus/bromimage.mif",
-		intended_device_family => "MAX 10",
-		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
-		lpm_type => "altsyncram",
-		numwords_a => 16384,
-		operation_mode => "ROM",
-		outdata_aclr_a => "NONE",
-		outdata_reg_a => "UNREGISTERED",
-		widthad_a => 14,
-		width_a => 12,
-		width_byteena_a => 1
-	)
-	PORT MAP (
-		address_a => address,
-		clock0 => clock,
-		q_a => sub_wire0
-	);
-
-
-
-END SYN;
-
+library ieee;
+use ieee.std_logic_1164.all;
+library altera_mf;
+use altera_mf.altera_mf_components.all;
+entity vga_rom3 is
+    port (
+        address : in  std_logic_vector (13 downto 0);
+        clock   : in  std_logic := '1';
+        q       : out std_logic_vector (11 downto 0)
+    );
+end vga_rom3;
+architecture SYN of vga_rom3 is
+    signal sub_wire0 : std_logic_vector (11 downto 0);
+begin
+    q <= sub_wire0(11 downto 0);
+    altsyncram_component : altsyncram
+    generic map(
+        address_aclr_a         => "NONE",
+        clock_enable_input_a   => "BYPASS",
+        clock_enable_output_a  => "BYPASS",
+        init_file              => "C:/Users/kdt91/OneDrive/Documents/Digital_Design/Lab6/Lab6_Quartus/bromimage.mif",
+        intended_device_family => "MAX 10",
+        lpm_hint               => "ENABLE_RUNTIME_MOD=NO",
+        lpm_type               => "altsyncram",
+        numwords_a             => 16384,
+        operation_mode         => "ROM",
+        outdata_aclr_a         => "NONE",
+        outdata_reg_a          => "UNREGISTERED",
+        widthad_a              => 14,
+        width_a                => 12,
+        width_byteena_a        => 1
+    )
+    port map(
+        address_a => address,
+        clock0    => clock,
+        q_a       => sub_wire0
+    );
+end SYN;
 -- ============================================================
 -- CNX file retrieval info
 -- ============================================================

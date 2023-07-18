@@ -5,8 +5,7 @@ entity test_tb is
 end test_tb;
 architecture test_arch of test_tb is
     component test is
-        port
-        (
+        port (
             clk   : in  std_logic;
             rst   : in  std_logic;
             go    : in  std_logic;

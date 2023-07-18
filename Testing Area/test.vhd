@@ -2,8 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity test is
-    port
-    (
+    port (
         clk   : in  std_logic;
         rst   : in  std_logic;
         go    : in  std_logic;
