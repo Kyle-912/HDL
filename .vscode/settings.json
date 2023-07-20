@@ -20,8 +20,19 @@
         "vhdl"
     ],
     "cSpell.words": [
+        "addu",
+        "bgez",
+        "bgtz",
+        "blez",
+        "bltz",
         "downto",
         "INPORT",
+        "mfhi",
+        "mflo",
+        "mult",
+        "multu",
+        "sltu",
+        "subu",
         "vhdl"
     ]
 }
