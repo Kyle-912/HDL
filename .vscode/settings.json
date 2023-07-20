@@ -26,6 +26,7 @@
         "blez",
         "bltz",
         "downto",
+        "HSYNC",
         "INPORT",
         "mfhi",
         "mflo",
@@ -33,6 +34,7 @@
         "multu",
         "sltu",
         "subu",
-        "vhdl"
+        "vhdl",
+        "VSYNC"
     ]
 }
