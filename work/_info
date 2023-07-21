@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/kdt91/OneDrive/Documents/VSCode_Projects/VHDL
+Ememory
+w1689957832
+Z0 DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/kdt91/AppData/Local/Programs/Microsoft VS Code
+8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd
+Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd
+l0
+L6
+VKk>z>1PSgFf`;j^D6U=?K1
+!s100 j[7hg:@C9GjMW>:SUOPLL1
+Z5 OV;C;10.5b;63
+33
+!s110 1689958573
+!i10b 1
+!s108 1689958573.000000
+!s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_xK89R_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd|
+!s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd|
+!i113 1
+o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_xK89R_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z6 tExplicit 1 CvgOpt 0
+Eram_testcase7_fixed
+Z7 w1689647932
+R0
+R2
+R3
+R4
+Z8 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd
+Z9 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd
+l0
+L37
+VK]9:[;WGi89bz_h5k0Q<K3
+!s100 b>JFelP^iz^=YKH68[<[G1
+R5
+33
+Z10 !s110 1689957826
+!i10b 1
+Z11 !s108 1689957826.000000
+Z12 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_AcfLI_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd|
+Z13 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd|
+!i113 1
+Z14 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_AcfLI_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+R6
+Asyn
+R0
+R2
+R3
+DEx4 work 19 ram_testcase7_fixed 0 22 K]9:[;WGi89bz_h5k0Q<K3
+l48
+L46
+Vmn4CNOb9kTI6SFHJ]?PYj0
+!s100 4T:3GlgeOK_B2bA4A60Hc0
+R5
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R6
+Etest
+Z15 w1689958603
+R1
+R2
+R3
+R4
+Z16 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
+Z17 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
+l0
+L4
+VGKGCmCeQ_@6oIMW4i5F[P3
+!s100 Ze_zY`JiZ2LNl__:DoTl>2
+R5
+33
+Z18 !s110 1689958603
+!i10b 1
+Z19 !s108 1689958603.000000
+Z20 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_0Oq5i_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+Z21 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+!i113 1
+Z22 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_0Oq5i_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+R6
+Abhv
+R1
+R2
+R3
+DEx4 work 4 test 0 22 GKGCmCeQ_@6oIMW4i5F[P3
+l17
+L13
+VO186]j;<TF_?5JbL^:FW53
+!s100 IH7mMGc2`iN]RBCdC[?>11
+R5
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R22
+R6
