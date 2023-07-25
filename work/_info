@@ -8,108 +8,222 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/kdt91/OneDrive/Documents/VSCode_Projects/VHDL
+vjtflipflop
+!s110 1690251985
+!i10b 1
+!s100 Qle@dGoCCdnL1FfT>lI9X0
+I6O0GJleWQneD5nC:2>A@i3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/kdt91/AppData/Local/Programs/Microsoft VS Code
+w1690251985
+8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.v
+Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1690251985.000000
+!s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.v|
+!s90 -quiet|-nologo|-work|C:\Users\kdt91\.teroshdl_RaV0V_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|-pedanticerrors|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.v|
+!i113 1
+o-quiet -nologo -work {C:\Users\kdt91\.teroshdl_RaV0V_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work} -pedanticerrors
+Z3 tCvgOpt 0
+vmealy
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z5 !s110 1690252430
+!i10b 1
+!s100 J7e_`ko[;5EmknjNBi09X0
+IM_iZClUzml;@mVI5jKo;i3
+R0
+Z6 !s105 test_sv_unit
+S1
+R1
+Z7 w1690251983
+Z8 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.sv
+Z9 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.sv
+L0 211
+R2
+r1
+!s85 0
+31
+Z10 !s108 1690252427.000000
+Z11 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.sv|
+Z12 !s90 -quiet|-nologo|-sv|-work|C:\Users\kdt91\.teroshdl_0NaWw_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|-pedanticerrors|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.sv|
+!i113 1
+Z13 o-quiet -nologo -sv -work {C:\Users\kdt91\.teroshdl_0NaWw_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work} -pedanticerrors
+R3
+vmealy_2p
+R4
+R5
+!i10b 1
+!s100 2<3^__PFYR7eBTQad7Vb:2
+I;613mzlQ^C<05:>dbQ;Gl0
+R0
+R6
+S1
+R1
+R7
+R8
+R9
+L0 14
+R2
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R13
+R3
+vmealy_hybrid
+R4
+R5
+!i10b 1
+!s100 S:j_hXS?TNejV@Hob=LN02
+I<FA]oR;M64ZnSfQZhAjUY2
+R0
+R6
+S1
+R1
+R7
+R8
+R9
+L0 108
+R2
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R13
+R3
 Ememory
-w1689972469
-Z0 DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
-Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dC:/Users/kdt91/AppData/Local/Programs/Microsoft VS Code
+w1690255745
+DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R1
 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd
 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd
 l0
 L6
-V9ePknQWf4T_aU0=^o;>O60
+V9:hW2HUUIZ>5`3mTNZT`_1
 !s100 j[7hg:@C9GjMW>:SUOPLL1
-Z5 OV;C;10.5b;63
+Z17 OV;C;10.5b;63
 33
-!s110 1689972939
+!s110 1690255745
 !i10b 1
-!s108 1689972939.000000
-!s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_UzmaM_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd|
+!s108 1690255745.000000
+!s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_eNBKM_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|-suppress|1195|-pedanticerrors|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd|
 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\memory.vhd|
 !i113 1
-o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_UzmaM_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
-Z6 tExplicit 1 CvgOpt 0
-Eram_testcase7_fixed
-Z7 w1689647932
-R0
-R2
-R3
-R4
-Z8 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd
-Z9 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd
-l0
-L37
-VK]9:[;WGi89bz_h5k0Q<K3
-!s100 b>JFelP^iz^=YKH68[<[G1
-R5
-33
-Z10 !s110 1689957826
-!i10b 1
-Z11 !s108 1689957826.000000
-Z12 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_AcfLI_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd|
-Z13 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\RAM_TestCase7_fixed.vhd|
-!i113 1
-Z14 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_AcfLI_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
-R6
-Asyn
-R0
-R2
-R3
-DEx4 work 19 ram_testcase7_fixed 0 22 K]9:[;WGi89bz_h5k0Q<K3
-l48
-L46
-Vmn4CNOb9kTI6SFHJ]?PYj0
-!s100 4T:3GlgeOK_B2bA4A60Hc0
-R5
-33
-R10
-!i10b 1
-R11
-R12
-R13
-!i113 1
-R14
-R6
+o-suppress 1195 -quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_eNBKM_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work} -pedanticerrors
+Z18 tExplicit 1 CvgOpt 0
 Etest
-Z15 w1689958744
+Z19 w1690266009
+R14
+R15
+R16
 R1
-R2
-R3
-R4
-Z16 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
-Z17 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
+Z20 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
+Z21 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
+l0
+L5
+VG5J1VNfHd;;OJgKON=AKB2
+!s100 ;cdd95H=0S0YnXQ9hO?=c1
+R17
+33
+Z22 !s110 1690266009
+!i10b 1
+Z23 !s108 1690266009.000000
+Z24 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_Kr3Tx_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|-suppress|1195|-pedanticerrors|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+Z25 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+!i113 1
+Z26 o-suppress 1195 -quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_Kr3Tx_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work} -pedanticerrors
+R18
+Abhv
+R14
+R15
+R16
+DEx4 work 4 test 0 22 G5J1VNfHd;;OJgKON=AKB2
+l19
+L15
+Vjm2N9[FYY2J=^`U@0iPY?1
+!s100 ]CKlm<cmdIYP9@@;`oe]D3
+R17
+33
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R26
+R18
+Etest_tb
+Z27 w1690075573
+R14
+R15
+R16
+R1
+Z28 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.vhd
+Z29 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.vhd
 l0
 L4
-V<l7d_0kdVV9FZc7>KXMAc0
-!s100 Ze_zY`JiZ2LNl__:DoTl>2
-R5
+V8>AG4Mf8Y?=BQ4D7:TSQU1
+!s100 V2;L_1IhHMULkP][;0lmX1
+R17
 33
-Z18 !s110 1689960725
+Z30 !s110 1690248195
 !i10b 1
-Z19 !s108 1689960725.000000
-Z20 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_INsJT_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
-Z21 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+Z31 !s108 1690248195.000000
+Z32 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_8iHu6_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.vhd|
+Z33 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.vhd|
 !i113 1
-Z22 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_INsJT_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
-R6
-Abhv
-R1
-R2
-R3
-DEx4 work 4 test 0 22 <l7d_0kdVV9FZc7>KXMAc0
-l17
-L13
-VGBVj_=noTE3f^m;5^X<ja3
-!s100 IH7mMGc2`iN]RBCdC[?>11
-R5
-33
+Z34 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_8iHu6_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R18
+Atest_arch
+R14
+R15
+R16
+DEx4 work 7 test_tb 0 22 8>AG4Mf8Y?=BQ4D7:TSQU1
+l21
+L6
+Vz9f4dmdmAoC2ze`;L[AFL0
+!s100 M<1L03CMNQMHmJ7=[DXk00
+R17
+33
+R30
 !i10b 1
-R19
-R20
-R21
+R31
+R32
+R33
 !i113 1
-R22
-R6
+R34
+R18
+Pvga_lib
+R15
+R16
+w1689647809
+R1
+8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_lib.vhd
+Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_lib.vhd
+l0
+L5
+Via??LUk^mjACOccaH0<mn1
+!s100 M_=J:fd?j<O4zjllNf=ET3
+R17
+33
+!s110 1690254149
+!i10b 1
+!s108 1690254149.000000
+!s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_tz03S_|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|-suppress|1195|-pedanticerrors|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_lib.vhd|
+!s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_lib.vhd|
+!i113 1
+o-suppress 1195 -quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_tz03S_} -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work} -pedanticerrors
+R18

@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+
 entity test is
   port (
     clk      : in std_logic;
@@ -10,6 +11,7 @@ entity test is
     done_out : out std_logic
   );
 end test;
+
 architecture bhv of test is
   type state_type is (IDLE, CHECK, DONE);
   signal state   : state_type;
