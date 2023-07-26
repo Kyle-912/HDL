@@ -50,7 +50,7 @@ begin
         address_aclr_a         => "NONE",
         clock_enable_input_a   => "BYPASS",
         clock_enable_output_a  => "BYPASS",
-        init_file              => "C:/Users/kdt91/OneDrive/Documents/Digital_Design/Lab6/Lab6_Quartus/brom.mif",
+        init_file              => "C:\Users\kdt91\OneDrive\Documents\Digital_Design\Lab6 - VGA Interfacing\Lab6_Quartus/brom.mif",
         intended_device_family => "MAX 10",
         lpm_hint               => "ENABLE_RUNTIME_MOD=NO",
         lpm_type               => "altsyncram",
