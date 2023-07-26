@@ -20,7 +20,10 @@
         "vhdl"
     ],
     "cSpell.words": [
+        "addi",
         "addu",
+        "altsyncram",
+        "andi",
         "bgez",
         "bgtz",
         "blez",
@@ -28,13 +31,22 @@
         "downto",
         "HSYNC",
         "INPORT",
+        "ledx",
+        "Megafunction",
         "mfhi",
         "mflo",
         "mult",
         "multu",
+        "slti",
+        "sltiu",
         "sltu",
+        "subi",
         "subu",
         "vhdl",
-        "VSYNC"
+        "VSYNC",
+        "xori"
+    ],
+    "cSpell.ignoreWords": [
+        "textio"
     ]
 }
