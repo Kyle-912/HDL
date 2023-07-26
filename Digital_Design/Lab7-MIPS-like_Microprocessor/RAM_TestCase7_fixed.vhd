@@ -51,7 +51,7 @@ begin
     generic map(
         clock_enable_input_a          => "BYPASS",
         clock_enable_output_a         => "BYPASS",
-        init_file                     => "C:\Users\kdt91\OneDrive\Documents\Digital_Design\Lab7\Lab7 Quartus\TestCase7-fixed.mif",
+        init_file                     => "C:\Users\kdt91\OneDrive\Documents\Digital_Design\Lab7 - MIPS-like Microprocessor\Lab7 Quartus\TestCase7-fixed.mif",
         intended_device_family        => "MAX 10",
         lpm_hint                      => "ENABLE_RUNTIME_MOD=NO",
         lpm_type                      => "altsyncram",
