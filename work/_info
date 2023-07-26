@@ -2666,7 +2666,7 @@ R464
 R465
 R13
 Etest
-Z466 w1690412243
+Z466 w1690412341
 R1
 R2
 R3
@@ -2675,27 +2675,27 @@ Z467 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.v
 Z468 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd
 l0
 L5
-V]hQ83zlYH[X=kkA2VORaJ3
+VMDVEhf:6ODV:Q<<H[GiI62
 !s100 ;cdd95H=0S0YnXQ9hO?=c1
 R7
 33
-Z469 !s110 1690412243
+Z469 !s110 1690412341
 !i10b 1
-Z470 !s108 1690412243.000000
-Z471 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_t3kXY_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
+Z470 !s108 1690412341.000000
+Z471 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_9UJPT_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
 Z472 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test.vhd|
 !i113 1
-Z473 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_t3kXY_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z473 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_9UJPT_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Abhv
 R1
 R2
 R3
-DEx4 work 4 test 0 22 ]hQ83zlYH[X=kkA2VORaJ3
+DEx4 work 4 test 0 22 MDVEhf:6ODV:Q<<H[GiI62
 l19
 L15
-V;X8If7PUd4AGL;dJmOYcR3
-!s100 ]CKlm<cmdIYP9@@;`oe]D3
+VU]OATTFO[8ASlgUT=f5n[1
+Z474 !s100 ]CKlm<cmdIYP9@@;`oe]D3
 R7
 33
 R469
@@ -2752,13 +2752,13 @@ Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.
 w1690075573
 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Testing_Area\test_tb_ai.vhd
 Etiming_tb
-Z474 w1689647607
+Z475 w1689647607
 R1
 R2
 R3
 R4
-Z475 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd
-Z476 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd
+Z476 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd
+Z477 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd
 l0
 L4
 V[d:RGAaSdG?[A@1cf4a@@2
@@ -2767,11 +2767,11 @@ R7
 33
 R191
 !i10b 1
-Z477 !s108 1690411187.000000
-Z478 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_SLm3J_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd|
-Z479 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd|
+Z478 !s108 1690411187.000000
+Z479 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_SLm3J_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd|
+Z480 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab3-Ripple-Carry_and_Carry-Lookahead_Adders\timing_tb.vhd|
 !i113 1
-Z480 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_SLm3J_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z481 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_SLm3J_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Atb
 DEx4 work 9 adder_top 0 22 @]jMQ=Bz>i[m1LmK421hg2
@@ -2787,32 +2787,32 @@ R7
 33
 !s110 1690411188
 !i10b 1
-R477
 R478
 R479
-!i113 1
 R480
+!i113 1
+R481
 R13
 Etop_level
-Z481 w1690409005
+Z482 w1690409005
 R2
 R3
 R4
-Z482 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd
-Z483 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd
+Z483 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd
+Z484 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd
 l0
 L11
 VX0M9WUOkgRjBaYXPFgJ>73
 !s100 mU<`nLfag7OC4GXhajc>f2
 R7
 33
-Z484 !s110 1690411257
+Z485 !s110 1690411257
 !i10b 1
-Z485 !s108 1690411257.000000
-Z486 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_LoXsh_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd|
-Z487 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd|
+Z486 !s108 1690411257.000000
+Z487 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_LoXsh_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd|
+Z488 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab7-MIPS-like_Microprocessor\top_level.vhd|
 !i113 1
-Z488 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_LoXsh_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z489 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_LoXsh_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Astr
 R183
@@ -2828,17 +2828,17 @@ V1`<5T83oXjL2en9KZ;Fd23
 !s100 Zn_EKheZ3UY4blXoXY3>H3
 R7
 33
-R484
-!i10b 1
 R485
+!i10b 1
 R486
 R487
-!i113 1
 R488
+!i113 1
+R489
 R13
 Evga
 w1690411113
-Z489 DPx4 work 7 vga_lib 0 22 1Zkm:VmV7=deh4e_3D<?i2
+Z490 DPx4 work 7 vga_lib 0 22 1Zkm:VmV7=deh4e_3D<?i2
 R1
 R2
 R3
@@ -2851,9 +2851,9 @@ VIR]@^GR5[5=HnSRZagQLc3
 !s100 G<IE5@?gadCH7fX<Y^z500
 R7
 33
-Z490 !s110 1690411229
+Z491 !s110 1690411229
 !i10b 1
-Z491 !s108 1690411229.000000
+Z492 !s108 1690411229.000000
 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_DqkKy_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga.vhd|
 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga.vhd|
 !i113 1
@@ -2872,7 +2872,7 @@ V1Zkm:VmV7=deh4e_3D<?i2
 !s100 M_=J:fd?j<O4zjllNf=ET3
 R7
 33
-Z492 !s110 1690411225
+Z493 !s110 1690411225
 !i10b 1
 !s108 1690411224.000000
 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_lH59j_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_lib.vhd|
@@ -2881,26 +2881,26 @@ Z492 !s110 1690411225
 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_lH59j_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Evga_mux2x1
-Z493 w1689647822
+Z494 w1689647822
 R1
 R2
 R3
 R4
-Z494 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd
-Z495 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd
+Z495 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd
+Z496 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd
 l0
 L4
 V8DVCiCaVHlm@g[A2bki4z2
 !s100 dEh9MNYGb:=BLcgVJNLbo3
 R7
 33
-R492
+R493
 !i10b 1
-Z496 !s108 1690411225.000000
-Z497 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_SBu0w_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd|
-Z498 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd|
+Z497 !s108 1690411225.000000
+Z498 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_SBu0w_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd|
+Z499 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_mux2x1.vhd|
 !i113 1
-Z499 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_SBu0w_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z500 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_SBu0w_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Avga_mux2x1_bhv
 R1
@@ -2913,35 +2913,35 @@ VU;e5PbY@kHFf85?1;?I3Q2
 !s100 fz4MTD7DkfN9EcF8J7zcJ3
 R7
 33
-R492
+R493
 !i10b 1
-R496
 R497
 R498
-!i113 1
 R499
+!i113 1
+R500
 R13
 Evga_rom
-Z500 w1689648039
+Z501 w1689648039
 R174
 R2
 R3
 R4
-Z501 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd
-Z502 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd
+Z502 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd
+Z503 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd
 l0
 L37
 Vn[7BSXV7TNPc[4gMIoX4i0
 !s100 jn=dPG7>cW7T6g`b1U2UH0
 R7
 33
-Z503 !s110 1690411226
+Z504 !s110 1690411226
 !i10b 1
-Z504 !s108 1690411226.000000
-Z505 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_GdkgL_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd|
-Z506 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd|
+Z505 !s108 1690411226.000000
+Z506 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_GdkgL_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd|
+Z507 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom.vhd|
 !i113 1
-Z507 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_GdkgL_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z508 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_GdkgL_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Asyn
 R174
@@ -2954,35 +2954,35 @@ VlNGAkTncFhGcIKHJi]YFl0
 !s100 hl6HNcBMh90[m]afEhXO10
 R7
 33
-R503
-!i10b 1
 R504
+!i10b 1
 R505
 R506
-!i113 1
 R507
+!i113 1
+R508
 R13
 Evga_rom2
-Z508 w1689647842
+Z509 w1689647842
 R174
 R2
 R3
 R4
-Z509 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd
-Z510 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd
+Z510 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd
+Z511 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd
 l0
 L37
 VF>69EWe1XK]g2hUh=jim43
 !s100 R]JOR0VlI9]?mP0nL>L4h3
 R7
 33
-Z511 !s110 1690411227
+Z512 !s110 1690411227
 !i10b 1
-Z512 !s108 1690411227.000000
-Z513 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_PNdct_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd|
-Z514 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd|
+Z513 !s108 1690411227.000000
+Z514 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_PNdct_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd|
+Z515 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom2.vhd|
 !i113 1
-Z515 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_PNdct_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z516 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_PNdct_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Asyn
 R174
@@ -2995,35 +2995,35 @@ VE>5;f3YUNbRBhb;Qa30L:2
 !s100 9b^XNbc_Ghj<E@`fDGJ6V3
 R7
 33
-R511
-!i10b 1
 R512
+!i10b 1
 R513
 R514
-!i113 1
 R515
+!i113 1
+R516
 R13
 Evga_rom3
-Z516 w1689648035
+Z517 w1689648035
 R174
 R2
 R3
 R4
-Z517 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd
-Z518 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd
+Z518 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd
+Z519 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd
 l0
 L37
 V]4A`OcQ8ef=V6`[AXb2e01
 !s100 R<_a[gVY3LQ[Q3F^oh@jR0
 R7
 33
-R511
-!i10b 1
 R512
-Z519 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_q6Haf_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd|
-Z520 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd|
+!i10b 1
+R513
+Z520 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_q6Haf_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd|
+Z521 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_rom3.vhd|
 !i113 1
-Z521 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_q6Haf_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z522 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_q6Haf_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Asyn
 R174
@@ -3036,39 +3036,39 @@ Vzilbd`fkadVBTnFI>I3@b2
 !s100 1cOZdcVNXDE5jEKdCk>o@0
 R7
 33
-R511
-!i10b 1
 R512
-R519
+!i10b 1
+R513
 R520
-!i113 1
 R521
+!i113 1
+R522
 R13
 Evga_sync_gen
-Z522 w1690252685
-R489
+Z523 w1690252685
+R490
 R1
 R2
 R3
 R4
-Z523 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd
-Z524 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd
+Z524 8c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd
+Z525 Fc:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd
 l0
 L5
 VDH53no8SNB56:_YgXjL9P1
 !s100 ^_Dned@FY_SEgISU7z]XQ2
 R7
 33
-Z525 !s110 1690411228
+Z526 !s110 1690411228
 !i10b 1
-Z526 !s108 1690411228.000000
-Z527 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_vrgBq_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd|
-Z528 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd|
+Z527 !s108 1690411228.000000
+Z528 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_vrgBq_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd|
+Z529 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_sync_gen.vhd|
 !i113 1
-Z529 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_vrgBq_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
+Z530 o-quiet -nologo -2008 -work {C:\Users\kdt91\.teroshdl_vrgBq_} -pedanticerrors -work {C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work}
 R13
 Abhv
-R489
+R490
 R1
 R2
 R3
@@ -3079,19 +3079,19 @@ VzLN@RKYFlhb;:@M`_VV^d1
 !s100 Z3O0@jbdooTY`o_J`3Ne@2
 R7
 33
-R525
-!i10b 1
 R526
+!i10b 1
 R527
 R528
-!i113 1
 R529
+!i113 1
+R530
 R13
 Evga_tb
 w1689647850
 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R174
-R489
+R490
 R1
 R2
 R3
@@ -3104,9 +3104,9 @@ VWGiOahP7Dkk@ziE9M`QO02
 !s100 C[XKLjK@08AUPXb3TBB9_1
 R7
 33
-R490
-!i10b 1
 R491
+!i10b 1
+R492
 !s90 -quiet|-nologo|-2008|-work|C:\Users\kdt91\.teroshdl_n3xzz_|-pedanticerrors|-work|C:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\work|c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_tb.vhd|
 !s107 c:\Users\kdt91\OneDrive\Documents\VSCode_Projects\VHDL\Digital_Design\Lab6-VGA_Interfacing\vga_tb.vhd|
 !i113 1
