@@ -65,6 +65,6 @@ begin
     input_tb <= "00000001";
     wait for 10 ns;
     assert done_out_tb = '0' report "Positive test case failed for go = '1' and input = 00000001" severity error;
-    wait;
+    report "done" severity failure;
   end process;
 end test_arch;
