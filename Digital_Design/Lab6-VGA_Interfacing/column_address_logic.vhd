@@ -14,7 +14,7 @@ end column_address_logic;
 
 architecture column_address_logic_BHV of column_address_logic is
 begin
-  process (h_count);
+  process (h_count)
   begin
     case(img_pos) is
       when CENTERED =>
