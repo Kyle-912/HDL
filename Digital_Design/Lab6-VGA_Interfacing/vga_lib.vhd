@@ -17,7 +17,7 @@ package VGA_LIB is
     -----------------------------------------------------------------------------
     -- CONSTANTS FOR SIGNAL WIDTHS
     constant ROM_ADDR_WIDTH : integer := 12; --128: 12->14
-    constant RESOLTUION     : integer := 2;  --128: 2->1
+    constant RESOLUTION     : integer := 2;  --128: 2->1
     subtype ROM_ADDR_RANGE is natural range ROM_ADDR_WIDTH - 1 downto 0;
     subtype ROM_ADDR_TOP_HALF_RANGE is natural range ROM_ADDR_WIDTH - 1 downto ROM_ADDR_WIDTH/2;
     subtype ROM_ADDR_BOTTOM_HALF_RANGE is natural range (ROM_ADDR_WIDTH/2) - 1 downto 0;

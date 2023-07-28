@@ -20,7 +20,7 @@ begin
             when CENTERED =>
                 if (unsigned(v_count) >= to_unsigned(CENTERED_Y_START, COUNT_WIDTH) AND unsigned(v_count) <= to_unsigned(CENTERED_Y_END, COUNT_WIDTH)) then
                     row_en <= '1';
-                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(CENTERED_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(CENTERED_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     row_en <= '0';
                     row    <= (others => '0');
@@ -28,7 +28,7 @@ begin
             when TOP_LEFT =>
                 if (unsigned(v_count) >= to_unsigned(TOP_LEFT_Y_START, COUNT_WIDTH) AND unsigned(v_count) <= to_unsigned(TOP_LEFT_Y_END, COUNT_WIDTH)) then
                     row_en <= '1';
-                    row    <= std_logic_vector(resize(unsigned(v_count) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    row    <= std_logic_vector(resize(unsigned(v_count) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     row_en <= '0';
                     row    <= (others => '0');
@@ -36,7 +36,7 @@ begin
             when TOP_RIGHT =>
                 if (unsigned(v_count) >= to_unsigned(TOP_RIGHT_Y_START, COUNT_WIDTH) AND unsigned(v_count) <= to_unsigned(TOP_RIGHT_Y_END, COUNT_WIDTH)) then
                     row_en <= '1';
-                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(TOP_RIGHT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(TOP_RIGHT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     row_en <= '0';
                     row    <= (others => '0');
@@ -44,7 +44,7 @@ begin
             when BOTTOM_LEFT =>
                 if (unsigned(v_count) >= to_unsigned(BOTTOM_LEFT_Y_START, COUNT_WIDTH) AND unsigned(v_count) <= to_unsigned(BOTTOM_LEFT_Y_END, COUNT_WIDTH)) then
                     row_en <= '1';
-                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(BOTTOM_LEFT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(BOTTOM_LEFT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     row_en <= '0';
                     row    <= (others => '0');
@@ -52,7 +52,7 @@ begin
             when BOTTOM_RIGHT =>
                 if (unsigned(v_count) >= to_unsigned(BOTTOM_RIGHT_Y_START, COUNT_WIDTH) AND unsigned(v_count) <= to_unsigned(BOTTOM_RIGHT_Y_END, COUNT_WIDTH)) then
                     row_en <= '1';
-                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(BOTTOM_RIGHT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    row    <= std_logic_vector(resize((unsigned(v_count) - to_unsigned(BOTTOM_RIGHT_Y_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     row_en <= '0';
                     row    <= (others => '0');

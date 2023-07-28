@@ -20,7 +20,7 @@ begin
             when CENTERED =>
                 if (unsigned(h_count) >= to_unsigned(CENTERED_X_START, COUNT_WIDTH) AND unsigned(h_count) <= to_unsigned(CENTERED_X_END, COUNT_WIDTH)) then
                     column_en <= '1';
-                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(CENTERED_X_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(CENTERED_X_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     column_en <= '0';
                     column    <= (others => '0');
@@ -28,7 +28,7 @@ begin
             when TOP_LEFT =>
                 if (unsigned(h_count) >= to_unsigned(TOP_LEFT_X_START, COUNT_WIDTH) AND unsigned(h_count) <= to_unsigned(TOP_LEFT_X_END, COUNT_WIDTH)) then
                     column_en <= '1';
-                    column    <= std_logic_vector(resize(unsigned(h_count) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    column    <= std_logic_vector(resize(unsigned(h_count) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     column_en <= '0';
                     column    <= (others => '0');
@@ -36,7 +36,7 @@ begin
             when TOP_RIGHT =>
                 if (unsigned(h_count) >= to_unsigned(TOP_RIGHT_X_START, COUNT_WIDTH) AND unsigned(h_count) <= to_unsigned(TOP_RIGHT_X_END, COUNT_WIDTH)) then
                     column_en <= '1';
-                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(TOP_RIGHT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(TOP_RIGHT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     column_en <= '0';
                     column    <= (others => '0');
@@ -44,7 +44,7 @@ begin
             when BOTTOM_LEFT =>
                 if (unsigned(h_count) >= to_unsigned(BOTTOM_LEFT_X_START, COUNT_WIDTH) AND unsigned(h_count) <= to_unsigned(BOTTOM_LEFT_X_END, COUNT_WIDTH)) then
                     column_en <= '1';
-                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(BOTTOM_LEFT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(BOTTOM_LEFT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     column_en <= '0';
                     column    <= (others => '0');
@@ -52,7 +52,7 @@ begin
             when BOTTOM_RIGHT =>
                 if (unsigned(h_count) >= to_unsigned(BOTTOM_RIGHT_X_START, COUNT_WIDTH) AND unsigned(h_count) <= to_unsigned(BOTTOM_RIGHT_X_END, COUNT_WIDTH)) then
                     column_en <= '1';
-                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(BOTTOM_RIGHT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLTUION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
+                    column    <= std_logic_vector(resize((unsigned(h_count) - to_unsigned(BOTTOM_RIGHT_X_START, COUNT_WIDTH)) / to_unsigned(RESOLUTION, COUNT_WIDTH), ROM_ADDR_WIDTH/2));
                 else
                     column_en <= '0';
                     column    <= (others => '0');
