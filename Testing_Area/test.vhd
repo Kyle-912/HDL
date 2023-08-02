@@ -1,17 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 entity test is
   port (
-    clk      : in std_logic;
-    rst      : in std_logic;
-    go       : in std_logic;
-    input    : in std_logic_vector(7 downto 0);
+    clk      : in  std_logic;
+    rst      : in  std_logic;
+    go       : in  std_logic;
+    input    : in  std_logic_vector(7 downto 0);
     done_out : out std_logic
   );
 end test;
-
 architecture bhv of test is
   type state_type is (IDLE, CHECK, DONE);
   signal state   : state_type;
