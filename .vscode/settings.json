@@ -37,6 +37,7 @@
         "mflo",
         "mult",
         "multu",
+        "OUPUT",
         "slti",
         "sltiu",
         "sltu",
