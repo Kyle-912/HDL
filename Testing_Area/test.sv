@@ -16,7 +16,7 @@ module up_counter_load    (
   always_ff @ (posedge clk)
     if (reset)
     begin
-      out <= 8'b0
+      out <= 8'b0;
     end
     else if (load)
     begin
