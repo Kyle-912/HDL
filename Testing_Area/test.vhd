@@ -56,7 +56,7 @@ entity test is
     go : in std_logic_vector;
     done_out : out std_logic_vector
   );
-end test;
+end test
 
 architecture bhv of test is
 type state_type is (IDLE, );
