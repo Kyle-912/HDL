@@ -43,23 +43,15 @@ begin
     end if;
   end process;
 end architecture;
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 entity test is
   port (
-    clk : in std_logic;
-    rst : in std_logic;
-    input : in std_logic_vector(7 downto 0);
-    go : in std_logic_vector;
+    clk      : in  std_logic;
+    rst      : in  std_logic;
+    input    : in  std_logic_vector(7 downto 0);
+    go       : in  std_logic_vector;
     done_out : out std_logic_vector
   );
 end test;
-
-architecture bhv of test is
-
-  begin
-
-end architecture;
