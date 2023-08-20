@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 use work.vga_lib.all;
 entity vga is
   port (
-    clk              : in std_logic;
-    rst              : in std_logic;
-    img_pos          : in std_logic_vector(2 downto 0);
+    clk              : in  std_logic;
+    rst              : in  std_logic;
+    img_pos          : in  std_logic_vector(2 downto 0);
     red, green, blue : out std_logic_vector(3 downto 0);
     h_sync, v_sync   : out std_logic;
     video_on         : out std_logic);
@@ -68,7 +68,7 @@ begin -- STR
   U_2x1 : entity work.vga_mux2x1
     port map(
       in1    => q,
-      in2 => (others => '0'),
+      in2    => (others => '0'),
       sel1   => video_en,
       sel2   => column_en,
       sel3   => row_en,

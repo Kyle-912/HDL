@@ -2,7 +2,6 @@
 -- GENERATION: STANDARD
 -- VERSION: WM1.0
 -- MODULE: altsyncram
-
 -- ============================================================
 -- File Name: vga_rom3.vhd
 -- Megafunction Name(s):
@@ -35,38 +34,38 @@ use ieee.std_logic_1164.all;
 library altera_mf;
 use altera_mf.altera_mf_components.all;
 entity vga_rom3 is
-    port (
-        address : in  std_logic_vector (13 downto 0);
-        clock   : in  std_logic := '1';
-        q       : out std_logic_vector (11 downto 0)
-    );
+  port (
+    address : in  std_logic_vector (13 downto 0);
+    clock   : in  std_logic := '1';
+    q       : out std_logic_vector (11 downto 0)
+  );
 end vga_rom3;
 architecture SYN of vga_rom3 is
-    signal sub_wire0 : std_logic_vector (11 downto 0);
+  signal sub_wire0 : std_logic_vector (11 downto 0);
 begin
-    q <= sub_wire0(11 downto 0);
-    altsyncram_component : altsyncram
-    generic map(
-        address_aclr_a         => "NONE",
-        clock_enable_input_a   => "BYPASS",
-        clock_enable_output_a  => "BYPASS",
-        init_file              => "C:\Users\kdt91\OneDrive\Documents\Digital_Design\Lab6 - VGA Interfacing\Lab6_Quartus/bromimage.mif",
-        intended_device_family => "MAX 10",
-        lpm_hint               => "ENABLE_RUNTIME_MOD=NO",
-        lpm_type               => "altsyncram",
-        numwords_a             => 16384,
-        operation_mode         => "ROM",
-        outdata_aclr_a         => "NONE",
-        outdata_reg_a          => "UNREGISTERED",
-        widthad_a              => 14,
-        width_a                => 12,
-        width_byteena_a        => 1
-    )
-    port map(
-        address_a => address,
-        clock0    => clock,
-        q_a       => sub_wire0
-    );
+  q <= sub_wire0(11 downto 0);
+  altsyncram_component : altsyncram
+  generic map(
+    address_aclr_a         => "NONE",
+    clock_enable_input_a   => "BYPASS",
+    clock_enable_output_a  => "BYPASS",
+    init_file              => "C:\Users\kdt91\OneDrive\Documents\Digital_Design\Lab6 - VGA Interfacing\Lab6_Quartus/bromimage.mif",
+    intended_device_family => "MAX 10",
+    lpm_hint               => "ENABLE_RUNTIME_MOD=NO",
+    lpm_type               => "altsyncram",
+    numwords_a             => 16384,
+    operation_mode         => "ROM",
+    outdata_aclr_a         => "NONE",
+    outdata_reg_a          => "UNREGISTERED",
+    widthad_a              => 14,
+    width_a                => 12,
+    width_byteena_a        => 1
+  )
+  port map(
+    address_a => address,
+    clock0    => clock,
+    q_a       => sub_wire0
+  );
 end SYN;
 -- ============================================================
 -- CNX file retrieval info

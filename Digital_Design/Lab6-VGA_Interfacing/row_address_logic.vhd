@@ -2,16 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.vga_lib.all;
-
 entity row_address_logic is
   port (
-    v_count : in std_logic_vector(COUNT_RANGE);
-    img_pos : in std_logic_vector(2 downto 0);
+    v_count : in  std_logic_vector(COUNT_RANGE);
+    img_pos : in  std_logic_vector(2 downto 0);
     row     : out std_logic_vector(ROM_ADDR_BOTTOM_HALF_RANGE);
     row_en  : out std_logic
   );
 end row_address_logic;
-
 architecture row_address_logic_BHV of row_address_logic is
 begin
   process (v_count)
@@ -57,7 +55,7 @@ begin
         row_en <= '0';
         row    <= (others => '0');
       end if;
-      when others       =>
+      when others =>
       row    <= (others => '0');
       row_en <= '0';
     end case;

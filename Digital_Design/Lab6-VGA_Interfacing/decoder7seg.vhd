@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity decoder7seg is
   generic (G_TO_A : boolean := true);
   port (
-    input  : in std_logic_vector(3 downto 0);
+    input  : in  std_logic_vector(3 downto 0);
     output : out std_logic_vector(6 downto 0));
 end decoder7seg;
 architecture BHV of decoder7seg is

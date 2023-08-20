@@ -5,13 +5,13 @@ library altera_mf;
 use altera_mf.altera_mf_components.all;
 entity memory is
   port (
-    clock       : in std_logic;
-    address     : in std_logic_vector(31 downto 0);
-    data        : in std_logic_vector(31 downto 0);
-    mem_write   : in std_logic;
-    switch_data : in std_logic_vector(31 downto 0);
-    port_select : in std_logic;
-    in_port_en  : in std_logic;
+    clock       : in  std_logic;
+    address     : in  std_logic_vector(31 downto 0);
+    data        : in  std_logic_vector(31 downto 0);
+    mem_write   : in  std_logic;
+    switch_data : in  std_logic_vector(31 downto 0);
+    port_select : in  std_logic;
+    in_port_en  : in  std_logic;
     out_port    : out std_logic_vector(31 downto 0);
     output      : out std_logic_vector(31 downto 0)
   );
