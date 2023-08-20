@@ -6,10 +6,10 @@ end test_tb;
 architecture test_arch of test_tb is
   component test
     port (
-      clk      : in std_logic;
-      rst      : in std_logic;
-      go       : in std_logic;
-      input    : in std_logic_vector(7 downto 0);
+      clk      : in  std_logic;
+      rst      : in  std_logic;
+      go       : in  std_logic;
+      input    : in  std_logic_vector(7 downto 0);
       done_out : out std_logic
     );
   end component;
