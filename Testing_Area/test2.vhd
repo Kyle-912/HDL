@@ -11,7 +11,7 @@ entity ent is
 end ent;
 
 architecture rtl of ent is
-signal input_r : std_logic;
+signal input_r : std_logic_vector(7 downto 0);
 begin
 
 end architecture;
