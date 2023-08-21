@@ -17,7 +17,7 @@ TEST_PROC : process(clk)
 begin
   if rising_edge(clk) then
     if rst = '1' then
-
+      input_r <= (others => '0');
 
     else
 
