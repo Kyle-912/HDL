@@ -13,5 +13,16 @@ end ent;
 architecture rtl of ent is
 signal input_r : std_logic_vector(7 downto 0);
 begin
-pros
+TEST_PROC : process(clk)
+begin
+  if rising_edge(clk) then
+    if rst = '1' then
+
+
+    else
+
+
+    end if;
+  end if;
+end process;
 end architecture;
