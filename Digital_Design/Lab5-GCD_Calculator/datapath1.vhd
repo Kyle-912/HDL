@@ -24,16 +24,16 @@ begin
   U_MUX_X : entity work.mux2x1
     generic map(WIDTH => WIDTH)
     port map(
-      input1    => x,
-      input2    => sub1_output,
+      input0 => x,
+      input1 => sub1_output,
       sel    => x_sel,
       output => mux_to_reg_x
     );
   U_MUX_Y : entity work.mux2x1
     generic map(WIDTH => WIDTH)
     port map(
-      input1    => y,
-      input2    => sub2_output,
+      input0 => y,
+      input1 => sub2_output,
       sel    => y_sel,
       output => mux_to_reg_y
     );
@@ -67,15 +67,15 @@ begin
   U_SUBTRACTOR1 : entity work.subtractor
     generic map(WIDTH => WIDTH)
     port map(
-      input1    => reg_x_output,
-      input2    => reg_y_output,
+      in1 => reg_x_output,
+      in2 => reg_y_output,
       output => sub1_output
     );
   U_SUBTRACTOR2 : entity work.subtractor
     generic map(WIDTH => WIDTH)
     port map(
-      input1    => reg_y_output,
-      input2    => reg_x_output,
+      in1 => reg_y_output,
+      in2 => reg_x_output,
       output => sub2_output
     );
   U_COMPARATOR : entity work.comparator
