@@ -20,8 +20,8 @@ begin
         case input_r is
           when "00000000" =>
             input_r <= std_logic_vector(unsigned(input_r) + 1);
-          when others        =>
-            input_r <= (others => '0');
+          when others =>
+            input_r <= "00000000";
         end case;
       end if;
     end if;
