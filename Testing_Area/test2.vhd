@@ -20,7 +20,14 @@ begin
       input_r <= (others => '0');
 
     else
+case input_r is
 
+  when "00000000" =>
+    
+
+  when others =>
+
+end case;
 
     end if;
   end if;
