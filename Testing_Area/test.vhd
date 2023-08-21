@@ -42,4 +42,4 @@ begin
       end case;
     end if;
   end process;
-end architecture; --edit working
+end architecture; --merge working
