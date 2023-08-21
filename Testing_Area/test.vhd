@@ -21,7 +21,7 @@ begin
       input_r  <= (others => '0');
       state    <= IDLE;
       done_out <= '0';
-    elsif rising_edge(clk) then --test
+    elsif rising_edge(clk) then
       input_r <= input;
       case state is
         when IDLE =>
