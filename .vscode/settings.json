@@ -49,5 +49,6 @@
     ],
     "cSpell.ignoreWords": [
         "textio"
-    ]
+    ],
+    "gitdoc.enabled": true
 }
