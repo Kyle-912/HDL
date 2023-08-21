@@ -34,7 +34,7 @@ begin
             state    <= DONE;
           end if;
         when DONE =>
-          if go = '0' then
+          if go = '0' then--
             done_out <= '0';
             state    <= IDLE;
           end if;
