@@ -71,7 +71,7 @@ begin
         when "101011" => -- sw
           ALUOp        <= "000001";
           next_state_r <= STORE_1;
-        when "000000" =>                          -- r-type
+        when "000000" => -- r-type
           if (unsigned(Specifier1) = "001000") then -- jump register
             ALUOp        <= "000000";
             next_state_r <= JR_1;
