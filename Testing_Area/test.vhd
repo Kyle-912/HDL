@@ -18,7 +18,7 @@ begin
   TEST_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      input_r  <= (others => '0');
+      input_r  <= (others => '0');--test
       state    <= IDLE;
       done_out <= '0';
     elsif rising_edge(clk) then
@@ -42,4 +42,4 @@ begin
       end case;
     end if;
   end process;
-end architecture; 
+end architecture;
