@@ -27,7 +27,7 @@ begin
         when IDLE =>
           if go = '1' then
             state <= CHECK;
-            done_out <=
+            done_out <= 
           end if;
         when CHECK =>
           if unsigned(input_r) = to_unsigned(0, input_r'length) then
