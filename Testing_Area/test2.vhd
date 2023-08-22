@@ -24,6 +24,7 @@ begin
 case input_r is
 
   when "00000000" =>
+    input_r <= std_logic_vector(unsigned(input_r) + 1);
     
 
   when others =>
