@@ -39,11 +39,11 @@ begin
   if input = "00" then
     output <= "0001";
   elsif input = "01" then
-output <= "0010";
-elsif input = "10" then
-output <= "0100";
-elsif input = " then
-  
+    output <= "0010";
+  elsif input = "10" then
+    output <= "0100";
+  elsif input = " then
+
   end if;
 end IF_STATEMENT;
 
