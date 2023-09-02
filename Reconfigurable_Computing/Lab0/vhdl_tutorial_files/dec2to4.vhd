@@ -35,10 +35,10 @@ end WHEN_ELSE;
 
 architecture IF_STATEMENT of dec2to4 is
 begin
-procedure name(params) is
+process(input)
 begin
-  
-end procedure;
+
+end process;
 end IF_STATEMENT;
 
 -- Implement the decoder using a case statement
