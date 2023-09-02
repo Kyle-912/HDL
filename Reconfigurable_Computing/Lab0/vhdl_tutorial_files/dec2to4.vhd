@@ -39,7 +39,9 @@ begin
   if input = "00" then
     output <= "0001";
   elsif input = "01" then
-output <= "0010"
+output <= "0010";
+elsif input = "01" then
+  
   end if;
 end IF_STATEMENT;
 
