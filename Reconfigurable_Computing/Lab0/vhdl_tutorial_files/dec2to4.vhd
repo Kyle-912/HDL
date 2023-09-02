@@ -57,7 +57,8 @@ begin
 
     when "01" =>
       output <= "0010";
-
+when STATE =>
+  
     when others => null;
 
   end case;
