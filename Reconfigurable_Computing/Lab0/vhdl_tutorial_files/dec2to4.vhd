@@ -35,7 +35,7 @@ end WHEN_ELSE;
 
 architecture IF_STATEMENT of dec2to4 is
 begin
-  if input = "00" then
+  if (input = "00" then
     output <= "0001";
   elsif input = "01" then
     output <= "0010";
