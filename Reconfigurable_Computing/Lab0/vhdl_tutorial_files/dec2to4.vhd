@@ -59,7 +59,10 @@ begin
       output <= "0010";
 
 when "10" =>
-output <= 
+output <= "0100";
+
+when "11" =>
+  (others => '0')
 
     when others => null;
 
