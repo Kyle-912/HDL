@@ -25,10 +25,10 @@ end WITH_SELECT;
 architecture WHEN_ELSE of dec2to4 is
 begin
   output <=
-           "0001" when input = "00", else
-           "0010" when input = "01", else
-           "0100" when input = "10", else
-           "1000" when input = "11", else
+           "0001" when input = "00" else
+           "0010" when input = "01" else
+           "0100" when input = "10" else
+           "1000" when input = "11" else
            (others => '0') when others;
 end WHEN_ELSE;
 
