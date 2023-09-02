@@ -42,6 +42,8 @@ begin
 output <= "0010";
 elsif input = "10" then
 output <= "0100";
+elsif input = " then
+  
   end if;
 end IF_STATEMENT;
 
