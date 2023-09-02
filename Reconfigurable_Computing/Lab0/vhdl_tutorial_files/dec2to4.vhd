@@ -51,11 +51,12 @@ end IF_STATEMENT;
 
 architecture CASE_STATEMENT of dec2to4 is
 begin
-case <sel> is
-  when <choice_1> =>
-    
+  case input is
+  
+    when IDLE =>
+      
 
-  when others =>
-    null;
-end case;
+    when others =>
+
+  end case;
 end CASE_STATEMENT;
