@@ -52,9 +52,9 @@ end IF_STATEMENT;
 architecture CASE_STATEMENT of dec2to4 is
 begin
   case input is
-  
-    when IDLE =>
-      
+
+    when "00" =>
+      output <= 
 
     when others =>
 
