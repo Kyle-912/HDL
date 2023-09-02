@@ -53,15 +53,8 @@ begin
 
   architecture CASE_STATEMENT of dec2to4 is
   begin
-    case input is
-      when "00" =>
-        output <= "0001";
-      when "01" =>
-        output <= "0010";
-      when "10" =>
-        output <= "0100";
-      when "11" =>
-        output <= "1000";
-      when others => null;
-    end case;
+ : process(sensitivity_list)
+begin
+
+end process;
   end CASE_STATEMENT;
