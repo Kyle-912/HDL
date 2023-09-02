@@ -36,10 +36,9 @@ end WHEN_ELSE;
 
 architecture IF_STATEMENT of dec2to4 is
 begin
-if input = " then
-  
-else
-  
+if input = "00" then
+  elsif input =  then
+    
 end if;
 end IF_STATEMENT;
 
