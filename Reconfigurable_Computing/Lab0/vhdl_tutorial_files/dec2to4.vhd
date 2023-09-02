@@ -40,8 +40,8 @@ begin
     output <= "0001";
   elsif input = "01" then
 output <= "0010";
-elsif input = "01" then
-
+elsif input = "10" then
+output <= "0100";
   end if;
 end IF_STATEMENT;
 
