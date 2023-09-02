@@ -13,9 +13,9 @@ architecture WITH_SELECT of dec2to4 is
 begin
 with input select output <=
 "00" when "0000",
-"01" when "0001",
-"10" when "0002",
-"11" when "0003",
+"01" when "0010",
+"10" when "0100",
+"11" when "0110",
 (others => '0') when others;
 end WITH_SELECT;
 
