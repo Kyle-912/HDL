@@ -24,20 +24,23 @@ end WITH_SELECT;
 
 architecture WHEN_ELSE of dec2to4 is
 begin
-output <=
+  output <=
+           "00" when "0001",
+           "01" when "0010",
+           "10" when "0100",
+           "11" when "1000",
+         end WHEN_ELSE;
 
-end WHEN_ELSE;
+  -- Implement the decoder using an if statement
 
--- Implement the decoder using an if statement
+  architecture IF_STATEMENT of dec2to4 is
+  begin
 
-architecture IF_STATEMENT of dec2to4 is
-begin
+  end IF_STATEMENT;
 
-end IF_STATEMENT;
+  -- Implement the decoder using a case statement
 
--- Implement the decoder using a case statement
+  architecture CASE_STATEMENT of dec2to4 is
+  begin
 
-architecture CASE_STATEMENT of dec2to4 is
-begin
-
-end CASE_STATEMENT;
+  end CASE_STATEMENT;
