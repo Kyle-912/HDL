@@ -28,7 +28,7 @@ begin
            "0001" when input = "00" else
            "0010" when input = "01" else
            "0100" when input = "10" else
-           "1000" when input = "11"
+           "1000" when input = "11";
          end WHEN_ELSE;
 
   -- Implement the decoder using an if statement
