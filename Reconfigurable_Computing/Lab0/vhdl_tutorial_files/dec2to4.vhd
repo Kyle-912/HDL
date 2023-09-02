@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity dec2to4 is
   port (
-    input  : in std_logic_vector(1 downto 0);
+    input  : in  std_logic_vector(1 downto 0);
     output : out std_logic_vector(3 downto 0));
 end dec2to4;
 
@@ -25,11 +25,11 @@ end WITH_SELECT;
 architecture WHEN_ELSE of dec2to4 is
 begin
   output <=
-    "0001" when input = "00" else
-    "0010" when input = "01" else
-    "0100" when input = "10" else
-    "1000" when input = "11"
-  end WHEN_ELSE;
+           "0001" when input = "00" else
+           "0010" when input = "01" else
+           "0100" when input = "10" else
+           "1000" when input = "11"
+         end WHEN_ELSE;
 
   -- Implement the decoder using an if statement
 
