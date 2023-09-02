@@ -52,14 +52,13 @@ end IF_STATEMENT;
 architecture CASE_STATEMENT of dec2to4 is
 begin
   case input is
-
     when "00" =>
       output <= "0001";
 
     when "01" =>
       output <= "0010";
 
-    when others =>
+    when others => null;
 
   end case;
 end CASE_STATEMENT;
