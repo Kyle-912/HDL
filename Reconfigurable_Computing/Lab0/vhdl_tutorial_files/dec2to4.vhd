@@ -13,7 +13,9 @@ architecture WITH_SELECT of dec2to4 is
 begin
 with input select output <=
 "" when "",
-
+"" when "",
+"" when "",
+"" when "",
 (others => '0') when others;
 end WITH_SELECT;
 
