@@ -11,7 +11,10 @@ end dec2to4;
 
 architecture WITH_SELECT of dec2to4 is
 begin
-
+with input select output <=
+"0000" when "00"
+,
+(others => '0') when others;
 end WITH_SELECT;
 
 -- Implement the decoder using a when-else statement
