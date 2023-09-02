@@ -54,10 +54,10 @@ begin
   case input is
 
     when "00" =>
-      output <= "0001;"
+      output <= "0001";
 
-                when "01" =>
-                output <= "0010";
+    when "01" =>
+      output <= "0010";
 
     when others =>
 
