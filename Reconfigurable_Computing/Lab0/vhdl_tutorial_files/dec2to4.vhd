@@ -36,7 +36,11 @@ end WHEN_ELSE;
 
 architecture IF_STATEMENT of dec2to4 is
 begin
-
+if true then
+  
+else
+  
+end if;
 end IF_STATEMENT;
 
 -- Implement the decoder using a case statement
