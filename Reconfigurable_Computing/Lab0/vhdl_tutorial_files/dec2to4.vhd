@@ -24,7 +24,8 @@ end WITH_SELECT;
 
 architecture WHEN_ELSE of dec2to4 is
 begin
-
+when <choice> =>
+  
 end WHEN_ELSE;
 
 -- Implement the decoder using an if statement
