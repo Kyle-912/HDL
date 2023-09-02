@@ -35,15 +35,10 @@ end WHEN_ELSE;
 
 architecture IF_STATEMENT of dec2to4 is
 begin
-  if input = "00" then
-    output <= "0001";
-  elsif input = "01" then
-    output <= "0010";
-  elsif input = "10" then
-    output <= "0100";
-  elsif input = "11" then
-    output <= "1000";
-  end if;
+procedure name(params) is
+begin
+  
+end procedure;
 end IF_STATEMENT;
 
 -- Implement the decoder using a case statement
