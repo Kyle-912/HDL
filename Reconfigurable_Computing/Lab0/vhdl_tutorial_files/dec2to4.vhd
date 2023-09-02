@@ -25,10 +25,10 @@ end WITH_SELECT;
 architecture WHEN_ELSE of dec2to4 is
 begin
   output <=
-           "00" when "0001",
-           "01" when "0010",
-           "10" when "0100",
-           "11" when "1000",
+           "0001""00" when ,
+           "0010""01" when ,
+           "0100""10" when ,
+           "1000""11" when ,
          end WHEN_ELSE;
 
   -- Implement the decoder using an if statement
