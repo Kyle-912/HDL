@@ -41,7 +41,7 @@ begin
   elsif input = "01" then
 output <= "0010";
 elsif input = "01" then
-  
+
   end if;
 end IF_STATEMENT;
 
