@@ -29,18 +29,19 @@ begin
            "0010" when "01", else
            "0100" when "10", else
            "1000" when "11", else
-         end WHEN_ELSE;
+           (others => '0') when others;
+end WHEN_ELSE;
 
-  -- Implement the decoder using an if statement
+-- Implement the decoder using an if statement
 
-  architecture IF_STATEMENT of dec2to4 is
-  begin
+architecture IF_STATEMENT of dec2to4 is
+begin
 
-  end IF_STATEMENT;
+end IF_STATEMENT;
 
-  -- Implement the decoder using a case statement
+-- Implement the decoder using a case statement
 
-  architecture CASE_STATEMENT of dec2to4 is
-  begin
+architecture CASE_STATEMENT of dec2to4 is
+begin
 
-  end CASE_STATEMENT;
+end CASE_STATEMENT;
