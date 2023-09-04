@@ -1,7 +1,6 @@
 -- Greg Stitt
 -- University of Florida
 
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -16,16 +15,16 @@ architecture TB of enc4to2_tb is
   signal valid_if    : std_logic;
   signal valid_case  : std_logic;
 
-begin  -- TB
+begin -- TB
 
   U_IF : entity work.enc4to2(IF_STATEMENT)
-    port map (
+    port map(
       input  => input,
       output => output_if,
       valid  => valid_if);
 
   U_CASE : entity work.enc4to2(CASE_STATEMENT)
-    port map (
+    port map(
       input  => input,
       output => output_case,
       valid  => valid_case);
