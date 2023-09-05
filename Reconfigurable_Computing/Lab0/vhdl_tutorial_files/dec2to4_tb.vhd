@@ -18,22 +18,22 @@ architecture TB of dec2to4_tb is
 begin
 
   U_WITH_SELECT : entity work.dec2to4(WITH_SELECT)
-    port map (
+    port map(
       input  => input,
       output => output_ws);
 
   U_WHEN_ELSE : entity work.dec2to4(WHEN_ELSE)
-    port map (
+    port map(
       input  => input,
       output => output_we);
 
   U_IF : entity work.dec2to4(IF_STATEMENT)
-    port map (
+    port map(
       input  => input,
       output => output_if);
 
   U_CASE : entity work.dec2to4(CASE_STATEMENT)
-    port map (
+    port map(
       input  => input,
       output => output_case);
 
