@@ -19,44 +19,35 @@ begin
       valid  <= '0';
       output <= "00";
     elsif input = "0001" then
-output <= "00";
+      output <= "00";
     elsif input = "0010" then
-output <= "";
+      output <= "";
     elsif input = "0011" then
-output <= "";
+      output <= "";
     elsif input = "0100" then
-output <= "";
+      output <= "";
     elsif input = "0101" then
-output <= "";
+      output <= "";
     elsif input = "0110" then
-output <= "";
+      output <= "";
     elsif input = "0111" then
-output <= "";
-
+      output <= "";
     elsif input = "1000" then
-output <= "";
-
+      output <= "";
     elsif input = "1001" then
-output <= "";
-
+      output <= "";
     elsif input = "1010" then
-output <= "";
-
+      output <= "";
     elsif input = "1011" then
-output <= "";
-
+      output <= "";
     elsif input = "1100" then
-output <= "";
-
+      output <= "";
     elsif input = "1101" then
-output <= "";
-
+      output <= "";
     elsif input = "1110" then
-output <= "";
-
+      output <= "";
     elsif input = "1111" then
-output <= "";
-
+      output <= "";
     end if;
   end process;
 end IF_STATEMENT;
