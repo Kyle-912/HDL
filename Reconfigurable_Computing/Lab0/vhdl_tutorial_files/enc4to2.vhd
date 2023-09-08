@@ -67,8 +67,7 @@ begin
       valid <= '0';
       output <= "00";
 
-      when "0001" =>
-        output <= "00";
+
 
     when others =>
 
