@@ -67,51 +67,35 @@ begin
         output <= "00";
       when "0001" =>
         output <= "00";
-
       when "0010" =>
         output <= "01";
-
       when "0011" =>
         output <= "01";
-
       when "0100" =>
         output <= "10";
-
       when "0101" =>
         output <= "10";
-
       when "0110" =>
         output <= "10";
-
       when "0111" =>
         output <= "10";
-
       when "1000" =>
         output <= "11";
-
       when "1001" =>
         output <= "11";
-
       when "1010" =>
         output <= "11";
-
       when "1011" =>
         output <= "11";
-
       when "1100" =>
         output <= "11";
-
       when "1101" =>
         output <= "11";
-
       when "1110" =>
         output <= "11";
-
       when "1111" =>
         output <= "11";
-
       when others => null;
-
     end case;
   end process;
 end CASE_STATEMENT;
