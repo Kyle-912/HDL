@@ -15,7 +15,7 @@ begin
   IF_PROC : process (input)
   begin
 if input = sl then
-  
+
 end if;
   end process;
 end IF_STATEMENT;
