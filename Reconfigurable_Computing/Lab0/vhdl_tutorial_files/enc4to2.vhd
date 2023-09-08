@@ -29,25 +29,25 @@ begin
     elsif input = "0101" then
       output <= "10";
     elsif input = "0110" then
-      output <= "";
+      output <= "10";
     elsif input = "0111" then
-      output <= "";
+      output <= "11";
     elsif input = "1000" then
-      output <= "";
+      output <= "11";
     elsif input = "1001" then
-      output <= "";
+      output <= "11";
     elsif input = "1010" then
-      output <= "";
+      output <= "11";
     elsif input = "1011" then
-      output <= "";
+      output <= "11";
     elsif input = "1100" then
-      output <= "";
+      output <= "11";
     elsif input = "1101" then
-      output <= "";
+      output <= "11";
     elsif input = "1110" then
-      output <= "";
+      output <= "11";
     elsif input = "1111" then
-      output <= "";
+      output <= "11";
     end if;
   end process;
 end IF_STATEMENT;
