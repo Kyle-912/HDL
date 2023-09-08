@@ -17,7 +17,9 @@ begin
   begin
     if input = "0000" then
       valid <= '0';
-      else
+      elsif input = "" then
+
+        elsif input = "" then
         
     end if;
   end process;
