@@ -12,7 +12,7 @@ end enc4to2;
 
 architecture IF_STATEMENT of enc4to2 is
 begin
-
+pro
 end IF_STATEMENT;
 
 -- TODO: Implement the priority encoder using a case statement. Note that this
