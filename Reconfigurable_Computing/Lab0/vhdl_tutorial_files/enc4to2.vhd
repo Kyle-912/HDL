@@ -68,7 +68,7 @@ begin
       output <= "00";
 
       when "0001" =>
-        ouput <= "00";
+        output <= "00";
 
     when others =>
 
