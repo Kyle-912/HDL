@@ -58,5 +58,9 @@ end IF_STATEMENT;
 
 architecture CASE_STATEMENT of enc4to2 is
 begin
-
+valid <= '1';
+CASE_PROC : process(sensitivity_list)
+begin
+  
+end process;
 end CASE_STATEMENT;
