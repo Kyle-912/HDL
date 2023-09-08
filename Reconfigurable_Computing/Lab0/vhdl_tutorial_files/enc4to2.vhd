@@ -19,7 +19,7 @@ begin
       valid  <= '0';
       output <= "00";
     elsif input = "0001" then
-
+output <=  ;
     elsif input = "0010" then
 
     elsif input = "0011" then
