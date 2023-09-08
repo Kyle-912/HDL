@@ -69,25 +69,25 @@ begin
         output <= "00";
 
       when "0010" =>
-        output <= "";
+        output <= "01";
 
       when "0011" =>
-        output <= "";
+        output <= "01";
 
       when "0100" =>
-        output <= "";
+        output <= "10";
 
       when "0101" =>
-        output <= "";
+        output <= "10";
 
       when "0110" =>
-        output <= "";
+        output <= "10";
 
       when "0111" =>
-        output <= "";
+        output <= "10";
 
       when "1000" =>
-        output <= "";
+        output <= "11";
 
       when "1001" =>
         output <= "";
