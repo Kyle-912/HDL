@@ -31,7 +31,7 @@ begin
     elsif input = "0110" then
       output <= "10";
     elsif input = "0111" then
-      output <= "11";
+      output <= "10";
     elsif input = "1000" then
       output <= "11";
     elsif input = "1001" then
