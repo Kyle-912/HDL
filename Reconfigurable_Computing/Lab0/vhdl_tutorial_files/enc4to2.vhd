@@ -67,51 +67,51 @@ begin
         valid  <= '0';
         output <= "00";
       when "0001" =>
-output <= "";
+        output <= "";
       when "0010" =>
-output <= "";
+        output <= "";
 
       when "0011" =>
-output <= "";
+        output <= "";
 
       when "0100" =>
-output <= "";
+        output <= "";
 
       when "0101" =>
-output <= "";
+        output <= "";
 
       when "0110" =>
-output <= "";
+        output <= "";
 
       when "0111" =>
-output <= "";
+        output <= "";
 
       when "1000" =>
-output <= "";
+        output <= "";
 
       when "1001" =>
-output <= "";
+        output <= "";
 
       when "1010" =>
-output <= "";
+        output <= "";
 
       when "1011" =>
-output <= "";
+        output <= "";
 
       when "1100" =>
-output <= "";
+        output <= "";
 
       when "1101" =>
-output <= "";
+        output <= "";
 
       when "1110" =>
-output <= "";
+        output <= "";
 
       when "1111" =>
-output <= "";
+        output <= "";
 
       when others =>
-output <= "";
+        output <= "";
 
     end case;
   end process;
