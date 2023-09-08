@@ -64,7 +64,11 @@ begin
   case input is
 
     when "0000" =>
-      valid <= 
+      valid <= '0';
+      output <= "00";
+
+      when "000" =>
+        
 
     when others =>
 
