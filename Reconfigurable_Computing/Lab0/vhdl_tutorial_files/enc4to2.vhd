@@ -22,19 +22,14 @@ begin
 output <= "00";
     elsif input = "0010" then
 output <= "";
-
     elsif input = "0011" then
 output <= "";
-
     elsif input = "0100" then
 output <= "";
-
     elsif input = "0101" then
 output <= "";
-
     elsif input = "0110" then
 output <= "";
-
     elsif input = "0111" then
 output <= "";
 
