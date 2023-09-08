@@ -62,12 +62,12 @@ begin
   CASE_PROC : process (input)
   begin
     case input is
-
       when "0000" =>
         valid  <= '0';
         output <= "00";
       when "0001" =>
-        output <= "";
+        output <= "00";
+
       when "0010" =>
         output <= "";
 
