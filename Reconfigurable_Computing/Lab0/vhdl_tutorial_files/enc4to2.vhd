@@ -58,9 +58,9 @@ end IF_STATEMENT;
 
 architecture CASE_STATEMENT of enc4to2 is
 begin
-  valid <= '1';
   CASE_PROC : process (input)
   begin
+    valid <= '1';
     case input is
       when "0000" =>
         valid  <= '0';
