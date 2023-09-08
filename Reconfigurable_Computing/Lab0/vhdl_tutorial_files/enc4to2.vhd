@@ -12,9 +12,9 @@ end enc4to2;
 
 architecture IF_STATEMENT of enc4to2 is
 begin
-  valid <= '1';
   IF_PROC : process (input)
   begin
+    valid <= '1';
     if input = "0000" then
       valid  <= '0';
       output <= "00";
