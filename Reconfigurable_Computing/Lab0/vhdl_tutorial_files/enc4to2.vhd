@@ -20,6 +20,10 @@ begin
       elsif input = "" then
 
         elsif input = "" then
+
+          elsif input = "" then
+
+            elsif input = "" then
         
     end if;
   end process;
