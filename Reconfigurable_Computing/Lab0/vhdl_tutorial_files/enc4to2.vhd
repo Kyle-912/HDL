@@ -21,13 +21,13 @@ begin
     elsif input = "0001" then
       output <= "00";
     elsif input = "0010" then
-      output <= "";
+      output <= "01";
     elsif input = "0011" then
-      output <= "";
+      output <= "01";
     elsif input = "0100" then
-      output <= "";
+      output <= "10";
     elsif input = "0101" then
-      output <= "";
+      output <= "10";
     elsif input = "0110" then
       output <= "";
     elsif input = "0111" then
