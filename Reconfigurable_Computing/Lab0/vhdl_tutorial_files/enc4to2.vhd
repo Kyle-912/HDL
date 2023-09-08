@@ -17,37 +17,37 @@ begin
   begin
     if input = "0000" then
       valid <= '0';
-    elsif input = "" then
+    elsif input = "0001" then
 
-    elsif input = "" then
+    elsif input = "0010" then
 
-    elsif input = "" then
+    elsif input = "0011" then
 
-    elsif input = "" then
+    elsif input = "0100" then
 
-    elsif input = "" then
+    elsif input = "0101" then
 
-    elsif input = "" then
+    elsif input = "0110" then
 
-    elsif input = "" then
+    elsif input = "0111" then
 
-    elsif input = "" then
+    elsif input = "1000" then
 
-    elsif input = "" then
+    elsif input = "1001" then
 
-    elsif input = "" then
+    elsif input = "1010" then
 
-    elsif input = "" then
+    elsif input = "1011" then
 
-    elsif input = "" then
+    elsif input = "1100" then
 
-    elsif input = "" then
+    elsif input = "1101" then
 
-    elsif input = "" then
+    elsif input = "1110" then
 
-    elsif input = "" then
+    elsif input = "1111" then
 
-    elsif input = "" then
+    elsif input = "10000" then
 
     end if;
   end process;
