@@ -59,8 +59,15 @@ end IF_STATEMENT;
 architecture CASE_STATEMENT of enc4to2 is
 begin
 valid <= '1';
-CASE_PROC : process(sensitivity_list)
+CASE_PROC : process(input)
 begin
-  
+  case input is
+
+    when "0000" =>
+      valid <= 
+
+    when others =>
+
+  end case;
 end process;
 end CASE_STATEMENT;
