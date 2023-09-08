@@ -14,7 +14,7 @@ architecture IF_STATEMENT of enc4to2 is
 begin
   IF_PROC : process (input)
   begin
-if ) =  then
+if input = " then
 
 end if;
   end process;
