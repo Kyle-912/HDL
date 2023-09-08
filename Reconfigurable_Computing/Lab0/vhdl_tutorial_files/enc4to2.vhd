@@ -17,6 +17,7 @@ begin
   begin
     if input = "0000" then
       valid <= '0';
+out
     elsif input = "0001" then
 
     elsif input = "0010" then
@@ -46,8 +47,6 @@ begin
     elsif input = "1110" then
 
     elsif input = "1111" then
-
-    elsif input = "10000" then
 
     end if;
   end process;
