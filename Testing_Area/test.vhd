@@ -13,7 +13,7 @@ end test;
 architecture bhv of test is
   type state_type is (IDLE, CHECK, DONE);
   signal state   : state_type;
-  signal input_r : std_logic_vector(7 downto 0)
+  signal input_r : std_logic_vector(7 downto 0);
 begin
   TEST_PROC : process (clk, rst)
   begin
