@@ -16,8 +16,8 @@ begin
   IF_PROC : process (input)
   begin
     if input = "0000" then
-      valid <= '0';
-out
+      valid  <= '0';
+      output <= "00";
     elsif input = "0001" then
 
     elsif input = "0010" then
