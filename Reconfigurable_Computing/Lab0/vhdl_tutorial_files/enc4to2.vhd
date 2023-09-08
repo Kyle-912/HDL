@@ -90,28 +90,27 @@ begin
         output <= "11";
 
       when "1001" =>
-        output <= "";
+        output <= "11";
 
       when "1010" =>
-        output <= "";
+        output <= "11";
 
       when "1011" =>
-        output <= "";
+        output <= "11";
 
       when "1100" =>
-        output <= "";
+        output <= "11";
 
       when "1101" =>
-        output <= "";
+        output <= "11";
 
       when "1110" =>
-        output <= "";
+        output <= "11";
 
       when "1111" =>
-        output <= "";
+        output <= "11";
 
-      when others =>
-        output <= "";
+      when others => null;
 
     end case;
   end process;
