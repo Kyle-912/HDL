@@ -56,4 +56,14 @@ begin
       input  => MULT1toREG3,
       output => REG3toADD
     );
+
+  U_REG4 : entity work.reg
+    generic map(WIDTH => WIDTH)
+    port map(
+      clk    => clk,
+      rst    => rst,
+      en     => en,
+      input  => MULT2toREG4,
+      output => REG4toADD
+    );
 end STR;
