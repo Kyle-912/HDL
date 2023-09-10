@@ -30,7 +30,7 @@ begin
 
     elsif rising_edge(clk) then
       if en = '1' then
-        output_r <= std_logic_vector(unsigned(in1) * unsigned(in2));
+        output_r <= std_logic_vector(unsigned(in1) * unsigned(in2)+1);
       end if;
 
     end if;
