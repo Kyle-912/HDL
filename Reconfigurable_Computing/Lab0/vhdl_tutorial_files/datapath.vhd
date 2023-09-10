@@ -56,8 +56,19 @@ begin
       in1    => in1,
       in2    => in2,
       output => MULT1toREG3
-
     );
+
+U_MULT2 : entity work.mult_pipe
+generic map(WIDTH => WIDTH)
+port map(
+  clk      => clk,
+  rst      => rst,
+  en => en,
+  in1 => in3,
+  in2 => in4,
+  output => MULT2toREG4
+
+);
 
   U_REG3 : entity work.reg
     generic map(WIDTH => WIDTH)
