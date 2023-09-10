@@ -4,14 +4,14 @@ use ieee.numeric_std.all;
 
 entity mult_pipe is
   generic (
-    width  :     positive := 16);
+    width : positive := 16);
   port (
     clk    : in  std_logic;
     rst    : in  std_logic;
     en     : in  std_logic;
-    in1    : in  std_logic_vector(width-1 downto 0);
-    in2    : in  std_logic_vector(width-1 downto 0);
-    output : out std_logic_vector(width*2-1 downto 0));
+    in1    : in  std_logic_vector(width - 1 downto 0);
+    in2    : in  std_logic_vector(width - 1 downto 0);
+    output : out std_logic_vector(width * 2 - 1 downto 0));
 end mult_pipe;
 
 -- TODO: Implement a behavioral description of a pipelined multiplier (i.e., a
@@ -21,7 +21,19 @@ end mult_pipe;
 -- returns a value whose width is the sum of the widths of the inputs.
 
 architecture BHV of mult_pipe is
+  signal output_r : std_logic_vector(output'range);
 begin
+  MULT_PIPE_PROC : process (clk, rst)
+  begin
+    if rst = '1' then
+      output_r <= (others => '0');
 
+    elsif rising_edge(clk) then
+      if en = '1' then
+        output_r <= std_logic_vector(unsigned(in1) * unsigned(in2));
+      end if;
+
+    end if;
+  end process;
+  output <= output_r;
 end BHV;
-
