@@ -90,7 +90,7 @@ begin
     );
 
   U_ADD : entity work.add_pipe
-    generic map(WIDTH => WIDTH)
+    generic map(WIDTH => WIDTH*2)
     port map(
       clk    => clk,
       rst    => rst,
