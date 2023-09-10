@@ -20,6 +20,7 @@ end add_pipe;
 -- hardcoded to a specific value.
 
 architecture BHV of add_pipe is
+  signal name : std_logic;
 begin
   ADD_PIPE_PROC : process(clk, rst)
   begin
