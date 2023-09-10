@@ -88,4 +88,6 @@ begin
       input  => MULT2toREG4,
       output => REG4toADD
     );
+
+    
 end STR;
