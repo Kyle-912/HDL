@@ -70,7 +70,7 @@ begin
     );
 
   U_REG3 : entity work.reg
-    generic map(WIDTH => WIDTH*2)
+    generic map(WIDTH => WIDTH * 2)
     port map(
       clk    => clk,
       rst    => rst,
@@ -80,7 +80,7 @@ begin
     );
 
   U_REG4 : entity work.reg
-    generic map(WIDTH => WIDTH*2)
+    generic map(WIDTH => WIDTH * 2)
     port map(
       clk    => clk,
       rst    => rst,
@@ -90,7 +90,7 @@ begin
     );
 
   U_ADD : entity work.add_pipe
-    generic map(WIDTH => WIDTH*2)
+    generic map(WIDTH => WIDTH * 2)
     port map(
       clk    => clk,
       rst    => rst,
@@ -101,7 +101,7 @@ begin
     );
 
   U_REG5 : entity work.reg
-    generic map(WIDTH => WIDTH*2)
+    generic map(WIDTH => WIDTH * 2 + 1)
     port map(
       clk    => clk,
       rst    => rst,
