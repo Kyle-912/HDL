@@ -4,13 +4,13 @@ use ieee.numeric_std.all;
 
 entity add_pipe is
   generic (
-    width  :     positive := 16);
+    width : positive := 16);
   port (
     clk    : in  std_logic;
     rst    : in  std_logic;
     en     : in  std_logic;
-    in1    : in  std_logic_vector(width-1 downto 0);
-    in2    : in  std_logic_vector(width-1 downto 0);
+    in1    : in  std_logic_vector(width - 1 downto 0);
+    in2    : in  std_logic_vector(width - 1 downto 0);
     output : out std_logic_vector(width downto 0));
 end add_pipe;
 
@@ -23,4 +23,3 @@ architecture BHV of add_pipe is
 begin
 
 end BHV;
-
