@@ -80,7 +80,7 @@ begin
     );
 
   U_REG4 : entity work.reg
-    generic map(WIDTH => WIDTH)
+    generic map(WIDTH => WIDTH*2)
     port map(
       clk    => clk,
       rst    => rst,
