@@ -27,7 +27,7 @@ begin
       output <= (others => '0');
 
     elsif rising_edge(clk) then
-      if en then
+      if en = '1' then
         
       end if;
 
