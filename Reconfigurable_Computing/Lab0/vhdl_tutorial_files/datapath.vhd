@@ -96,6 +96,7 @@ begin
       rst => rst,
       en  => en,
       in1 => REG3toADD,
-      in2 => REG4toADD
+      in2 => REG4toADD,
+      output => ADDtoREG5
     );
 end STR;
