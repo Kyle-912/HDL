@@ -28,7 +28,7 @@ begin
 
     elsif rising_edge(clk) then
       if en = '1' then
-        output <= std_logic_vector(unsigned(in1));
+        output <= std_logic_vector(unsigned(in1) + unsigned(in2 ));
       end if;
 
     end if;
