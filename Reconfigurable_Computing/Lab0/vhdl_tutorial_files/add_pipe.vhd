@@ -21,10 +21,10 @@ end add_pipe;
 
 architecture BHV of add_pipe is
 begin
-  ADD_PIE_PROC : process(clk, rst)
+  ADD_PIPE_PROC : process(clk, rst)
   begin
     if rst = '1' then
-      
+      output <= (others => '0');
 
     elsif rising_edge(clk) then
 
