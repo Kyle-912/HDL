@@ -89,13 +89,13 @@ begin
       output => REG4toADD
     );
 
-U_ADD : entity work.add_pipe
-generic map(WIDTH => WIDTH)
-port map(
-  clk      => clk,
-  rst      => rst,
-  en => en,
-  in1 => REG3toADD,
-  in2 => REG4toADD
-);
+  U_ADD : entity work.add_pipe
+    generic map(WIDTH => WIDTH)
+    port map(
+      clk => clk,
+      rst => rst,
+      en  => en,
+      in1 => REG3toADD,
+      in2 => REG4toADD
+    );
 end STR;
