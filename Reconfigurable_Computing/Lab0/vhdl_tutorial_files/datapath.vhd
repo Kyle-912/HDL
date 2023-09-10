@@ -47,6 +47,18 @@ begin
   end process;
   valid_out <= REG2_r;
 
+  U_MULT1 : entity work.mult_pipe
+    generic map(WIDTH => WIDTH)
+    port map(
+      clk    => clk,
+      rst    => rst,
+      en     => en,
+      in1    => in1,
+      in2    => in2,
+      output => MULT1toREG3
+
+    );
+
   U_REG3 : entity work.reg
     generic map(WIDTH => WIDTH)
     port map(
