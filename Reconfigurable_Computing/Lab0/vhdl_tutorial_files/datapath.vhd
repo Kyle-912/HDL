@@ -43,7 +43,6 @@ begin
         REG1_r <= valid_in;
         REG2_r <= REG1_r;
       end if;
-
     end if;
   end process;
   valid_out <= REG2_r;
