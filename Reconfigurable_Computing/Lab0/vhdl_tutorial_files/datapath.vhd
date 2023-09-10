@@ -40,12 +40,9 @@ begin
 
     elsif rising_edge(clk) then
       if en = '1' then
-        
-      else
-        
+        REG1_r <= valid_in;
+        REG2_r <= REG1_r;
       end if;
-      REG1_r <= valid_in;
-      REG2_r <= REG1_r;
 
     end if;
   end process;
