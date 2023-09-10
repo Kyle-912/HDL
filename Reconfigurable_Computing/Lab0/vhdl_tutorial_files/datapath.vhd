@@ -97,7 +97,7 @@ begin
       en     => en,
       in1    => REG3toADD,
       in2    => REG4toADD,
-      output => ADDtoREG5
+      output => ADDtoREG5--test
     );
 
   U_REG5 : entity work.reg
