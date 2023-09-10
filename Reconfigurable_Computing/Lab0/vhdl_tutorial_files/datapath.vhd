@@ -92,20 +92,21 @@ begin
   U_ADD : entity work.add_pipe
     generic map(WIDTH => WIDTH)
     port map(
-      clk => clk,
-      rst => rst,
-      en  => en,
-      in1 => REG3toADD,
-      in2 => REG4toADD,
+      clk    => clk,
+      rst    => rst,
+      en     => en,
+      in1    => REG3toADD,
+      in2    => REG4toADD,
       output => ADDtoREG5
     );
 
-    U_REG5 : entity work.reg
+  U_REG5 : entity work.reg
     generic map(WIDTH => WIDTH)
     port map(
-      clk      => clk,
-      rst      => rst,
-      en => en,
-      input => ADDtoREG5
+      clk    => clk,
+      rst    => rst,
+      en     => en,
+      input  => ADDtoREG5,
+      output => output
     );
 end STR;
