@@ -22,5 +22,5 @@ end mult_pipe;
 
 architecture BHV of mult_pipe is
 begin
-
+  
 end BHV;
