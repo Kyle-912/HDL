@@ -29,7 +29,7 @@ begin
 
     elsif rising_edge(clk) then
       if en = '1' then
-        output_r <= std_logic_vector(resize(unsigned(in1), output_r'length) + resize(unsigned(in2), width + 1));
+        output_r <= std_logic_vector(resize(unsigned(in1), output_r'length) + resize(unsigned(in2), output_r'length));
       end if;
 
     end if;
