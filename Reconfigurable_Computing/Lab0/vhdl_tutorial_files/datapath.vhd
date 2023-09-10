@@ -99,4 +99,13 @@ begin
       in2 => REG4toADD,
       output => ADDtoREG5
     );
+
+    U_REG5 : entity work.reg
+    generic map(WIDTH => WIDTH)
+    port map(
+      clk      => clk,
+      rst      => rst,
+      en => en,
+      input => ADDtoREG5
+    );
 end STR;
