@@ -22,5 +22,14 @@ end mult_pipe;
 
 architecture BHV of mult_pipe is
 begin
-  
+  MULT_PIPE_PROC : process(clk, rst)
+  begin
+    if rst = '1' then
+      
+
+    elsif rising_edge(clk) then
+
+
+    end if;
+  end process;
 end BHV;
