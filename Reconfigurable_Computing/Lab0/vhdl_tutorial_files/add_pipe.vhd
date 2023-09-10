@@ -25,7 +25,7 @@ begin
   ADD_PIPE_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      output <= (others => '0');
+      output_r <= (others => '0');
 
     elsif rising_edge(clk) then
       if en = '1' then
