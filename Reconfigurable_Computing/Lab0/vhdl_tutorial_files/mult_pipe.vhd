@@ -35,5 +35,5 @@ begin
 
     end if;
   end process;
-  output <= output_r;
+  output <= output_r; --test
 end BHV;
