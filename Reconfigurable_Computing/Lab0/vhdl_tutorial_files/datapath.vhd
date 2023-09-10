@@ -39,6 +39,11 @@ begin
       REG2_r <= '0';
 
     elsif rising_edge(clk) then
+      if en = '1' then
+        
+      else
+        
+      end if;
       REG1_r <= valid_in;
       REG2_r <= REG1_r;
 
