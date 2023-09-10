@@ -24,5 +24,5 @@ end datapath;
 architecture STR of datapath is
 
 begin
-
+  
 end STR;
