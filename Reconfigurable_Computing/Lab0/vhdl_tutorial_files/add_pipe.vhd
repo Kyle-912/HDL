@@ -20,7 +20,7 @@ end add_pipe;
 -- hardcoded to a specific value.
 
 architecture BHV of add_pipe is
-  signal name : std_logic;
+  signal output_r : std_logic_vector(7 downto 0);
 begin
   ADD_PIPE_PROC : process(clk, rst)
   begin
