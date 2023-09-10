@@ -104,7 +104,7 @@ begin
     generic map(WIDTH => WIDTH * 2 + 1)
     port map(
       clk    => clk,
-      rst    => rst,
+      rst    => clk,
       en     => en,
       input  => ADDtoREG5,
       output => output
