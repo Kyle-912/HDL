@@ -20,17 +20,19 @@ end add_pipe;
 -- hardcoded to a specific value.
 
 architecture BHV of add_pipe is
+  signal output_r : std_logic_vector(output'range);
 begin
-  ADD_PIPE_PROC : process(clk, rst)
+  ADD_PIPE_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      output <= (others => '0');
+      output_r <= (others => '0');
 
     elsif rising_edge(clk) then
       if en = '1' then
-        
+        output_r <= std_logic_vector(resize(unsigned(in1), output'length) + resize(unsigned(in2), output'length));
       end if;
 
     end if;
   end process;
+  output <= output_r;
 end BHV;
