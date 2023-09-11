@@ -1,38 +1,30 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-
 entity ent is
   port (
-    clk : in std_logic;
-    rst : in std_logic;
-    en  : in std_logic;
-    sig : in std_logic
+    clk   : in  std_logic;
+    rst   : in  std_logic;
+    input : in  std_logic_vector(7 downto 0);
+    done  : out std_logic
   );
 end ent;
-
 architecture rtl of ent is
-  type state_type is (IDLE);
-  signal state_r, next_state : state_type;
+  signal input_r : std_logic_vector(7 downto 0);
 begin
-
-  process(clk, rst)
+  TEST_PROC : process (clk)
   begin
-    if (rst = '1') then
-      state_r <= IDLE;
-    elsif (rising_edge(clk)) then
-      state_r <= next_state;
+    if rising_edge(clk) then
+      if rst = '1' then
+        input_r <= (others => '0');
+      else
+        case input_r is
+          when "00000000" =>
+            input_r <= std_logic_vector(unsigned(input_r) + 1);
+          when others =>
+            input_r <= (others => '0');
+        end case;
+      end if;
     end if;
-  end process;
-
-  process(en, state_r)
-  begin
-    case state_r is
-      when IDLE =>
-        if en = '1' then
-        next_state <= IDLE;
-        end if;
-      when others => null;
-    end case;
   end process;
 end architecture;
