@@ -26,7 +26,7 @@ begin
       case state is
         when IDLE =>
           if go = '1' then
-            state <= CHECK
+            state <= CHECK;
           end if;
         when CHECK =>
           if unsigned(input_r) = to_unsigned(0, input_r'length) then
