@@ -92,7 +92,7 @@ architecture fsm_plus_d of fib is
   signal n_eq_0     : std_logic;
   signal i_le_n     : std_logic;
 begin
-
+  
 end fsm_plus_d;
 
 -- TODO: Change the architecture that is used to simulate and synthesis each
