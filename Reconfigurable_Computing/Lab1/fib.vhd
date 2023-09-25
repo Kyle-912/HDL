@@ -30,6 +30,8 @@ begin
   begin
     if rst = '1' then
       n_r      <= (others => '0');
+      x_r      <= (others => '0');
+      y_r      <= (others => '0');
       result_r <= (others => '0');
       done_r   <= '0';
       state_r  <= START;
