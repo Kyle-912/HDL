@@ -39,6 +39,7 @@ begin
 
   process (state_r, go, n_eq_0, i_le_n)
   begin
+    
     next_state <= state_r;
     case state_r is
       when START =>
