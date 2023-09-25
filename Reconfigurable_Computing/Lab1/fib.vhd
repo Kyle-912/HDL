@@ -36,7 +36,7 @@ begin
       done_r <= '0';
       case state_r is
         when START =>
-          
+          n_r <= n;
         when COMPUTE =>
 
         when RESTART =>
