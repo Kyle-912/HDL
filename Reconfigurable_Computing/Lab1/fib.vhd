@@ -37,6 +37,11 @@ begin
       case state_r is
         when START  =>
 
+        when COMPUTE =>
+
+        when RESTART =>
+          
+
         when others =>
           state_r <= START;
 
