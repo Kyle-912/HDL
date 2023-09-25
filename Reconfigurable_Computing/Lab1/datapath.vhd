@@ -36,6 +36,19 @@ architecture default_arch of datapath is
   signal adder2_out     : std_logic_vector(result'range);
   signal result_mux_out : std_logic_vector(result'range);
   signal result_reg_out : std_logic_vector(result'range);
+
+  component mux2x1 is
+  generic (
+    WIDTH : positive
+  );
+  port (
+    input0 : in  std_logic_vector(WIDTH - 1 downto 0);
+    input1 : in  std_logic_vector(WIDTH - 1 downto 0);
+    sel    : in  std_logic;
+    output : out std_logic_vector(WIDTH - 1 downto 0)
+  );
+end component;
+
 begin
   U_N_REG : entity work.reg
     generic map(WIDTH => n'length)
