@@ -33,11 +33,11 @@ begin
       state_r  <= START;
 
     elsif rising_edge(clk) then
-      done_r <= '0';
       case state_r is
         when START =>
           n_r <= n;
           if go = '1' then
+            done_r  <= '0';
             state_r <= COMPUTE;
           else
 
