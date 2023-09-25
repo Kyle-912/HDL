@@ -30,7 +30,8 @@ architecture default_arch of fsm is
   signal done_r              : std_logic;
 begin
 
-  done <= '1';
+  done <= done_r;
+  done_r <= '1';
 
   process (clk, rst)
   begin
