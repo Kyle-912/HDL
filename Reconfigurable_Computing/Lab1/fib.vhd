@@ -13,8 +13,6 @@ entity fib is
   );
 end fib;
 
--- TODO: Add your FSMD architecture here.
-
 architecture fsmd of fib is
   type state_t is (START, COMPUTE, RESTART);
   signal state_r  : state_t;
