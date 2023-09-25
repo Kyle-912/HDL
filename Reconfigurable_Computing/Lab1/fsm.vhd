@@ -81,12 +81,12 @@ begin
             y_sel <= '1';
             y_en  <= '1';
           end if;
+          result_sel <= '1';
+          result_en  <= '1';
           next_state <= RESTART;
         end if;
 
       when RESTART =>
-        result_sel <= '1';
-        result_en  <= '1';
         done_r     <= '1';
         if go = '0' then
           next_state <= START;
