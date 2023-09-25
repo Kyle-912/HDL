@@ -30,6 +30,7 @@ begin
       n_r      <= (others => '0');
       result_r <= (others => '0');
       done_r   <= '0';
+      state_r <= START;
 
     elsif rising_edge(clk) then
       done_r <= '0';
