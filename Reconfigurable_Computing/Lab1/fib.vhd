@@ -37,6 +37,11 @@ begin
       case state_r is
         when START =>
           n_r <= n;
+          if true then
+            
+          else
+            
+          end if;
         when COMPUTE =>
 
         when RESTART =>
