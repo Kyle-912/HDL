@@ -16,6 +16,7 @@ end fib;
 -- TODO: Add your FSMD architecture here.
 
 architecture fsmd of fib is
+    signal name : std_logic;
 begin
 
 end fsmd;
