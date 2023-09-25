@@ -43,6 +43,7 @@ begin
         when COMPUTE =>
 
         when RESTART =>
+        done_r <= '1';
 
         when others  =>
           state_r <= START;
