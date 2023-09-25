@@ -6,7 +6,7 @@ use ieee.math_real.all;
 entity fib_tb is
 end fib_tb;
 
-architecture tb of fib_tb is    
+architecture tb of fib_tb is
 begin
 
 end tb;
