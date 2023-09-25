@@ -78,8 +78,9 @@ begin
             i_sel <= '1';
             i_en  <= '1';
             x_sel <= '1';
-            x_en <= '1';
+            x_en  <= '1';
             y_sel <= '1';
+            y_en  <= '1';
           end loop;
         end if;
 
