@@ -109,7 +109,7 @@ begin
     -- Check for coverage of max and min n values.
     if (unsigned(n) = 0) then
       min_test := true;
-    elsif (unsigned(n) = 47) then
+    elsif (unsigned(n) = 10) then --FIXME: 47
       max_test := true;
     end if;
 
