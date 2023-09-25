@@ -44,7 +44,7 @@ begin
       when START =>
         if go = '1' then
           done       <= '0';
-
+          n_en <= '1';
           next_state <= COMPUTE;
         end if;
 
