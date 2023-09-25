@@ -80,10 +80,8 @@ begin
             x_en  <= '1';
             y_sel <= '1';
             y_en  <= '1';
+            
           end if;
-          result_sel <= '1';
-          result_en  <= '1';
-          next_state <= RESTART;
         end if;
 
       when RESTART =>
