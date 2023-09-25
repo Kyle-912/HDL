@@ -83,11 +83,11 @@ begin
       output => i_reg_out
     );
 
-    U_ADDER1 : entity work.adder
-    generic map (WIDTH => n'length)
+  U_ADDER1 : entity work.adder
+    generic map(WIDTH => n'length)
     port map(
-      in1 => i_reg_out,
-      in2 => std_logic_vector(to_unsigned(1, n'length)),
+      in1    => i_reg_out,
+      in2    => std_logic_vector(to_unsigned(1, n'length)),
       output => adder1_out
     );
 end default_arch;
