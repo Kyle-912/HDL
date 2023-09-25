@@ -37,10 +37,10 @@ begin
       case state_r is
         when START =>
           n_r <= n;
-          if true then
-            
+          if go = '1' then
+            state_r <= COMPUTE;
           else
-            
+
           end if;
         when COMPUTE =>
 
