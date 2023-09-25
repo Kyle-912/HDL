@@ -25,7 +25,7 @@ begin
   process(clk, rst)
   begin
     if rst = '1' then
-        
+        n_r <= 
 
     elsif rising_edge(clk) then
 
