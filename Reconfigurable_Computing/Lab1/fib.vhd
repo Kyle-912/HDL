@@ -45,7 +45,7 @@ begin
         when RESTART =>
         done_r <= '1';
         if go = '0' then
-          
+          state_r <= START;
         end if;
 
         when others  =>
