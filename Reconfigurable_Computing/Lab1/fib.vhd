@@ -52,13 +52,13 @@ begin
         when COMPUTE =>
           if unsigned(n_r) = to_unsigned(0, n_r'length) then
             result_r <= x_r;
-            state_r <= RESTART;
           else
             for i in 2 to to_integer(unsigned(n_r)) loop
               temp_r := std_logic_vector(unsigned(x_r) + unsigned(y_r));
               x_r    := y_r;
               y_r    := temp_r;
             end loop;
+            state_r <= RESTART;
           end if;
 
         when RESTART =>
