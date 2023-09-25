@@ -110,6 +110,24 @@ begin
       n_eq_0     => n_eq_0,
       i_le_n     => i_le_n
     );
+
+  U_FSM : entity work.fsm
+    port map(
+      clk        => clk,
+      rst        => rst,
+      go         => go,
+      n_en       => n_en,
+      result_en  => result_en,
+      result_sel => result_sel,
+      x_en       => x_en,
+      x_sel      => x_sel,
+      y_en       => y_en,
+      y_sel      => y_sel,
+      i_en       => i_en,
+      i_sel      => i_sel,
+      n_eq_0     => n_eq_0,
+      i_le_n     => i_le_n
+    );
 end fsm_plus_d;
 
 -- TODO: Change the architecture that is used to simulate and synthesis each
