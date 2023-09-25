@@ -55,6 +55,7 @@ begin
       when COMPUTE =>
 
       when RESTART =>
+        done_r <= '1';
 
       when others  => null;
     end case;
