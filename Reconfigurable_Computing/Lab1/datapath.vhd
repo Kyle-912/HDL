@@ -100,7 +100,15 @@ begin
       output => x_mux_out
     );
 
-    
+    U_X_REG : entity work.reg
+    generic map (WIDTH => result'length)
+    port map(
+      clk      => clk,
+      rst      => rst,
+      input => x_mux_out,
+      enable => x_en,
+      output => x_reg_out
+    );
 end default_arch;
 
 library ieee;
