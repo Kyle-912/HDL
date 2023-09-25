@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity fsm is
   port (
@@ -24,8 +25,28 @@ entity fsm is
 end fsm;
 
 architecture default_arch of fsm is
-
+  type state_type is (START, COMPUTE, RESTART);
+  signal state_r, next_state : state_type;
 begin
+  process (clk, rst)
+  begin
+    if (rst = '1') then
+      state_r <= START;
+    elsif (rising_edge(clk)) then
+      state_r <= next_state;
+    end if;
+  end process;
 
+  process (state_r, go, n_eq_0, i_le_n)
+  begin
+    next_state <= state_r;
+    done       <= '0';
+    case state_r is
+      when START =>
+        if go = '1' then
+          next_state <= COMPUTE;
+        end if;
+      when others => null;
+    end case;
+  end process;
 end default_arch;
-
