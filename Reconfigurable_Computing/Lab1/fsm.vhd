@@ -74,7 +74,7 @@ begin
           i_sel <= '0';
           i_en  <= '1';
           while i_le_n = '1' loop
-            
+            i_sel <= '1';
           end loop;
         end if;
 
