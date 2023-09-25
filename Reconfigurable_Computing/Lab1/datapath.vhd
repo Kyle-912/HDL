@@ -38,41 +38,50 @@ architecture default_arch of datapath is
   signal result_reg_out : std_logic_vector(result'range);
 
   component mux2x1 is
-  generic (
-    WIDTH : positive
-  );
-  port (
-    input0 : in  std_logic_vector(WIDTH - 1 downto 0);
-    input1 : in  std_logic_vector(WIDTH - 1 downto 0);
-    sel    : in  std_logic;
-    output : out std_logic_vector(WIDTH - 1 downto 0)
-  );
-end component;
+    generic (
+      WIDTH : positive
+    );
+    port (
+      input0 : in  std_logic_vector(WIDTH - 1 downto 0);
+      input1 : in  std_logic_vector(WIDTH - 1 downto 0);
+      sel    : in  std_logic;
+      output : out std_logic_vector(WIDTH - 1 downto 0)
+    );
+  end component;
 
-component reg is
-  generic (
-    WIDTH : positive
-  );
-  port (
-    clk    : in  std_logic;
-    rst    : in  std_logic;
-    input  : in  std_logic_vector(WIDTH - 1 downto 0);
-    enable : in  std_logic;
-    output : out std_logic_vector(WIDTH - 1 downto 0)
-  );
-end component;
+  component reg is
+    generic (
+      WIDTH : positive
+    );
+    port (
+      clk    : in  std_logic;
+      rst    : in  std_logic;
+      input  : in  std_logic_vector(WIDTH - 1 downto 0);
+      enable : in  std_logic;
+      output : out std_logic_vector(WIDTH - 1 downto 0)
+    );
+  end component;
 
-component adder is
-  generic (
-    WIDTH : positive
-  );
-  port (
-    in1    : in  std_logic_vector(WIDTH - 1 downto 0);
-    in2    : in  std_logic_vector(WIDTH - 1 downto 0);
-    output : out std_logic_vector(WIDTH - 1 downto 0)
-  );
-end component;
+  component adder is
+    generic (
+      WIDTH : positive
+    );
+    port (
+      in1    : in  std_logic_vector(WIDTH - 1 downto 0);
+      in2    : in  std_logic_vector(WIDTH - 1 downto 0);
+      output : out std_logic_vector(WIDTH - 1 downto 0)
+    );
+  end component;
 
+  component comparator is
+    generic (
+      WIDTH : positive
+    );
+    port (
+      x, y           : in  std_logic_vector(WIDTH - 1 downto 0);
+      x_lte_y, x_e_y : out std_logic
+    );
+  end component;
 
 begin
   U_N_REG : entity work.reg
@@ -175,21 +184,21 @@ begin
       output => adder2_out
     );
 
-    U_RESULT_MUX : entity work.mux2x1
-    generic map (WIDTH => result'length)
+  U_RESULT_MUX : entity work.mux2x1
+    generic map(WIDTH => result'length)
     port map(
       input0 => std_logic_vector(to_unsigned(0, result'length)),
       input1 => y_reg_out,
-      sel => result_sel,
+      sel    => result_sel,
       output => result_mux_out
     );
 
-    U_RESULT_REG : entity work.reg
-    generic map (WIDTH => result'length)
+  U_RESULT_REG : entity work.reg
+    generic map(WIDTH => result'length)
     port map(
-      clk      => clk,
-      rst      => rst,
-      input => result_mux_out,
+      clk    => clk,
+      rst    => rst,
+      input  => result_mux_out,
       enable => result_en,
       output => result
     );
