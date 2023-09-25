@@ -68,8 +68,9 @@ begin
           next_state <= WAITING;
         end if;
 
-        when WAITING =>
-          next_state <= COMPUTE;
+      when WAITING =>
+        n_en       <= '1';
+        next_state <= COMPUTE;
 
       when COMPUTE =>
         if n_eq_0 = '1' then
