@@ -34,7 +34,7 @@ begin
   begin
     if (rst = '1') then
       state_r <= START;
-      done_r <= '0';
+      done_r  <= '0';
     elsif (rising_edge(clk)) then
       state_r <= next_state;
     end if;
@@ -42,15 +42,15 @@ begin
 
   process (state_r, go, n_eq_0, i_le_n)
   begin
-    n_en <= '0';
-result_en <= '0';
-result_sel <= '0';
-x_en <= '0';
-x_sel <= '0';
-y_en <= '0';
-y_sel <= '0';
-i_en <= '0';
-i_sel      <= '0';
+    n_en       <= '0';
+    result_en  <= '0';
+    result_sel <= '0';
+    x_en       <= '0';
+    x_sel      <= '0';
+    y_en       <= '0';
+    y_sel      <= '0';
+    i_en       <= '0';
+    i_sel      <= '0';
     next_state <= state_r;
     case state_r is
       when START =>
@@ -68,7 +68,7 @@ i_sel      <= '0';
 
         end if;
 
-      when others  => null;
+      when others => null;
     end case;
   end process;
 end default_arch;
