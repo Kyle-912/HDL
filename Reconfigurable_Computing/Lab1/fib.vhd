@@ -19,7 +19,8 @@ architecture fsmd of fib is
   type state_t is (START, COMPUTE, RESTART);
   signal state_r  : state_t;
   signal n_r      : std_logic_vector(n'range);
-  signal x_r : std_logic_vector(n'range);
+  signal x_r      : std_logic_vector(n'range);
+  signal y_r      : std_logic_vector(n'range);
   signal result_r : std_logic_vector(result'range);
   signal done_r   : std_logic;
 begin
@@ -36,22 +37,21 @@ begin
     elsif rising_edge(clk) then
       case state_r is
         when START =>
-        if go = '1' then
-          done_r  <= '0';
-          n_r <= n;
+          if go = '1' then
+            done_r  <= '0';
+            n_r     <= n;
             state_r <= COMPUTE;
           end if;
 
         when COMPUTE =>
 
-
         when RESTART =>
-        done_r <= '1';
-        if go = '0' then
-          state_r <= START;
-        end if;
+          done_r <= '1';
+          if go = '0' then
+            state_r <= START;
+          end if;
 
-        when others  => null;
+        when others => null;
       end case;
     end if;
   end process;
