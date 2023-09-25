@@ -73,7 +73,7 @@ begin
           result_sel <= '0';
           result_en  <= '1';
         else
-          if i_le_n = '1' then
+                    if i_le_n = '1' then
             i_sel <= '1';
             i_en  <= '1';
             x_sel <= '1';
