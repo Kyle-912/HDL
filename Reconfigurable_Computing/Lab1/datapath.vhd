@@ -145,6 +145,16 @@ begin
       sel => result_sel,
       output => result_mux_out
     );
+
+    U_RESULT_REG : entity work.reg
+    generic map (WIDTH => result'length)
+    port map(
+      clk      => clk,
+      rst      => rst,
+      input => result_mux_out,
+      enable => result_en,
+      output => result
+    );
 end default_arch;
 
 library ieee;
