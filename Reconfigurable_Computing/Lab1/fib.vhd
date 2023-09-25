@@ -39,8 +39,6 @@ begin
           if go = '1' then
             done_r  <= '0';
             state_r <= COMPUTE;
-          else
-
           end if;
         when COMPUTE =>
 
