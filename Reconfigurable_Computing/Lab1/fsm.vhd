@@ -25,5 +25,5 @@ end fsm;
 
 architecture default_arch of fsm is
 begin
-
+  
 end default_arch;
