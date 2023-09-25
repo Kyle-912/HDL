@@ -19,7 +19,7 @@ architecture fsmd of fib is
   type state_t is (START, COMPUTE, RESTART);
   signal state_r  : state_t;
   signal n_r      : std_logic_vector(n'range);
-  signal x_r : std_logic;
+  signal x_r : std_logic_vector(n'range);
   signal result_r : std_logic_vector(result'range);
   signal done_r   : std_logic;
 begin
