@@ -118,7 +118,7 @@ begin
     else
       x_lte_y <= '0';
     end if;
-    if (unsigned(x) /= unsigned(y)) then
+    if (unsigned(x) = unsigned(y)) then
       x_ne_y <= '1';
     else
       x_ne_y <= '0';
