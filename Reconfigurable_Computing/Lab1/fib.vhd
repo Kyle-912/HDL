@@ -16,11 +16,12 @@ end fib;
 -- TODO: Add your FSMD architecture here.
 
 architecture fsmd of fib is
-    signal n_r : std_logic_vector(n'range);
-    signal result_r : std_logic_vector(result'range);
-    
+  signal n_r      : std_logic_vector(n'range);
+  signal result_r : std_logic_vector(result'range);
+  signal done_r   : std_logic;
 begin
-
+  result <= result_r;
+  done   <= done_r;
 end fsmd;
 
 -- TODO: Complete the FSM+D architecture here. Some signals are provided to
