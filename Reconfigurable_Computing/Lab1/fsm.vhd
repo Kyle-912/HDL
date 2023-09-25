@@ -24,8 +24,8 @@ entity fsm is
 end fsm;
 
 architecture default_arch of fsm is
-type state_type is (START, COMPUTE, RESTART);
-signal state : state_type;
+
 begin
 
 end default_arch;
+
