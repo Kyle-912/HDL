@@ -26,7 +26,14 @@ end datapath;
 
 architecture default_arch of datapath is
 begin
-
+  U_N_REG : entity work.reg
+  generic map (WIDTH => 6)
+  port map(
+    clk      => clk,
+    rst      => rst,
+    input => n,
+    enable => n_en
+  );
 end default_arch;
 
 library ieee;
