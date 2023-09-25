@@ -34,6 +34,7 @@ begin
   begin
     if (rst = '1') then
       state_r <= START;
+      done_r <= '0';
     elsif (rising_edge(clk)) then
       state_r <= next_state;
     end if;
