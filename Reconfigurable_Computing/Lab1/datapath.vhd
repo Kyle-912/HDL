@@ -102,7 +102,7 @@ begin
       x_e_y   => n_eq_0
     );
 
-  U_COMPARATOR_LTE : entity work.comparator
+  U_COMPARATOR_LTE : comparator
     generic map(WIDTH => n'length)
     port map(
       x       => i_reg_out,
@@ -111,7 +111,7 @@ begin
       x_e_y   => open
     );
 
-  U_I_MUX : entity work.mux2x1
+  U_I_MUX : mux2x1
     generic map(WIDTH => n'length)
     port map(
       input0 => std_logic_vector(to_unsigned(2, n'length)),
@@ -120,7 +120,7 @@ begin
       output => i_mux_out
     );
 
-  U_I_REG : entity work.reg
+  U_I_REG : reg
     generic map(WIDTH => n'length)
     port map(
       clk    => clk,
@@ -130,7 +130,7 @@ begin
       output => i_reg_out
     );
 
-  U_ADDER1 : entity work.adder
+  U_ADDER1 : adder
     generic map(WIDTH => n'length)
     port map(
       in1    => i_reg_out,
