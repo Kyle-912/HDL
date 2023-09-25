@@ -52,7 +52,7 @@ begin
             result_r <= x_r;
           else
             for i in 2 to to_integer(unsigned(n_r)) loop
-
+              
             end loop;
           end if;
 
