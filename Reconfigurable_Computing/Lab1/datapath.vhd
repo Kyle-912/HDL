@@ -115,7 +115,8 @@ begin
     port map(
       input0 => std_logic_vector(to_unsigned(1, result'length)),
       input1 => adder2_out,
-      sel => y_sel
+      sel => y_sel,
+      output => y_mux_out
     );
 end default_arch;
 
