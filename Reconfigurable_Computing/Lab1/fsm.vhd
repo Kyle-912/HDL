@@ -25,7 +25,7 @@ entity fsm is
 end fsm;
 
 architecture default_arch of fsm is
-  type state_type is (START, WAITING, COMPUTE, RESTART);
+  type state_type is (START, COMPUTE, RESTART);
   signal state_r, next_state : state_type;
   signal done_r              : std_logic;
 begin
@@ -67,10 +67,6 @@ begin
           i_en       <= '1';
           next_state <= COMPUTE;
         end if;
-
-      -- when WAITING =>
-      --   n_en       <= '1';
-      --   next_state <= WAITING;
 
       when COMPUTE =>
         if n_eq_0 = '1' then
