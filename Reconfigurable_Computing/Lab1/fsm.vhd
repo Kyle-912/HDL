@@ -68,7 +68,8 @@ begin
 
       when COMPUTE =>
       if n_eq_0 = '1' then
-        
+        result_sel <= '0';
+        result_en <= '1';
       else
 
       end if;
