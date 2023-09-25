@@ -73,7 +73,7 @@ begin
       else
         i_sel <= '0';
         i_en <= '1';
-        while true loop
+        while i_le_n = '1' loop
           
         end loop;
       end if;
