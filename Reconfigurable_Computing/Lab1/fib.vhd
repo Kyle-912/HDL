@@ -51,8 +51,8 @@ begin
           if unsigned(n_r) = to_unsigned(0, n_r'length) then
             result_r <= x_r;
           else
-            for i in 2 to 7 loop
-              
+            for i in 2 to to_integer(unsigned(n_r)) loop
+
             end loop;
           end if;
 
