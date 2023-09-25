@@ -19,21 +19,21 @@ architecture fsmd of fib is
   type state_t is (START, COMPUTE, RESTART);
   signal state_r  : state_t;
   signal n_r      : std_logic_vector(n'range);
-  signal x_r      : std_logic_vector(result'range);
-  signal y_r      : std_logic_vector(result'range);
-  signal temp_r   : std_logic_vector(result'range);
   signal result_r : std_logic_vector(result'range);
   signal done_r   : std_logic;
 begin
   result <= result_r;
   done   <= done_r;
   process (clk, rst)
+    variable x_r    : std_logic_vector(result'range);
+    variable y_r    : std_logic_vector(result'range);
+    variable temp_r : std_logic_vector(result'range);
   begin
     if rst = '1' then
       n_r      <= (others => '0');
-      x_r      <= (others => '0');
-      y_r      <= (others => '0');
-      temp_r   <= (others => '0');
+      x_r      := (others => '0');
+      y_r      := (others => '0');
+      temp_r   := (others => '0');
       result_r <= (others => '0');
       done_r   <= '0';
       state_r  <= START;
@@ -44,8 +44,8 @@ begin
           if go = '1' then
             done_r  <= '0';
             n_r     <= n;
-            x_r     <= std_logic_vector(to_unsigned(0, x_r'length));
-            y_r     <= std_logic_vector(to_unsigned(1, y_r'length));
+            x_r     := std_logic_vector(to_unsigned(0, x_r'length));
+            y_r     := std_logic_vector(to_unsigned(1, y_r'length));
             state_r <= COMPUTE;
           end if;
 
@@ -54,9 +54,9 @@ begin
             result_r <= x_r;
           else
             for i in 2 to to_integer(unsigned(n_r)) loop
-              temp_r <= std_logic_vector(unsigned(x_r) + unsigned(y_r));
-              x_r    <= y_r;
-              y_r    <= temp_r;
+              temp_r := std_logic_vector(unsigned(x_r) + unsigned(y_r));
+              x_r    := y_r;
+              y_r    := temp_r;
             end loop;
             state_r <= RESTART;
           end if;
