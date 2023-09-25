@@ -29,6 +29,7 @@
         "blez",
         "bltz",
         "downto",
+        "fsmd",
         "HSYNC",
         "INPORT",
         "ledx",
