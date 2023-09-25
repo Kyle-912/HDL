@@ -28,8 +28,6 @@ architecture default_arch of fsm is
   type state_type is (START, COMPUTE, RESTART);
   signal state_r, next_state : state_type;
 begin
-
-
   process (clk, rst)
   begin
     if (rst = '1') then
