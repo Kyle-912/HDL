@@ -84,7 +84,7 @@ architecture default_arch of datapath is
   end component;
 
 begin
-  U_N_REG : entity work.reg
+  U_N_REG : reg
     generic map(WIDTH => n'length)
     port map(
       clk    => clk,
@@ -93,7 +93,7 @@ begin
       enable => n_en
     );
 
-  U_COMPARATOR_EQUAL : entity work.comparator
+  U_COMPARATOR_EQUAL : comparator
     generic map(WIDTH => n'length)
     port map(
       x       => std_logic_vector(to_unsigned(0, n'length)),
