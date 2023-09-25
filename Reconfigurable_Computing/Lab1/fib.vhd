@@ -21,6 +21,7 @@ architecture fsmd of fib is
   signal n_r      : std_logic_vector(n'range);
   signal x_r      : std_logic_vector(result'range);
   signal y_r      : std_logic_vector(result'range);
+  signal temp_r      : std_logic_vector(result'range);
   signal result_r : std_logic_vector(result'range);
   signal done_r   : std_logic;
 begin
@@ -32,6 +33,7 @@ begin
       n_r      <= (others => '0');
       x_r      <= (others => '0');
       y_r      <= (others => '0');
+      temp_r   <= (others => '0');
       result_r <= (others => '0');
       done_r   <= '0';
       state_r  <= START;
@@ -52,7 +54,7 @@ begin
             result_r <= x_r;
           else
             for i in 2 to to_integer(unsigned(n_r)) loop
-              
+
             end loop;
           end if;
 
