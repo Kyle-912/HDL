@@ -34,7 +34,14 @@ begin
 
     elsif rising_edge(clk) then
       done_r <= '0';
+      case state_r is
+      
+        when START =>
+          
 
+        when others =>
+
+      end case;
     end if;
   end process;
 end fsmd;
