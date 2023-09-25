@@ -289,7 +289,7 @@ begin
   process (x, y)
   begin
     if (unsigned(x) <= unsigned(y)) then
-      x_lte_y         <= '1';
+      x_lte_y <= '1';
     else
       x_lte_y <= '0';
     end if;
