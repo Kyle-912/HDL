@@ -25,15 +25,25 @@ entity datapath is
 end datapath;
 
 architecture default_arch of datapath is
+  signal n_reg_out : std_logic_vector(n'range);
 begin
   U_N_REG : entity work.reg
-  generic map (WIDTH => 6)
-  port map(
-    clk      => clk,
-    rst      => rst,
-    input => n,
-    enable => n_en
-  );
+    generic map(WIDTH => n'length)
+    port map(
+      clk    => clk,
+      rst    => rst,
+      input  => n,
+      enable => n_en
+    );
+
+  U_COMPARATOR_EQUAL : entity work.comparator
+    generic map(WIDTH => n'length)
+    port map(
+      x       => std_logic_vector(to_unsigned(0, n'length)),
+      y       => n_reg_out,
+      x_lte_y => open,
+      x_e_y   => n_eq_0
+    );
 end default_arch;
 
 library ieee;
@@ -121,7 +131,7 @@ begin
   process (x, y)
   begin
     if (unsigned(x) <= unsigned(y)) then
-      x_lte_y <= '1';
+      x_lte_y         <= '1';
     else
       x_lte_y <= '0';
     end if;
