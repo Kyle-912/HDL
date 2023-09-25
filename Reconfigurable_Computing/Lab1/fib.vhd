@@ -49,7 +49,7 @@ begin
 
         when COMPUTE =>
           if unsigned(n_r) = to_unsigned(0, n_r'length) then
-
+            result_r <= x_r;
           else
 
           end if;
