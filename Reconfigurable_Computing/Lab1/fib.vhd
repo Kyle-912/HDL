@@ -30,10 +30,10 @@ begin
     variable temp_r : std_logic_vector(result'range);
   begin
     if rst = '1' then
-      n_r      <= (others => '0');
-      x_r      := (others => '0');
-      y_r      := (others => '0');
-      temp_r   := (others => '0');
+      n_r <= (others      => '0');
+      x_r    := (others   => '0');
+      y_r    := (others   => '0');
+      temp_r := (others   => '0');
       result_r <= (others => '0');
       done_r   <= '0';
       state_r  <= START;
@@ -42,10 +42,10 @@ begin
       case state_r is
         when START =>
           if go = '1' then
-            done_r  <= '0';
-            n_r     <= n;
-            x_r     := std_logic_vector(to_unsigned(0, x_r'length));
-            y_r     := std_logic_vector(to_unsigned(1, y_r'length));
+            done_r <= '0';
+            n_r    <= n;
+            x_r := std_logic_vector(to_unsigned(0, x_r'length));
+            y_r := std_logic_vector(to_unsigned(1, y_r'length));
             state_r <= COMPUTE;
           end if;
 
@@ -58,7 +58,7 @@ begin
               x_r    := y_r;
               y_r    := temp_r;
             end loop;
-              
+            result_r <= y_r;
             state_r <= RESTART;
           end if;
 
