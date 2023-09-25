@@ -106,7 +106,7 @@ entity comparator is
   generic (WIDTH : positive);
   port (
     x, y           : in  std_logic_vector(WIDTH - 1 downto 0);
-    x_lt_y, x_ne_y : out std_logic
+    x_lte_y, x_ne_y : out std_logic
   );
 end comparator;
 architecture comparator_BHV of comparator is
@@ -114,9 +114,9 @@ begin
   process (x, y)
   begin
     if (unsigned(x) <= unsigned(y)) then
-      x_lt_y <= '1';
+      x_lte_y <= '1';
     else
-      x_lt_y <= '0';
+      x_lte_y <= '0';
     end if;
     if (unsigned(x) /= unsigned(y)) then
       x_ne_y <= '1';
