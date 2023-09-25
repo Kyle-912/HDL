@@ -49,6 +49,31 @@ architecture default_arch of datapath is
   );
 end component;
 
+component reg is
+  generic (
+    WIDTH : positive
+  );
+  port (
+    clk    : in  std_logic;
+    rst    : in  std_logic;
+    input  : in  std_logic_vector(WIDTH - 1 downto 0);
+    enable : in  std_logic;
+    output : out std_logic_vector(WIDTH - 1 downto 0)
+  );
+end component;
+
+component adder is
+  generic (
+    WIDTH : positive
+  );
+  port (
+    in1    : in  std_logic_vector(WIDTH - 1 downto 0);
+    in2    : in  std_logic_vector(WIDTH - 1 downto 0);
+    output : out std_logic_vector(WIDTH - 1 downto 0)
+  );
+end component;
+
+
 begin
   U_N_REG : entity work.reg
     generic map(WIDTH => n'length)
