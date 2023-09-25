@@ -40,19 +40,17 @@ begin
   process (state_r, go, n_eq_0, i_le_n)
   begin
     next_state <= state_r;
-    done       <= '0';
     case state_r is
       when START =>
         if go = '1' then
+          done       <= '0';
 
           next_state <= COMPUTE;
         end if;
 
       when COMPUTE =>
 
-
       when RESTART =>
-
 
       when others  => null;
     end case;
