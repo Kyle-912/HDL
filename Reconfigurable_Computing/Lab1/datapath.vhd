@@ -129,12 +129,21 @@ begin
       output => y_reg_out
     );
 
-    U_ADDER2 : entity work.adder
+  U_ADDER2 : entity work.adder
+    generic map(WIDTH => result'length)
+    port map(
+      in1    => x_reg_out,
+      in2    => y_reg_out,
+      output => adder2_out
+    );
+
+    U_RESULT_MUX : entity work.mux2x1
     generic map (WIDTH => result'length)
     port map(
-      in1 => x_reg_out,
-      in2 => y_reg_out,
-      output => adder2_out
+      input0 => std_logic_vector(to_unsigned(0, result'length)),
+      input1 => y_reg_out,
+      sel => result_sel,
+      output => result_mux_out
     );
 end default_arch;
 
