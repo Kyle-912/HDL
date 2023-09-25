@@ -81,6 +81,11 @@ begin
             y_sel <= '1';
             y_en  <= '1';
           end loop;
+            if i_le_n = '1' then
+              
+            else
+              
+            end if;
           next_state <= RESTART;
         end if;
 
