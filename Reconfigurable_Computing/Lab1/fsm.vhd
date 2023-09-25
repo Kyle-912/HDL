@@ -82,7 +82,7 @@ begin
             y_sel <= '1';
             y_en  <= '1';
           end loop;
-            next_state <= RESTART;
+          next_state <= RESTART;
         end if;
 
       when RESTART =>
