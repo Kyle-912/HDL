@@ -50,6 +50,10 @@ begin
 
       when COMPUTE =>
 
+
+      when RESTART =>
+
+
       when others  => null;
     end case;
   end process;
