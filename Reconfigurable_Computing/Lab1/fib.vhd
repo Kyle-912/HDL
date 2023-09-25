@@ -17,7 +17,7 @@ end fib;
 
 architecture fsmd of fib is
     signal n_r : std_logic_vector(n'range);
-    
+    signal result_r : std_logic_vector(result'range)
 begin
 
 end fsmd;
