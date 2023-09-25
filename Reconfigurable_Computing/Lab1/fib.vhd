@@ -36,8 +36,8 @@ begin
       case state_r is
         when START =>
         if go = '1' then
+          done_r  <= '0';
           n_r <= n;
-            done_r  <= '0';
             state_r <= COMPUTE;
           end if;
 
