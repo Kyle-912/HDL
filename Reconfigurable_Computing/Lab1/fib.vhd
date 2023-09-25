@@ -42,12 +42,17 @@ begin
           if go = '1' then
             done_r  <= '0';
             n_r     <= n;
-            x_r <= std_logic_vector(to_unsigned(0, x_r'length));
-            y_r <= std_logic_vector(to_unsigned(1, y_r'length));
+            x_r     <= std_logic_vector(to_unsigned(0, x_r'length));
+            y_r     <= std_logic_vector(to_unsigned(1, y_r'length));
             state_r <= COMPUTE;
           end if;
 
         when COMPUTE =>
+          if unsigned(n_r) = to_unsigned(0, n_r'length) then
+
+          else
+
+          end if;
 
         when RESTART =>
           done_r <= '1';
