@@ -22,8 +22,10 @@ architecture fsmd of fib is
   signal result_r : std_logic_vector(result'range);
   signal done_r   : std_logic;
 begin
+
   result <= result_r;
   done   <= done_r;
+  
   process (clk, rst)
     variable x_r    : std_logic_vector(result'range);
     variable y_r    : std_logic_vector(result'range);
@@ -90,7 +92,7 @@ architecture fsm_plus_d of fib is
   signal n_eq_0     : std_logic;
   signal i_le_n     : std_logic;
 begin
-  
+
 end fsm_plus_d;
 
 -- TODO: Change the architecture that is used to simulate and synthesis each

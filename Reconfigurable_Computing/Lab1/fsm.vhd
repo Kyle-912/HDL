@@ -29,8 +29,9 @@ architecture default_arch of fsm is
   signal state_r, next_state : state_type;
   signal done_r              : std_logic;
 begin
-  
+
   done <= done_r;
+
   process (clk, rst)
   begin
     if (rst = '1') then
