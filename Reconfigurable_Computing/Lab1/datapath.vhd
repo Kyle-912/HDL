@@ -90,6 +90,17 @@ begin
       in2    => std_logic_vector(to_unsigned(1, n'length)),
       output => adder1_out
     );
+
+  U_X_MUX : entity work.mux2x1
+    generic map(WIDTH => result'length)
+    port map(
+      input0 => std_logic_vector(to_unsigned(0, result'length)),
+      input1 => y_reg_out,
+      sel    => x_sel,
+      output => x_mux_out
+    );
+
+    
 end default_arch;
 
 library ieee;
