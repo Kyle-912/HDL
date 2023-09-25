@@ -88,7 +88,7 @@ begin
         end if;
 
       when RESTART =>
-        done_r <= '1';
+        done <= '1';
         if go = '0' then
           next_state <= START;
         end if;
