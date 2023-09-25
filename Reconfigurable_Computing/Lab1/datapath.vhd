@@ -166,7 +166,7 @@ begin
       output => y_mux_out
     );
 
-  U_Y_REG : entity work.reg
+  U_Y_REG : reg
     generic map(WIDTH => result'length)
     port map(
       clk    => clk,
@@ -176,7 +176,7 @@ begin
       output => y_reg_out
     );
 
-  U_ADDER2 : entity work.adder
+  U_ADDER2 : adder
     generic map(WIDTH => result'length)
     port map(
       in1    => x_reg_out,
@@ -184,7 +184,7 @@ begin
       output => adder2_out
     );
 
-  U_RESULT_MUX : entity work.mux2x1
+  U_RESULT_MUX : mux2x1
     generic map(WIDTH => result'length)
     port map(
       input0 => std_logic_vector(to_unsigned(0, result'length)),
@@ -193,7 +193,7 @@ begin
       output => result_mux_out
     );
 
-  U_RESULT_REG : entity work.reg
+  U_RESULT_REG : reg
     generic map(WIDTH => result'length)
     port map(
       clk    => clk,
