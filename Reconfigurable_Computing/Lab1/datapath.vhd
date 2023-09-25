@@ -113,7 +113,7 @@ architecture comparator_BHV of comparator is
 begin
   process (x, y)
   begin
-    if (unsigned(x) < unsigned(y)) then
+    if (unsigned(x) <= unsigned(y)) then
       x_lt_y <= '1';
     else
       x_lt_y <= '0';
