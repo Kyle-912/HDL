@@ -22,6 +22,16 @@ architecture fsmd of fib is
 begin
   result <= result_r;
   done   <= done_r;
+  process(clk, rst)
+  begin
+    if rst = '1' then
+        
+
+    elsif rising_edge(clk) then
+
+
+    end if;
+  end process;
 end fsmd;
 
 -- TODO: Complete the FSM+D architecture here. Some signals are provided to
