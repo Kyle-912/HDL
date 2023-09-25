@@ -55,6 +55,7 @@ begin
           else
             for i in 2 to to_integer(unsigned(n_r)) loop
               temp_r <= std_logic_vector(unsigned(x_r) + unsigned(y_r));
+              x_r <= y_r;
               
             end loop;
           end if;
