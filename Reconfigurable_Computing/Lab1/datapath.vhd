@@ -85,123 +85,123 @@ architecture default_arch of datapath is
 
 begin
   U_N_REG : reg
-    generic map(WIDTH => n'length)
-    port map(
-      clk    => clk,
-      rst    => rst,
-      input  => n,
-      enable => n_en
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    clk    => clk,
+    rst    => rst,
+    input  => n,
+    enable => n_en
+  );
 
   U_COMPARATOR_EQUAL : comparator
-    generic map(WIDTH => n'length)
-    port map(
-      x       => std_logic_vector(to_unsigned(0, n'length)),
-      y       => n_reg_out,
-      x_lte_y => open,
-      x_e_y   => n_eq_0
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    x       => std_logic_vector(to_unsigned(0, n'length)),
+    y       => n_reg_out,
+    x_lte_y => open,
+    x_e_y   => n_eq_0
+  );
 
   U_COMPARATOR_LTE : comparator
-    generic map(WIDTH => n'length)
-    port map(
-      x       => i_reg_out,
-      y       => n_reg_out,
-      x_lte_y => i_le_n,
-      x_e_y   => open
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    x       => i_reg_out,
+    y       => n_reg_out,
+    x_lte_y => i_le_n,
+    x_e_y   => open
+  );
 
   U_I_MUX : mux2x1
-    generic map(WIDTH => n'length)
-    port map(
-      input0 => std_logic_vector(to_unsigned(2, n'length)),
-      input1 => adder1_out,
-      sel    => i_sel,
-      output => i_mux_out
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    input0 => std_logic_vector(to_unsigned(2, n'length)),
+    input1 => adder1_out,
+    sel    => i_sel,
+    output => i_mux_out
+  );
 
   U_I_REG : reg
-    generic map(WIDTH => n'length)
-    port map(
-      clk    => clk,
-      rst    => rst,
-      input  => i_mux_out,
-      enable => i_en,
-      output => i_reg_out
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    clk    => clk,
+    rst    => rst,
+    input  => i_mux_out,
+    enable => i_en,
+    output => i_reg_out
+  );
 
   U_ADDER1 : adder
-    generic map(WIDTH => n'length)
-    port map(
-      in1    => i_reg_out,
-      in2    => std_logic_vector(to_unsigned(1, n'length)),
-      output => adder1_out
-    );
+  generic map(WIDTH => n'length)
+  port map(
+    in1    => i_reg_out,
+    in2    => std_logic_vector(to_unsigned(1, n'length)),
+    output => adder1_out
+  );
 
   U_X_MUX : mux2x1
-    generic map(WIDTH => result'length)
-    port map(
-      input0 => std_logic_vector(to_unsigned(0, result'length)),
-      input1 => y_reg_out,
-      sel    => x_sel,
-      output => x_mux_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    input0 => std_logic_vector(to_unsigned(0, result'length)),
+    input1 => y_reg_out,
+    sel    => x_sel,
+    output => x_mux_out
+  );
 
   U_X_REG : reg
-    generic map(WIDTH => result'length)
-    port map(
-      clk    => clk,
-      rst    => rst,
-      input  => x_mux_out,
-      enable => x_en,
-      output => x_reg_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    clk    => clk,
+    rst    => rst,
+    input  => x_mux_out,
+    enable => x_en,
+    output => x_reg_out
+  );
 
   U_Y_MUX : mux2x1
-    generic map(WIDTH => result'length)
-    port map(
-      input0 => std_logic_vector(to_unsigned(1, result'length)),
-      input1 => adder2_out,
-      sel    => y_sel,
-      output => y_mux_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    input0 => std_logic_vector(to_unsigned(1, result'length)),
+    input1 => adder2_out,
+    sel    => y_sel,
+    output => y_mux_out
+  );
 
   U_Y_REG : reg
-    generic map(WIDTH => result'length)
-    port map(
-      clk    => clk,
-      rst    => rst,
-      input  => y_mux_out,
-      enable => y_en,
-      output => y_reg_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    clk    => clk,
+    rst    => rst,
+    input  => y_mux_out,
+    enable => y_en,
+    output => y_reg_out
+  );
 
   U_ADDER2 : adder
-    generic map(WIDTH => result'length)
-    port map(
-      in1    => x_reg_out,
-      in2    => y_reg_out,
-      output => adder2_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    in1    => x_reg_out,
+    in2    => y_reg_out,
+    output => adder2_out
+  );
 
   U_RESULT_MUX : mux2x1
-    generic map(WIDTH => result'length)
-    port map(
-      input0 => std_logic_vector(to_unsigned(0, result'length)),
-      input1 => y_reg_out,
-      sel    => result_sel,
-      output => result_mux_out
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    input0 => std_logic_vector(to_unsigned(0, result'length)),
+    input1 => y_reg_out,
+    sel    => result_sel,
+    output => result_mux_out
+  );
 
   U_RESULT_REG : reg
-    generic map(WIDTH => result'length)
-    port map(
-      clk    => clk,
-      rst    => rst,
-      input  => result_mux_out,
-      enable => result_en,
-      output => result
-    );
+  generic map(WIDTH => result'length)
+  port map(
+    clk    => clk,
+    rst    => rst,
+    input  => result_mux_out,
+    enable => result_en,
+    output => result
+  );
 end default_arch;
 
 library ieee;
