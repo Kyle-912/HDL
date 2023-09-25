@@ -116,7 +116,7 @@ begin
       clk        => clk,
       rst        => rst,
       go         => go,
-      done => done,
+      done       => done,
       n_en       => n_en,
       result_en  => result_en,
       result_sel => result_sel,
