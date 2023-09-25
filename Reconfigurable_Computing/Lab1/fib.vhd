@@ -26,6 +26,8 @@ begin
   begin
     if rst = '1' then
         n_r <= (others => '0');
+        result_r <= (others => '0');
+        done_r <= '0';
 
     elsif rising_edge(clk) then
 
