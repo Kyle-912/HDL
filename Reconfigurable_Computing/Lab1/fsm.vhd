@@ -44,10 +44,13 @@ begin
     case state_r is
       when START =>
         if go = '1' then
-          
+
           next_state <= COMPUTE;
         end if;
-      when others => null;
+
+      when COMPUTE =>
+
+      when others  => null;
     end case;
   end process;
 end default_arch;
