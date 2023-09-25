@@ -71,9 +71,15 @@ begin
       when COMPUTE =>
         if n_eq_0 = '1' then
           result_sel <= '0';
-          result_en  <= '1';            if i_le_n = '1' then
-
-            end if;
+          result_en  <= '1';
+          if i_le_n = '1' then
+            i_sel <= '1';
+            i_en  <= '1';
+            x_sel <= '1';
+            x_en  <= '1';
+            y_sel <= '1';
+            y_en  <= '1';
+          end if;
           next_state <= RESTART;
         end if;
 
