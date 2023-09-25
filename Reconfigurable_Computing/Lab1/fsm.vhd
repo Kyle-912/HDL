@@ -27,6 +27,8 @@ end fsm;
 architecture default_arch of fsm is
   type state_type is (START, COMPUTE, RESTART);
   signal state_r, next_state : state_type;
+  signal done_r              : std_logic;
+
 begin
   process (clk, rst)
   begin
@@ -44,8 +46,8 @@ begin
     case state_r is
       when START =>
         if go = '1' then
-          done <= '0';
-          n_en <= '1';
+          done_r     <= '0';
+          n_en       <= '1';
           next_state <= COMPUTE;
         end if;
 
