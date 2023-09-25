@@ -67,12 +67,13 @@ begin
         end if;
 
       when COMPUTE =>
+          i_sel <= '0';
+          i_en  <= '1';
         if n_eq_0 = '1' then
           result_sel <= '0';
           result_en  <= '1';
         else
-          i_sel <= '0';
-          i_en  <= '1';
+
           while i_le_n = '1' loop
             i_sel <= '1';
             i_en  <= '1';
