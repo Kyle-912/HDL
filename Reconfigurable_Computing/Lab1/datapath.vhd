@@ -26,6 +26,7 @@ end datapath;
 
 architecture default_arch of datapath is
   signal n_reg_out : std_logic_vector(n'range);
+  signal name : std_logic;
 begin
   U_N_REG : entity work.reg
     generic map(WIDTH => n'length)
