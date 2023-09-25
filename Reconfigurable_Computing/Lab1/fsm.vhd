@@ -42,7 +42,15 @@ begin
 
   process (state_r, go, n_eq_0, i_le_n)
   begin
-    
+    n_en <= '0';
+result_en <= '0';
+result_sel <= '0';
+x_en <= '0';
+x_sel <= '0';
+y_en <= '0';
+y_sel <= '0';
+i_en <= '0';
+i_sel      <= '0';
     next_state <= state_r;
     case state_r is
       when START =>
