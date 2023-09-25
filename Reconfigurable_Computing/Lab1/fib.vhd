@@ -25,7 +25,7 @@ begin
 
   result <= result_r;
   done   <= done_r;
-  
+
   process (clk, rst)
     variable x_r    : std_logic_vector(result'range);
     variable y_r    : std_logic_vector(result'range);
@@ -61,7 +61,7 @@ begin
               y_r    := temp_r;
             end loop;
             result_r <= y_r;
-            state_r <= RESTART;
+            state_r  <= RESTART;
           end if;
 
         when RESTART =>
@@ -101,8 +101,8 @@ end fsm_plus_d;
 architecture default_arch of fib is
 begin
 
-  U_FIB : entity work.fib(fsmd)
-    --U_FIB : entity work.fib(fsm_plus_d)
+  -- U_FIB : entity work.fib(fsmd)
+  U_FIB : entity work.fib(fsm_plus_d)
     port map(
       clk    => clk,
       rst    => rst,
