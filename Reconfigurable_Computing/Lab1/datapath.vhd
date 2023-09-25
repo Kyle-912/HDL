@@ -33,7 +33,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity mux2x1 is
-  generic (WIDTH : positive);
+  generic (WIDTH : positive := 6);
   port (
     input0 : in  std_logic_vector(WIDTH - 1 downto 0);
     input1 : in  std_logic_vector(WIDTH - 1 downto 0);
