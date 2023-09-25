@@ -42,6 +42,7 @@ begin
           end if;
 
         when COMPUTE =>
+          
 
         when RESTART =>
         done_r <= '1';
