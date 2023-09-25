@@ -25,15 +25,15 @@ entity datapath is
 end datapath;
 
 architecture default_arch of datapath is
-  signal n_reg_out : std_logic_vector(n'range);
-  signal i_mux_out : std_logic_vector(n'range);
-  signal i_reg_out : std_logic_vector(n'range);
-  signal x_mux_out : std_logic_vector(result'range);
-  signal x_reg_out : std_logic_vector(result'range);
-  signal y_mux_out : std_logic_vector(result'range);
-  signal y_reg_out : std_logic_vector(result'range);
-  signal adder1_out : std_logic_vector(n'range);
-  signal adder2_out : std_logic_vector(result'range);
+  signal n_reg_out      : std_logic_vector(n'range);
+  signal i_mux_out      : std_logic_vector(n'range);
+  signal i_reg_out      : std_logic_vector(n'range);
+  signal x_mux_out      : std_logic_vector(result'range);
+  signal x_reg_out      : std_logic_vector(result'range);
+  signal y_mux_out      : std_logic_vector(result'range);
+  signal y_reg_out      : std_logic_vector(result'range);
+  signal adder1_out     : std_logic_vector(n'range);
+  signal adder2_out     : std_logic_vector(result'range);
   signal result_mux_out : std_logic_vector(result'range);
   signal result_reg_out : std_logic_vector(result'range);
 begin
@@ -55,13 +55,22 @@ begin
       x_e_y   => n_eq_0
     );
 
-    U_COMPARATOR_LTE : entity work.comparator
-    generic map (WIDTH => n'length)
+  U_COMPARATOR_LTE : entity work.comparator
+    generic map(WIDTH => n'length)
     port map(
-      x => i_reg_out,
-      y => n_reg_out,
+      x       => i_reg_out,
+      y       => n_reg_out,
       x_lte_y => i_le_n,
-      x_e_y => open
+      x_e_y   => open
+    );
+
+  U_I_MUX : entity work.mux2x1
+    generic map(WIDTH => n'length)
+    port map(
+      input0 => std_logic_vector(to_unsigned(2, n'length)),
+      input1 => adder1_out,
+      sel    => i_sel,
+      output => i_mux_out
     );
 end default_arch;
 
