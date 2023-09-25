@@ -78,7 +78,6 @@ end fsmd;
 -- speed things up. You only need to connect the FSM and datapath together.
 
 architecture fsm_plus_d of fib is
-
   signal n_en       : std_logic;
   signal result_en  : std_logic;
   signal result_sel : std_logic;
@@ -91,7 +90,7 @@ architecture fsm_plus_d of fib is
   signal n_eq_0     : std_logic;
   signal i_le_n     : std_logic;
 begin
-
+  
 end fsm_plus_d;
 
 -- TODO: Change the architecture that is used to simulate and synthesis each
