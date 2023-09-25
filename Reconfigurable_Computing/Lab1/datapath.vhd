@@ -54,6 +54,14 @@ begin
       x_lte_y => open,
       x_e_y   => n_eq_0
     );
+
+    U_COMPARATOR_LTE : entity work.comparator
+    generic map (WIDTH => n'length)
+    port map(
+      x => i_reg_out,
+      y => n_reg_out,
+      x_lte_y => i_le_n
+    );
 end default_arch;
 
 library ieee;
