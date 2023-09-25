@@ -71,7 +71,7 @@ begin
         result_sel <= '0';
         result_en <= '1';
       else
-        
+        i_sel <= '0';
       end if;
 
       when RESTART =>
