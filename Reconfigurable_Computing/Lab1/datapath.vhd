@@ -60,7 +60,8 @@ begin
     port map(
       x => i_reg_out,
       y => n_reg_out,
-      x_lte_y => i_le_n
+      x_lte_y => i_le_n,
+      x_e_y => open
     );
 end default_arch;
 
