@@ -90,7 +90,8 @@ begin
     clk    => clk,
     rst    => rst,
     input  => n,
-    enable => n_en
+    enable => n_en,
+    output => n_reg_out
   );
 
   U_COMPARATOR_EQUAL : comparator
