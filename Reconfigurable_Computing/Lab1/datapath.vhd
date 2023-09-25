@@ -88,7 +88,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 entity adder is
-  generic (WIDTH : positive);
+  generic (WIDTH : positive := 6);
   port (
     in1, in2 : in  std_logic_vector(WIDTH - 1 downto 0);
     output   : out std_logic_vector(WIDTH - 1 downto 0)
