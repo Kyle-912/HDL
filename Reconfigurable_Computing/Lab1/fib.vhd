@@ -44,6 +44,9 @@ begin
 
         when RESTART =>
         done_r <= '1';
+        if go = '0' then
+          
+        end if;
 
         when others  =>
           state_r <= START;
