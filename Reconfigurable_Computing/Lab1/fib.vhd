@@ -58,6 +58,7 @@ begin
               x_r <= y_r;
               y_r <= temp_r;
             end loop;
+              state_r <= RESTART;
           end if;
 
         when RESTART =>
