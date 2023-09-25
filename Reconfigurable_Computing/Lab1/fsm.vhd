@@ -57,6 +57,7 @@ begin
         if go = '1' then
           done_r     <= '0';
           n_en       <= '1';
+          x_sel <= '0';
           next_state <= COMPUTE;
         end if;
 
