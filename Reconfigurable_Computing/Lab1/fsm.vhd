@@ -73,7 +73,9 @@ begin
       else
         i_sel <= '0';
         i_en <= '1';
-        
+        while true loop
+          
+        end loop;
       end if;
 
       when RESTART =>
