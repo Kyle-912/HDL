@@ -35,14 +35,14 @@ begin
     elsif rising_edge(clk) then
       case state_r is
         when START =>
+        if go = '1' then
           n_r <= n;
-          if go = '1' then
             done_r  <= '0';
             state_r <= COMPUTE;
           end if;
 
         when COMPUTE =>
-          
+
 
         when RESTART =>
         done_r <= '1';
