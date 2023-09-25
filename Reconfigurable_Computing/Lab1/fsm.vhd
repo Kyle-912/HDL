@@ -53,6 +53,7 @@ begin
     y_sel      <= '0';
     i_en       <= '0';
     i_sel      <= '0';
+    done <= '0';
     next_state <= state_r;
     case state_r is
       when START =>
