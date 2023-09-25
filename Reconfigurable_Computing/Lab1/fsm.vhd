@@ -25,7 +25,7 @@ entity fsm is
 end fsm;
 
 architecture default_arch of fsm is
-  type state_type is (START, COMPUTE, RESTART);
+  type state_type is (START, COMPUTE, RESTART, WAITING);
   signal state_r, next_state : state_type;
   signal done_r              : std_logic;
 begin
