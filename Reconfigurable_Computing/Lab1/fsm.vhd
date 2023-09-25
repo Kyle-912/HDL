@@ -65,12 +65,12 @@ begin
           y_en       <= '1';
           i_sel      <= '0';
           i_en       <= '1';
-          next_state <= WAITING;
+          next_state <= COMPUTE;
         end if;
 
-      when WAITING =>
-        n_en       <= '1';
-        next_state <= WAITING;
+      -- when WAITING =>
+      --   n_en       <= '1';
+      --   next_state <= WAITING;
 
       when COMPUTE =>
         if n_eq_0 = '1' then
