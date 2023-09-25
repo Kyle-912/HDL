@@ -30,6 +30,7 @@ begin
       done_r   <= '0';
 
     elsif rising_edge(clk) then
+      done_r <= '0';
 
     end if;
   end process;
