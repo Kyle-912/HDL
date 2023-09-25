@@ -34,7 +34,8 @@ architecture default_arch of datapath is
   signal y_reg_out : std_logic_vector(result'range);
   signal adder1_out : std_logic_vector(n'range);
   signal adder2_out : std_logic_vector(result'range);
-  signal result_mux_out : std_logic;
+  signal result_mux_out : std_logic_vector(result'range);
+  signal result_reg_out : std_logic_vector(result'range);
 begin
   U_N_REG : entity work.reg
     generic map(WIDTH => n'length)
