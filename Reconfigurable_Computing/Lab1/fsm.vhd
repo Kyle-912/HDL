@@ -67,6 +67,11 @@ begin
         end if;
 
       when COMPUTE =>
+      if n_eq_0 = '1' then
+        
+      else
+        
+      end if;
 
       when RESTART =>
         done_r <= '1';
