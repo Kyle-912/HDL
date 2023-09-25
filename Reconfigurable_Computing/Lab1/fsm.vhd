@@ -31,7 +31,6 @@ architecture default_arch of fsm is
 begin
 
   done <= done_r;
-  done_r <= '1';
 
   process (clk, rst)
   begin
