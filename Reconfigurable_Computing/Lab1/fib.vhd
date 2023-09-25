@@ -40,6 +40,7 @@ begin
             done_r  <= '0';
             state_r <= COMPUTE;
           end if;
+          
         when COMPUTE =>
 
         when RESTART =>
@@ -48,9 +49,7 @@ begin
           state_r <= START;
         end if;
 
-        when others  =>
-          state_r <= START;
-
+        when others  => null;
       end case;
     end if;
   end process;
