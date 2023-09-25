@@ -74,7 +74,6 @@ begin
           result_sel <= '0';
           result_en  <= '1';
         else
-
           while i_le_n = '1' loop
             i_sel <= '1';
             i_en  <= '1';
