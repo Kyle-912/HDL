@@ -128,6 +128,14 @@ begin
       enable => y_en,
       output => y_reg_out
     );
+
+    U_ADDER2 : entity work.adder
+    generic map (WIDTH => result'length)
+    port map(
+      in1 => x_reg_out,
+      in2 => y_reg_out,
+      output => adder2_out
+    );
 end default_arch;
 
 library ieee;
