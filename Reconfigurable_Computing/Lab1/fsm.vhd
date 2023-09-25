@@ -70,7 +70,7 @@ begin
 
       when WAITING =>
         n_en       <= '1';
-        next_state <= COMPUTE;
+        next_state <= WAITING;
 
       when COMPUTE =>
         if n_eq_0 = '1' then
