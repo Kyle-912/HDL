@@ -63,12 +63,13 @@ begin
           x_en       <= '1';
           y_sel      <= '0';
           y_en       <= '1';
+          i_sel      <= '0';
+          i_en       <= '1';
           next_state <= COMPUTE;
         end if;
 
       when COMPUTE =>
-          i_sel <= '0';
-          i_en  <= '1';
+
         if n_eq_0 = '1' then
           result_sel <= '0';
           result_en  <= '1';
