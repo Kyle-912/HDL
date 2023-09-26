@@ -48,6 +48,7 @@ begin
     assert result = std_logic_vector(to_unsigned(0, result'length));
     report "Incorrect fib 0"
       severity error;
+      
 
     finish;
   end process;
