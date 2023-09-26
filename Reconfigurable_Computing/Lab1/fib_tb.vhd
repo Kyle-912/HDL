@@ -57,7 +57,7 @@ begin
       severity error;
 
     wait for clk_period * 2;
-    n  <= std_logic_vector(to_unsigned(0, n'length));
+    n  <= std_logic_vector(to_unsigned(8, n'length));
     go <= '1';
     wait until rising_edge(clk);
     go <= '0';
@@ -72,7 +72,7 @@ begin
       severity error;
 
     wait for clk_period * 2;
-    n  <= std_logic_vector(to_unsigned(0, n'length));
+    n  <= std_logic_vector(to_unsigned(34, n'length));
     go <= '1';
     wait until rising_edge(clk);
     go <= '0';
