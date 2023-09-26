@@ -57,7 +57,7 @@ begin
     case state_r is
       when START =>
         if go = '1' then
-          done_r     <= '0';
+          -- done_r     <= '0';
           n_en       <= '1';
           x_sel      <= '0';
           x_en       <= '1';
@@ -88,7 +88,7 @@ begin
         end if;
 
       when RESTART =>
-        done_r <= '0';
+        done_r <= '1';
         if go = '0' then
           next_state <= START;
         end if;
