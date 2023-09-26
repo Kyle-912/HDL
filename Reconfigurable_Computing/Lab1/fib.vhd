@@ -135,8 +135,8 @@ end fsm_plus_d;
 architecture default_arch of fib is
 begin
 
-  -- U_FIB : entity work.fib(fsmd)
-  U_FIB : entity work.fib(fsm_plus_d)
+  U_FIB : entity work.fib(fsmd)
+  -- U_FIB : entity work.fib(fsm_plus_d)
     port map(
       clk    => clk,
       rst    => rst,
