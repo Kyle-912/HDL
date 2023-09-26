@@ -48,7 +48,7 @@ begin
     go <= '0';
     wait until done = '1';
     wait for clk_period * 2;
-    assert result = std_logic_vector(to_unsigned(0, result'length));
+    assert result = std_logic_vector(to_unsigned(0, result'length))
     report "Incorrect fib 0"
       severity error;
 
@@ -58,7 +58,7 @@ begin
     wait until rising_edge(clk);
     go <= '0';
     wait until done = '1';
-    assert result = std_logic_vector(to_unsigned(21, result'length));
+    assert result = std_logic_vector(to_unsigned(21, result'length))
     report "Incorrect fib 8"
       severity error;
 
@@ -68,7 +68,7 @@ begin
     wait until rising_edge(clk);
     go <= '0';
     wait until done = '1';
-    assert result = std_logic_vector(to_unsigned(5702887, result'length));
+    assert result = std_logic_vector(to_unsigned(5702887, result'length))
     report "Incorrect fib 34"
       severity error;
 
