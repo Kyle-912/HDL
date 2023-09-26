@@ -91,6 +91,7 @@ architecture fsm_plus_d of fib is
   signal i_le_n     : std_logic;
   signal done_r : std_logic;
 begin
+  done <= done_r;
   U_DATAPATH : entity work.datapath
     port map(
       clk        => clk,
