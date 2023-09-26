@@ -42,13 +42,31 @@ begin
     rst <= '0';
 
     wait for clk_period * 10;
-    n <= "000000";
+    n  <= "000000";
     go <= '1';
     wait until done = '1';
     assert result = std_logic_vector(to_unsigned(0, result'length));
     report "Incorrect fib 0"
       severity error;
-      
+    go <= '0';
+
+    wait for clk_period * 10;
+    n  <= "000000";
+    go <= '1';
+    wait until done = '1';
+    assert result = std_logic_vector(to_unsigned(0, result'length));
+    report "Incorrect fib 0"
+      severity error;
+    go <= '0';
+
+    wait for clk_period * 10;
+    n  <= "000000";
+    go <= '1';
+    wait until done = '1';
+    assert result = std_logic_vector(to_unsigned(0, result'length));
+    report "Incorrect fib 0"
+      severity error;
+    go <= '0';
 
     finish;
   end process;
