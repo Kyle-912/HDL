@@ -71,6 +71,7 @@ begin
         if n_eq_0 = '1' then
           result_sel <= '0';
           result_en  <= '1';
+          next_state <= RESTART;
         else
           if i_le_n = '1' then
             i_sel <= '1';
