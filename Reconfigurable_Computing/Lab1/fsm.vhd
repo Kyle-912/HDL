@@ -89,10 +89,8 @@ begin
 
       when RESTART =>
         if go = '0' then
-          done_r     <= '1'; -- Set done_r to '1' only when go is '0'
+          done_r     <= '1';
           next_state <= START;
-        else
-          done_r     <= '0'; -- Set done_r to '0' when go is '1'
         end if;
 
       when others => null;
