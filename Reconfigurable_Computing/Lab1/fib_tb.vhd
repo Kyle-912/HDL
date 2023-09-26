@@ -16,10 +16,10 @@ architecture tb of fib_tb is
 
   signal clk          : std_logic := '1';
   signal rst          : std_logic := '1';
-  signal go : std_logic := '0';
-  signal done : std_logic;
-  signal n : std_logic_vector(5 downto 0);
-  signal result : std_logic_vector(31 downto 0);
+  signal go           : std_logic := '0';
+  signal n            : std_logic_vector(5 downto 0);
+  signal done         : std_logic;
+  signal result       : std_logic_vector(31 downto 0);
 
 begin
 
