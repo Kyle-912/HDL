@@ -46,7 +46,7 @@ begin
     go <= '1';
     wait until done = '1';
     assert result = std_logic_vector(to_unsigned(0, result'length));
-    report "Incorrect fib"
+    report "Incorrect fib 0"
       severity error;
 
     finish;
