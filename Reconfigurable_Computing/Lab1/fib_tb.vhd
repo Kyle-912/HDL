@@ -82,7 +82,7 @@ begin
     if (done = '0') then
       wait until rising_edge(clk) and done = '1' for 5 us;
     end if;
-    assert result = std_logic_vector(to_unsigned(0, result'length));
+    assert result = std_logic_vector(to_unsigned(5702887, result'length));
     report "Incorrect fib 34"
       severity error;
 
