@@ -36,7 +36,7 @@ begin
   begin
     if (rst = '1') then
       state_r <= START;
-      done_r  <= '0';
+      -- done_r  <= '0';
     elsif (rising_edge(clk)) then
       state_r <= next_state;
     end if;
@@ -57,7 +57,7 @@ begin
     case state_r is
       when START =>
         if go = '1' then
-          done_r     <= '0';
+          -- done_r     <= '0';
           n_en       <= '1';
           x_sel      <= '0';
           x_en       <= '1';
