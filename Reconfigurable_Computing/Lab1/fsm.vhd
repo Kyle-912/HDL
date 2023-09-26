@@ -85,8 +85,8 @@ begin
             result_en  <= '1';
             next_state <= RESTART;
           end if;
-          done_r <= '1';
         end if;
+        done_r <= '1';
 
       when RESTART =>
         if go = '0' then
