@@ -46,12 +46,7 @@ begin
     go <= '1';
     wait until rising_edge(clk);
     go <= '0';
-    if (done = '1') then
-      wait until rising_edge(clk) and done = '0' for 1 us;
-    end if;
-    if (done = '0') then
-      wait until rising_edge(clk) and done = '1' for 5 us;
-    end if;
+    wait until done = '1';
     assert result = std_logic_vector(to_unsigned(0, result'length));
     report "Incorrect fib 0"
       severity error;
