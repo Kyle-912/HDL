@@ -42,11 +42,12 @@ begin
     rst <= '0';
 
     wait for clk_period * 10;
-    
-    assert false
-    report "Replace this with your test cases"
-      severity failure;
-      wait until done = '1';
+    n <= "000000";
+    go <= '1';
+    wait until done = '1';
+    assert result = std_logic_vector(to_unsigned(0, result'length));
+    report "Incorrect fib"
+      severity error;
 
     finish;
   end process;
