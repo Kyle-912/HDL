@@ -41,7 +41,7 @@ begin
 
     rst <= '0';
 
-    wait for clk_period * 10;
+    wait for clk_period * 2;
     n  <= "000000";
     go <= '1';
     wait until done = '1';
@@ -50,7 +50,7 @@ begin
       severity error;
     go <= '0';
 
-    wait for clk_period * 10;
+    wait for clk_period * 2;
     n  <= "000100";
     go <= '1';
     wait until done = '1';
@@ -59,7 +59,7 @@ begin
       severity error;
     go <= '0';
 
-    wait for clk_period * 10;
+    wait for clk_period * 2;
     n  <= "010000";
     go <= '1';
     wait until done = '1';
