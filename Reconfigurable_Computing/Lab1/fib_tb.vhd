@@ -47,7 +47,6 @@ begin
     wait until rising_edge(clk);
     go <= '0';
     wait until done = '1';
-    wait for clk_period * 2;
     assert result = std_logic_vector(to_unsigned(0, result'length))
     report "Incorrect fib 0"
       severity error;
