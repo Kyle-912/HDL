@@ -41,7 +41,7 @@ begin
 
     rst <= '0';
 
-    wait for clk_period * 2;
+    wait for clk_period * 10;
     n  <= std_logic_vector(to_unsigned(0, n'length));
     go <= '1';
     wait until rising_edge(clk);
@@ -56,7 +56,7 @@ begin
     report "Incorrect fib 0"
       severity error;
 
-    wait for clk_period * 2;
+    wait for clk_period * 10;
     n  <= std_logic_vector(to_unsigned(8, n'length));
     go <= '1';
     wait until rising_edge(clk);
@@ -71,7 +71,7 @@ begin
     report "Incorrect fib 8"
       severity error;
 
-    wait for clk_period * 2;
+    wait for clk_period * 10;
     n  <= std_logic_vector(to_unsigned(34, n'length));
     go <= '1';
     wait until rising_edge(clk);
