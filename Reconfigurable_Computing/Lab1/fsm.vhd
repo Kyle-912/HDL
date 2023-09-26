@@ -56,7 +56,6 @@ begin
     case state_r is
       when START =>
         if go = '1' then
-          done_r     <= '0';
           n_en       <= '1';
           x_sel      <= '0';
           x_en       <= '1';
@@ -68,6 +67,7 @@ begin
         end if;
 
       when COMPUTE =>
+        done_r <= '0';
         if n_eq_0 = '1' then
           result_sel <= '0';
           result_en  <= '1';
