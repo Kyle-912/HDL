@@ -33,7 +33,6 @@ begin
       n      => n,
       result => result,
       done   => done
-
     );
 
   SEQUENCER_PROC : process
