@@ -42,9 +42,11 @@ begin
     rst <= '0';
 
     wait for clk_period * 10;
+
     assert false
     report "Replace this with your test cases"
       severity failure;
+      wait until done = '1';
 
     finish;
   end process;
