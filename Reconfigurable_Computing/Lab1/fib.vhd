@@ -59,8 +59,8 @@ begin
               y_r    := temp_r;
             end loop;
             result_r <= y_r;
-            state_r  <= RESTART;
           end if;
+          state_r  <= RESTART;
 
         when RESTART =>
           done_r <= '1';
