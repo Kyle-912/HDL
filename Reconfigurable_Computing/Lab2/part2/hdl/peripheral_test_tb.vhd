@@ -50,7 +50,7 @@ begin
 
         wait for clk_period * 2;
         assert out0 = std_logic_vector(to_unsigned(6, out0'length))
-            report "Replace this with your test cases"
+            report "Incorrect out0"
             severity failure;
 
         finish;
