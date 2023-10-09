@@ -55,12 +55,14 @@ begin
     report "Incorrect out0"
       severity failure;
     assert out1 = std_logic_vector(to_unsigned(5, out1'length))
-    report "Incorrect out0"
+    report "Incorrect out1"
       severity failure;
-    assert out2 = std_logic_vector(to_unsigned(5, out2'length))
-    report "Incorrect out0"
+    assert out2 = std_logic_vector(to_unsigned(1, out2'length))
+    report "Incorrect out2"
       severity failure;
-      
+    assert out3 = std_logic_vector(to_unsigned(5, out3'length))
+    report "Incorrect out3"
+      severity failure;
 
     finish;
   end process;
