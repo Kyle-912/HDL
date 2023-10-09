@@ -46,7 +46,7 @@ begin
         wait for clk_period * 2;
 
         in0 <= std_logic_vector(to_unsigned(2, in0'length));
-        in0 <= std_logic_vector(to_unsigned(2, in0'length));
+        in1 <= std_logic_vector(to_unsigned(3, in1'length));
 
         wait for clk_period * 10;
         assert false
