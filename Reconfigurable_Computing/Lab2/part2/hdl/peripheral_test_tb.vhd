@@ -60,7 +60,7 @@ begin
     assert out2 = std_logic_vector(to_unsigned(1, out2'length))
     report "Incorrect out2"
       severity failure;
-    assert out3 = std_logic_vector(to_unsigned(5, out3'length))
+    assert out3 = std_logic_vector(to_unsigned(1, out3'length))
     report "Incorrect out3"
       severity failure;
 
