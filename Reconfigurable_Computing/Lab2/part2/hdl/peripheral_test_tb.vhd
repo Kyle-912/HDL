@@ -47,8 +47,8 @@ begin
 
     in0 <= std_logic_vector(to_unsigned(2, in0'length));
     in1 <= std_logic_vector(to_unsigned(3, in1'length));
-    in2 <= std_logic_vector(to_unsigned(3, in2'length));
-    in3 <= std_logic_vector(to_unsigned(3, in3'length));
+    in2 <= std_logic_vector(to_unsigned(5, in2'length));
+    in3 <= std_logic_vector(to_unsigned(4, in3'length));
 
     wait for clk_period * 2;
     assert out0 = std_logic_vector(to_unsigned(6, out0'length))
