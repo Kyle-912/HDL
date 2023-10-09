@@ -26,5 +26,7 @@ begin
 
   out1 <= std_logic_vector(unsigned(in0) + unsigned(in1));
 
-  out2 <= std_logic_vector(unsigned(in2) - unsigned(in1));
+  out2 <= std_logic_vector(unsigned(in2) - unsigned(in3));
+
+  
 end architecture;
