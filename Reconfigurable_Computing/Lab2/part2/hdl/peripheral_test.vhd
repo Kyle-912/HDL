@@ -17,7 +17,7 @@ entity peripheral_test is
 end peripheral_test;
 
 architecture default_a of peripheral_test is
-    signal in0_int, b_int, result_int : integer;
+    signal in0_int, in1_int, result_int : integer;
 begin
 
 end architecture;
