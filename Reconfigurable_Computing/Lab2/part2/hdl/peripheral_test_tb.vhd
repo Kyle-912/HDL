@@ -41,14 +41,18 @@ begin
       out3 => out3
     );
 
-  SEQUENCER_PROC : process
-  begin
-    wait for clk_period * 2;
-    assert false
-    report "Replace this with your test cases"
-      severity failure;
+    SEQUENCER_PROC : process
+    begin
+        wait for clk_period * 2;
 
-    finish;
-  end process;
+        in0 <= std_logic_vector(to_unsigned(3, in0'length));
+
+        wait for clk_period * 10;
+        assert false
+            report "Replace this with your test cases"
+            severity failure;
+
+        finish;
+    end process;
 
 end architecture;
