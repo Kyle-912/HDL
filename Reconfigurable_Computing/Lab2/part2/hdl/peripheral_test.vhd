@@ -28,5 +28,5 @@ begin
 
   out2 <= std_logic_vector(unsigned(in2) - unsigned(in3));
 
-  
+  out3 <= in2 xor in3;
 end architecture;
