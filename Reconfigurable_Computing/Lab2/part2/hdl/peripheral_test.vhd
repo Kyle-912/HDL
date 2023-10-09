@@ -16,7 +16,7 @@ entity peripheral_test is
   );
 end peripheral_test;
 
-architecture default_arch of peripheral_test is
+architecture default_a of peripheral_test is
 begin
 
 end architecture;
