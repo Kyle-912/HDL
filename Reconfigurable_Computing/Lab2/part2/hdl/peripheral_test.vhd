@@ -22,4 +22,5 @@ begin
   in0_int <= to_integer(unsigned(in0));
   in1_int <= to_integer(unsigned(in1));
   result_int <= in0_int * in1_int;
+  out0 <= std_logic_vector(to_unsigned(result_int, out0'length));
 end architecture;
