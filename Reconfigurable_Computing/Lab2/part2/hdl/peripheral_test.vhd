@@ -17,10 +17,12 @@ entity peripheral_test is
 end peripheral_test;
 
 architecture default_a of peripheral_test is
-    signal in0_int, in1_int, result_int : integer;
+  signal in0_int, in1_int, result_int : integer;
 begin
-  in0_int <= to_integer(unsigned(in0));
-  in1_int <= to_integer(unsigned(in1));
+  in0_int    <= to_integer(unsigned(in0));
+  in1_int    <= to_integer(unsigned(in1));
   result_int <= in0_int * in1_int;
-  out0 <= std_logic_vector(to_unsigned(result_int, out0'length));
+  out0       <= std_logic_vector(to_unsigned(result_int, out0'length));
+
+  
 end architecture;
