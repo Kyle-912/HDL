@@ -48,8 +48,8 @@ begin
         in0 <= std_logic_vector(to_unsigned(2, in0'length));
         in1 <= std_logic_vector(to_unsigned(3, in1'length));
 
-        wait for clk_period * 10;
-        assert false
+        wait for clk_period * 2;
+        assert out0 = std_logic_vector(to_unsigned(6, out0'length))
             report "Replace this with your test cases"
             severity failure;
 
