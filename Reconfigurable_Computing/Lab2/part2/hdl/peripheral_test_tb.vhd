@@ -52,7 +52,7 @@ begin
     assert out0 = std_logic_vector(to_unsigned(6, out0'length))
     report "Incorrect out0"
       severity failure;
-    assert out1 = std_logic_vector(to_unsigned(6, out0'length))
+    assert out1 = std_logic_vector(to_unsigned(5, out0'length))
     report "Incorrect out0"
       severity failure;
 
