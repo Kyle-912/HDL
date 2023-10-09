@@ -47,20 +47,13 @@ begin
 
     in0 <= std_logic_vector(to_unsigned(2, in0'length));
     in1 <= std_logic_vector(to_unsigned(3, in1'length));
+    
 
     wait for clk_period * 2;
     assert out0 = std_logic_vector(to_unsigned(6, out0'length))
     report "Incorrect out0"
       severity failure;
     assert out1 = std_logic_vector(to_unsigned(5, out0'length))
-    report "Incorrect out0"
-      severity failure;
-
-    in0 <= std_logic_vector(to_unsigned(2, in0'length));
-    in1 <= std_logic_vector(to_unsigned(3, in1'length));
-
-    wait for clk_period * 2;
-    assert out0 = std_logic_vector(to_unsigned(6, out0'length))
     report "Incorrect out0"
       severity failure;
 
