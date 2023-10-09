@@ -41,19 +41,27 @@ begin
       out3 => out3
     );
 
-    SEQUENCER_PROC : process
-    begin
-        wait for clk_period * 2;
+  SEQUENCER_PROC : process
+  begin
+    wait for clk_period * 2;
 
-        in0 <= std_logic_vector(to_unsigned(2, in0'length));
-        in1 <= std_logic_vector(to_unsigned(3, in1'length));
+    in0 <= std_logic_vector(to_unsigned(2, in0'length));
+    in1 <= std_logic_vector(to_unsigned(3, in1'length));
 
-        wait for clk_period * 2;
-        assert out0 = std_logic_vector(to_unsigned(6, out0'length))
-            report "Incorrect out0"
-            severity failure;
+    wait for clk_period * 2;
+    assert out0 = std_logic_vector(to_unsigned(6, out0'length))
+    report "Incorrect out0"
+      severity failure;
 
-        finish;
-    end process;
+    in0 <= std_logic_vector(to_unsigned(2, in0'length));
+    in1 <= std_logic_vector(to_unsigned(3, in1'length));
+
+    wait for clk_period * 2;
+    assert out0 = std_logic_vector(to_unsigned(6, out0'length))
+    report "Incorrect out0"
+      severity failure;
+
+    finish;
+  end process;
 
 end architecture;
