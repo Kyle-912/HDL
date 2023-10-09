@@ -19,7 +19,7 @@ end peripheral_test;
 architecture default_arch of peripheral_test is
 begin
 
-end default_arch;
+end architecture;
 
 
 
