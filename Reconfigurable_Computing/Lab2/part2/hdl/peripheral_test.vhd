@@ -21,4 +21,5 @@ architecture default_a of peripheral_test is
 begin
   in0_int <= to_integer(unsigned(in0));
   in1_int <= to_integer(unsigned(in1));
+  result_int <= in0_int * in1_int;
 end architecture;
