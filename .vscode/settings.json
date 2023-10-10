@@ -20,10 +20,12 @@
         "vhdl"
     ],
     "cSpell.words": [
+        "ACLK",
         "addi",
         "addu",
         "altsyncram",
         "andi",
+        "ARESETN",
         "bgez",
         "bgtz",
         "blez",
