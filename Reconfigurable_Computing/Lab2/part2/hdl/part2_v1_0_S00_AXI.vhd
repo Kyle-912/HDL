@@ -127,19 +127,6 @@ architecture arch_imp of part2_v1_0_S00_AXI is
 	signal test_out2 : std_logic_vector(31 downto 0);
 	signal test_out3 : std_logic_vector(31 downto 0);
 
-	component peripheral_test
-	port (
-	    in0  : in std_logic_vector(31 downto 0);
-		in1  : in std_logic_vector(31 downto 0);
-		in2  : in std_logic_vector(31 downto 0);
-		in3  : in std_logic_vector(31 downto 0);
-		out0 : out std_logic_vector(31 downto 0);
-		out1 : out std_logic_vector(31 downto 0);
-		out2 : out std_logic_vector(31 downto 0);
-		out3 : out std_logic_vector(31 downto 0));
-	end component;
-
-
 begin
 	-- I/O Connections assignments
 
