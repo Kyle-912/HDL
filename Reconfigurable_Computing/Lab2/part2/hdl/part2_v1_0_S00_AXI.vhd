@@ -352,7 +352,7 @@ begin
 	      axi_araddr  <= (others => '1');
 	    else
 	      if (axi_arready = '0' and S_AXI_ARVALID = '1') then
-	        -- indicates that the slave has acceped the valid read address
+	        -- indicates that the slave has accepted the valid read address
 	        axi_arready <= '1';
 	        -- Read Address latching
 	        axi_araddr  <= S_AXI_ARADDR;

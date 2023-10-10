@@ -69,6 +69,7 @@
         "WREADY",
         "WSTRB",
         "WVALID",
+        "rden",
         "textio"
     ],
     "gitdoc.enabled": true
