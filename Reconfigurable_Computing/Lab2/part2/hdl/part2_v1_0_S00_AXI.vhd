@@ -442,17 +442,7 @@ begin
 
 
 	-- Add user logic here
-	peripheral_test_0 : peripheral_test
-	port map (
-		in0 =>  slv_reg0,
-		in1 =>  slv_reg1,
-		in2 =>  slv_reg2,
-		in3 =>  slv_reg3,
-		out0 => slv_reg4,
-		out1 => slv_reg5,
-		out2 => slv_reg6,
-		out3 => slv_reg7
-	);
+	U_
 
 	-- User logic ends
 
