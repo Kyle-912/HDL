@@ -57,7 +57,7 @@ entity part2_v1_0_S00_AXI is
 		-- Response ready. This signal indicates that the master
     		-- can accept a write response.
 		S_AXI_BREADY	: in std_logic;
-		-- Read address (issued by master, acceped by Slave)
+		-- Read address (issued by master, accepted by Slave)
 		S_AXI_ARADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 		-- Protection type. This signal indicates the privilege
     		-- and security level of the transaction, and whether the
