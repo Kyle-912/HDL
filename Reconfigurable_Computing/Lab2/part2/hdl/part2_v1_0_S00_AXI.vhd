@@ -442,7 +442,7 @@ begin
 
 
 	-- Add user logic here
-	U_
+	U_PERIPHERAL_TEST: p
 
 	-- User logic ends
 
