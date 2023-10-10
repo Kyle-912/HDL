@@ -52,6 +52,10 @@
         "xori"
     ],
     "cSpell.ignoreWords": [
+        "AWPROT",
+        "AWREADY",
+        "AWVALID",
+        "WDATA",
         "textio"
     ],
     "gitdoc.enabled": true
