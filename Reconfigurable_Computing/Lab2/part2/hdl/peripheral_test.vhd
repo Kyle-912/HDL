@@ -16,7 +16,7 @@ entity peripheral_test is
   );
 end peripheral_test;
 
-architecture default_a of peripheral_test is
+architecture default of peripheral_test is
   signal in0_int, in1_int, result_int : integer;
 begin
   in0_int    <= to_integer(unsigned(in0));
