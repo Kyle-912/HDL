@@ -18,7 +18,7 @@ begin
   TEST_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      input_r  <= (others => '0');
+      input_r  <= (others => '0')
       state    <= IDLE;
       done_out <= '0';
     elsif rising_edge(clk) then
@@ -26,7 +26,7 @@ begin
       case state is
         when IDLE =>
           if go = '1' then
-            state <= CHECK
+            state <= CHECK;
           end if;
         when CHECK =>
           if unsigned(input_r) = to_unsigned(0, input_r'length) then
