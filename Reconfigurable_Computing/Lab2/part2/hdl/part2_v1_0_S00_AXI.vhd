@@ -24,7 +24,7 @@ entity part2_v1_0_S00_AXI is
 		S_AXI_ACLK	: in std_logic;
 		-- Global Reset Signal. This Signal is Active LOW
 		S_AXI_ARESETN	: in std_logic;
-		-- Write address (issued by master, acceped by Slave)
+		-- Write address (issued by master, accepted by Slave)
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 		-- Write channel Protection type. This signal indicates the
     		-- privilege and security level of the transaction, and whether
