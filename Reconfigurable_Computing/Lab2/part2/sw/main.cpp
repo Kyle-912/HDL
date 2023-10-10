@@ -23,13 +23,13 @@ using namespace std;
 
 enum addresses {
   IN0_ADDR=0,
-  IN1_ADDR=1,
-  IN2_ADDR=2,
-  IN3_ADDR=3,
-  OUT0_ADDR=4,
-  OUT1_ADDR=5,
-  OUT2_ADDR=6,
-  OUT3_ADDR=7
+  IN1_ADDR,
+  IN2_ADDR,
+  IN3_ADDR,
+  OUT0_ADDR,
+  OUT1_ADDR,
+  OUT2_ADDR,
+  OUT3_ADDR
 };
 
 int main(int argc, char* argv[]) {
@@ -83,10 +83,14 @@ int main(int argc, char* argv[]) {
     // write inputs to the board
     board->write(&in0[i], IN0_ADDR, 1);
     board->write(&in1[i], IN1_ADDR, 1);
+	board->write(&in2[i], IN2_ADDR, 1);
+	board->write(&in3[i], IN3_ADDR, 1);
 
     // read outputs from the board
     board->read(&out0[i], OUT0_ADDR, 1);
     board->read(&out1[i], OUT1_ADDR, 1);
+	board->read(&out2[i], OUT2_ADDR, 1);
+	board->read(&out3[i], OUT3_ADDR, 1);
   }
 
   unsigned out0Errors=0, out1Errors=0, out2Errors=0, out3Errors=0, totalErrors=0;
