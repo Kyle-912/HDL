@@ -26,6 +26,7 @@
         "altsyncram",
         "andi",
         "ARESETN",
+        "AWADDR",
         "bgez",
         "bgtz",
         "blez",
