@@ -23,9 +23,9 @@ using namespace std;
 
 enum addresses {
   IN0_ADDR=0,
-  IN1_ADDR,
-  IN2_ADDR,
-  IN3_ADDR,
+  IN1_ADDR=1,
+  IN2_ADDR=2,
+  IN3_ADDR=3,
   OUT0_ADDR,
   OUT1_ADDR,
   OUT2_ADDR,
@@ -64,13 +64,13 @@ int main(int argc, char* argv[]) {
   // create inputs to test
   for (unsigned i=0; i < TEST_SIZE; i++) {
 
-    // use random inputs 
+    // use random inputs
     in0[i] = rand();
     in1[i] = rand();
     in2[i] = rand();
     in3[i] = rand();
   }
-  
+
   // initialize all outputs to be 0 to make sure Board is doing something
   memset(out0, 0, sizeof(unsigned)*TEST_SIZE);
   memset(out1, 0, sizeof(unsigned)*TEST_SIZE);
@@ -83,12 +83,12 @@ int main(int argc, char* argv[]) {
     // write inputs to the board
     board->write(&in0[i], IN0_ADDR, 1);
     board->write(&in1[i], IN1_ADDR, 1);
-    
+
     // read outputs from the board
     board->read(&out0[i], OUT0_ADDR, 1);
     board->read(&out1[i], OUT1_ADDR, 1);
   }
-    
+
   unsigned out0Errors=0, out1Errors=0, out2Errors=0, out3Errors=0, totalErrors=0;
 
   // check for errors
@@ -97,7 +97,7 @@ int main(int argc, char* argv[]) {
     if (out0[i] != in0[i]*in1[i]) out0Errors ++;
     if (out1[i] != in0[i]+in1[i]) out1Errors ++;
     if (out2[i] != in2[i]-in3[i]) out2Errors ++;
-    if (out3[i] != (in2[i]^in3[i])) out3Errors ++;    
+    if (out3[i] != (in2[i]^in3[i])) out3Errors ++;
   }
 
   totalErrors = out0Errors + out1Errors + out2Errors + out3Errors;
@@ -107,7 +107,7 @@ int main(int argc, char* argv[]) {
   cout << "Out2 Errors: " << out2Errors << endl;
   cout << "Out3 Errors: " << out3Errors << endl;
   cout << "Total Errors: " << totalErrors << endl;
-  
+
   if (totalErrors == 0)
     cout << "Application completed successfully!" << endl;
 
