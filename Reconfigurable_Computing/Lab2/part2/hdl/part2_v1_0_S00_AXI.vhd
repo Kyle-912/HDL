@@ -448,10 +448,10 @@ begin
       in1  => slv_reg1,
       in2  => slv_reg2,
       in3  => slv_reg3,
-      out0 => out0,
-      out1 => out1,
-      out2 => out2,
-      out3 => out3
+      out0 => test_out0,
+      out1 => test_out1,
+      out2 => test_out2,
+      out3 => test_out3
     );
   -- User logic ends
 
