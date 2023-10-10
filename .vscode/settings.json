@@ -52,9 +52,13 @@
         "xori"
     ],
     "cSpell.ignoreWords": [
+        "ARADDR",
         "AWPROT",
         "AWREADY",
         "AWVALID",
+        "BREADY",
+        "BRESP",
+        "BVALID",
         "WDATA",
         "WREADY",
         "WSTRB",

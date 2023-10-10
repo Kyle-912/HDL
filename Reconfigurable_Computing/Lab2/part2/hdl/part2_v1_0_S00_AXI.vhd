@@ -36,7 +36,7 @@ entity part2_v1_0_S00_AXI is
 		-- Write address ready. This signal indicates that the slave is ready
     		-- to accept an address and associated control signals.
 		S_AXI_AWREADY	: out std_logic;
-		-- Write data (issued by master, accepyed by Slave)
+		-- Write data (issued by master, accepted by Slave)
 		S_AXI_WDATA	: in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- Write strobes. This signal indicates which byte lanes hold
     		-- valid data. There is one write strobe bit for each eight
