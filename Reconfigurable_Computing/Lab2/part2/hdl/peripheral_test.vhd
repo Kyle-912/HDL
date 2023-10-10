@@ -12,7 +12,7 @@ entity peripheral_test is
     out0 : out std_logic_vector(width - 1 downto 0);
     out1 : out std_logic_vector(width - 1 downto 0);
     out2 : out std_logic_vector(width - 1 downto 0);
-    out3 : out std_logic_vector(width - 1 downto 0);
+    out3 : out std_logic_vector(width - 1 downto 0)
   );
 end peripheral_test;
 
