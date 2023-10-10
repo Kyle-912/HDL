@@ -442,7 +442,12 @@ begin
 
 
 	-- Add user logic here
-	U_PERIPHERAL_TEST: p
+	U_PERIPHERAL_TEST : entity work.
+	generic map (WIDTH => )
+	port map(
+		clk      => clk,
+		rst      => rst
+	);
 
 	-- User logic ends
 
