@@ -442,8 +442,8 @@ begin
 
 
 	-- Add user logic here
-	U_PERIPHERAL_TEST : entity work.
-	generic map (WIDTH => )
+	U_PERIPHERAL_TEST : entity work.peripheral_test
+	generic map (WIDTH => 32)
 	port map(
 		clk      => clk,
 		rst      => rst
