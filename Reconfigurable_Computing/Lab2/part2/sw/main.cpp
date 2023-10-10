@@ -26,10 +26,10 @@ enum addresses {
   IN1_ADDR=1,
   IN2_ADDR=2,
   IN3_ADDR=3,
-  OUT0_ADDR,
-  OUT1_ADDR,
-  OUT2_ADDR,
-  OUT3_ADDR
+  OUT0_ADDR=4,
+  OUT1_ADDR=5,
+  OUT2_ADDR=6,
+  OUT3_ADDR=7
 };
 
 int main(int argc, char* argv[]) {
