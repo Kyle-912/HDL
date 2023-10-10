@@ -268,46 +268,46 @@ begin
 	              end if;
 	            end loop;
 	          when b"100" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes
-	                -- slave registor 4
-	                -- slv_reg4(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"101" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes
-	                -- slave registor 5
-	                -- slv_reg5(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"110" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes
-	                -- slave registor 6
-	                -- slv_reg6(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
-	          when b"111" =>
-	            for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
-	              if ( S_AXI_WSTRB(byte_index) = '1' ) then
-	                -- Respective byte enables are asserted as per write strobes
-	                -- slave registor 7
-	                -- slv_reg7(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
-	              end if;
-	            end loop;
+	        --     for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+	        --       if ( S_AXI_WSTRB(byte_index) = '1' ) then
+	        --         -- Respective byte enables are asserted as per write strobes
+	        --         -- slave registor 4
+	        --         -- slv_reg4(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	        --       end if;
+	        --     end loop;
+	        --   when b"101" =>
+	        --     for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+	        --       if ( S_AXI_WSTRB(byte_index) = '1' ) then
+	        --         -- Respective byte enables are asserted as per write strobes
+	        --         -- slave registor 5
+	        --         -- slv_reg5(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	        --       end if;
+	        --     end loop;
+	        --   when b"110" =>
+	        --     for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+	        --       if ( S_AXI_WSTRB(byte_index) = '1' ) then
+	        --         -- Respective byte enables are asserted as per write strobes
+	        --         -- slave registor 6
+	        --         -- slv_reg6(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	        --       end if;
+	        --     end loop;
+	        --   when b"111" =>
+	        --     for byte_index in 0 to (C_S_AXI_DATA_WIDTH/8-1) loop
+	        --       if ( S_AXI_WSTRB(byte_index) = '1' ) then
+	        --         -- Respective byte enables are asserted as per write strobes
+	        --         -- slave registor 7
+	        --         -- slv_reg7(byte_index*8+7 downto byte_index*8) <= S_AXI_WDATA(byte_index*8+7 downto byte_index*8);
+	        --       end if;
+	        --     end loop;
 	          when others =>
 	            slv_reg0 <= slv_reg0;
 	            slv_reg1 <= slv_reg1;
 	            slv_reg2 <= slv_reg2;
 	            slv_reg3 <= slv_reg3;
-	            -- slv_reg4 <= slv_reg4;
-	            -- slv_reg5 <= slv_reg5;
-	            -- slv_reg6 <= slv_reg6;
-	            -- slv_reg7 <= slv_reg7;
+	            slv_reg4 <= slv_reg4;
+	            slv_reg5 <= slv_reg5;
+	            slv_reg6 <= slv_reg6;
+	            slv_reg7 <= slv_reg7;
 	        end case;
 	      end if;
 	    end if;
