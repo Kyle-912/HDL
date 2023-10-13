@@ -4,8 +4,11 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="42" value="Main loop operation" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+                <mxCell id="42" value="Upon connection draw confimation line low" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
                     <mxGeometry x="90" y="160" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Main loop operation" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="200" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
