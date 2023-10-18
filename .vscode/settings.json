@@ -104,7 +104,7 @@
         "**/desktop.ini": true,
         "**/googletest": false,
         "**/ieee": false,
-        "**/work": false
+        "**/work": true
     },
     "explorerExclude.backup": {}
 }
