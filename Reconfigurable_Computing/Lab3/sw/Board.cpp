@@ -43,7 +43,7 @@ Board::Board(const char *bitfile, const vector<float> &clocks) : PAGE_SIZE(sysco
 
   // make sure unsigned is 4 bytes on this machine
   assert(sizeof(unsigned) == 4);
-  
+
   configureFpgaClocks(clocks);
   loadBitfile(bitfile);
   initializeMemoryMap();
@@ -57,7 +57,7 @@ Board::~Board() {
 
 
 void Board::waitUntilNotZero(unsigned long addr, float timeout) {
-  
+
   Timer waitTime;
   unsigned value = 0;
   waitTime.start();
@@ -84,7 +84,7 @@ void Board::setClockStatus(unsigned clk, bool enable) {
 */
 
 void Board::writeToDriver(string file, string data) const {
-  
+
   FILE *outFile = fopen(file.c_str(), "w");
   if (outFile==NULL) {handleError("Error opening " + file);}
   fwrite(data.c_str(), sizeof(char), data.size(), outFile);
@@ -95,16 +95,16 @@ string Board::readFromDriver(string file) const {
 
   FILE *inFile = fopen(file.c_str(), "rb" );
   if (inFile==NULL) {handleError("Error opening " + file);}
-      
+
   unsigned long fileSize;
   fseek(inFile , 0 , SEEK_END);
   fileSize = ftell(inFile);
   rewind(inFile);
 
   char *buffer = (char*) new char[fileSize];
-  unsigned long size = fread(buffer, sizeof(char), fileSize, inFile); 
+  unsigned long size = fread(buffer, sizeof(char), fileSize, inFile);
   fclose(inFile);
-  
+
   string returnVal;
   returnVal.assign(buffer, size);
   delete[] buffer;
@@ -113,7 +113,7 @@ string Board::readFromDriver(string file) const {
 
 
 void Board::configureFpgaClock(unsigned clockId, double freq) {
-  
+
   ostringstream name;
   ostringstream path;
   ostringstream freqFile;
@@ -130,20 +130,20 @@ void Board::configureFpgaClock(unsigned clockId, double freq) {
 
   //  printf("Configuring clock %d:\n", clockId);
   //printf("%s %s %s %s %s %s\n", name.str().c_str(), path.str().c_str(), freqFile.str().c_str(), enableFile.str().c_str(), freqData.str().c_str(), enableData.c_str());
-  
+
   // expose the corresponding clock drivers to the file system
   writeToDriver(CLK_EXPORT_FILE, name.str());
 
   // enable/disable the corresponding clock
-  writeToDriver(enableFile.str(), enableData);  
+  writeToDriver(enableFile.str(), enableData);
 
   // set the clock frequency
   if (freq != 0.0) {
-    
+
     writeToDriver(freqFile.str(), freqData.str());
   }
 
-  /*  
+  /*
   string debugFreq = readFromDriver(freqFile.str());
   string debugEnable = readFromDriver(enableFile.str());
   cout << "->" << debugFreq << "<-" << endl;
@@ -153,7 +153,7 @@ void Board::configureFpgaClock(unsigned clockId, double freq) {
 
 
 void Board::configureFpgaClocks(const vector<float> &clocks) {
-  
+
   for (unsigned i=0; i < clocks.size(); i++) {
 
     configureFpgaClock(i, clocks[i]);
@@ -167,7 +167,7 @@ void Board::copy(const char *to, const char *from) {
   unsigned long lSize;
   char * buffer;
   size_t result;
-  
+
   // open input file
   inFile = fopen(from, "rb" );
   if (inFile==NULL) {handleError("Error opening " + (string) from);}
@@ -204,7 +204,7 @@ void Board::loadBitfile(const char* bitfile) {
 
 
 void Board::initializeMemoryMap() {
-  
+
   // Open /dev/mem file
   int fd = open("/dev/mem", O_RDWR);
   if (fd < 1) {
@@ -218,7 +218,7 @@ void Board::initializeMemoryMap() {
   mmapPages = new unsigned*[numPages];
 
   // save a ptr to the start of each page.
-  // This is necessary because the pages are unlikely to be adjacent 
+  // This is necessary because the pages are unlikely to be adjacent
   // in physical memory.
   for (unsigned i=0; i < numPages; i++) {
 
@@ -240,7 +240,7 @@ inline void Board::handleError(std::string str) const {
 
 inline bool Board::write(unsigned *data, unsigned long addr, unsigned long words) {
 
-  // identify the starting page, the number of pages for the 
+  // identify the starting page, the number of pages for the
   // entire transfer, and the addr within the starting page
   unsigned page = addr*sizeof(unsigned) / PAGE_SIZE;
   unsigned pages = ceil(words*sizeof(unsigned) / (float) PAGE_SIZE);
@@ -262,7 +262,7 @@ inline bool Board::write(unsigned *data, unsigned long addr, unsigned long words
 
 inline bool Board::read(unsigned *data, unsigned long addr, unsigned long words) {
 
-// identify the starting page, the number of pages for the 
+// identify the starting page, the number of pages for the
   // entire transfer, and the addr within the starting page
   unsigned page = addr*sizeof(unsigned) / PAGE_SIZE;
   unsigned pages = ceil(words*sizeof(unsigned) / (float) PAGE_SIZE);

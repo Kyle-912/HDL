@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     board->write(&go, GO_ADDR, 1);
 
     swFib = fib(i);
-    board->waitUntilNotZero(DONE_ADDR, 2);
+    board->waitUntilNotZero(DONE_ADDR, 60);
     board->read(&hwFib, RESULT_ADDR, 1);
 
     cout << i << ": HW = " << hwFib <<", SW = " << swFib << endl;
