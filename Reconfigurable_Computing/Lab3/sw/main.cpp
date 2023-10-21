@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
   for (unsigned int i = 0; i < 48; i++)
   {
     int swFib = fib(i);
-    board->write(&i, GO_ADDR, 1);
+    board->write(&i, N_ADDR, 1);
   }
 
   return 0;
