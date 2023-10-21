@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     board->waitUntilNotZero(DONE_ADDR, 2);
     unsigned int hwFib = 0;
     board->read(&hwFib, RESULT_ADDR, 1);
-    cout << "0: HW = 0, SW = 0" << endl;
+    cout << "0: HW = " << hwFib <<", SW = " << endl;
   }
 
   return 0;
