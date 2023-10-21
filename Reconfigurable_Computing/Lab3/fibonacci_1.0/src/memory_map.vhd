@@ -65,4 +65,6 @@ begin
       end if;
     end if;
   end process;
+  go <= go_r;
+  n  <= n_r;
 end BHV;

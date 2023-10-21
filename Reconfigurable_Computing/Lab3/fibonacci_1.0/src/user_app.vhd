@@ -24,7 +24,7 @@ architecture default of user_app is
     signal n      : std_logic_vector(5 downto 0);
     signal result : std_logic_vector(31 downto 0);
     signal done   : std_logic;
-    
+
     component fib
     port (
         clk    : in  std_logic;
@@ -36,7 +36,7 @@ architecture default of user_app is
         );
     end component;
 
-    
+
 begin
 
 	-- connect memory map and fib entity
@@ -59,7 +59,7 @@ begin
             done   => done
             );
 
-    U_FIB : fib        
+    U_FIB : fib
         port map (
             clk    => clk,
             rst    => rst,

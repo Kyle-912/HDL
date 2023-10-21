@@ -5,7 +5,7 @@
 -- File: user_app_tb.vhd
 --
 -- Description: This file implements a testbench for the Fibonacci
--- calculator when running on the ZedBoard. 
+-- calculator when running on the ZedBoard.
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -101,7 +101,7 @@ begin
 
     begin
 
-        -- reset circuit  
+        -- reset circuit
         rst <= '1';
         clearMMAP;
         wait for 200 ns;
@@ -139,7 +139,7 @@ begin
             -- read the done signal every cycle to see if the circuit has
             -- completed.
             --
-            -- equivalent to wait until (done = '1') for TIMEOUT;      
+            -- equivalent to wait until (done = '1') for TIMEOUT;
             while done = '0' and count < MAX_CYCLES loop
 
                 mmap_rd_addr <= std_logic_vector(to_unsigned(C_DONE_ADDR, C_MMAP_ADDR_WIDTH));
