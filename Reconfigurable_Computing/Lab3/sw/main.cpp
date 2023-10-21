@@ -82,7 +82,8 @@ int main(int argc, char *argv[])
     go = 0;
     board->write(&go, GO_ADDR, 1);
     board->waitUntilNotZero(DONE_ADDR, 2);
-    
+    unsigned int fpgaFib = 0;
+    board->read(&fpgaFib, RESULT_ADDR, 1);
   }
 
   return 0;
