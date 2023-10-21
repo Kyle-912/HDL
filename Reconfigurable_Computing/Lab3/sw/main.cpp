@@ -79,12 +79,15 @@ int main(int argc, char *argv[])
   {
     swFib = fib(i);
     board->write(&i, N_ADDR, 1);
+
     go = 1;
     board->write(&go, GO_ADDR, 1);
     go = 0;
     board->write(&go, GO_ADDR, 1);
+
     board->waitUntilNotZero(DONE_ADDR, 2);
     board->read(&hwFib, RESULT_ADDR, 1);
+    
     cout << i << ": HW = " << hwFib <<", SW = " << swFib << endl;
   }
 
