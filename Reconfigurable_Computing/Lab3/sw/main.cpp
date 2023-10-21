@@ -78,6 +78,7 @@ int main(int argc, char *argv[])
   for (unsigned int i = 0; i < 48; i++)
   {
     swFib = fib(i);
+    
     board->write(&i, N_ADDR, 1);
 
     go = 1;
@@ -87,7 +88,7 @@ int main(int argc, char *argv[])
 
     board->waitUntilNotZero(DONE_ADDR, 2);
     board->read(&hwFib, RESULT_ADDR, 1);
-    
+
     cout << i << ": HW = " << hwFib <<", SW = " << swFib << endl;
   }
 
