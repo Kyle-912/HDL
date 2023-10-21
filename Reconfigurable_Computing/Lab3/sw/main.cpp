@@ -22,7 +22,7 @@ enum mmapAddr
   DONE_ADDR
 };
 
-int fib(int n)
+unsigned int fib(unsigned int n)
 {
   if (n <= 1)
     return n;
