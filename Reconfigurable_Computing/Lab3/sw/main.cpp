@@ -71,6 +71,7 @@ int main(int argc, char *argv[])
   // until the returned value is non-zero, or until the timeout occurs.
   // If the timeout occurs, the function throws a TimeoutException.
 
+  int one = 1;
   for (unsigned int i = 0; i < 48; i++)
   {
     int swFib = fib(i);
