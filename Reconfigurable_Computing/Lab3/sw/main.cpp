@@ -72,10 +72,11 @@ int main(int argc, char *argv[])
   // If the timeout occurs, the function throws a TimeoutException.
 
   unsigned int go = 0;
+  unsigned int swFib = 0;
 
   for (unsigned int i = 0; i < 48; i++)
   {
-    unsigned int swFib = fib(i);
+    swFib = fib(i);
     board->write(&i, N_ADDR, 1);
     go = 1;
     board->write(&go, GO_ADDR, 1);
