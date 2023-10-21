@@ -61,6 +61,7 @@
         "BREADY",
         "BRESP",
         "BVALID",
+        "MMAP",
         "MMIO",
         "RDATA",
         "RREADY",
