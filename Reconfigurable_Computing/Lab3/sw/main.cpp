@@ -73,6 +73,7 @@ int main(int argc, char *argv[])
 
   unsigned int go = 0;
   unsigned int swFib = 0;
+  unsigned int hwFib = 0;
 
   for (unsigned int i = 0; i < 48; i++)
   {
