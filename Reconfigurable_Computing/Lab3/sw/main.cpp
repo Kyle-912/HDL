@@ -71,10 +71,10 @@ int main(int argc, char *argv[])
   // until the returned value is non-zero, or until the timeout occurs.
   // If the timeout occurs, the function throws a TimeoutException.
 
-  for (int i = 0; i < 48; i++)
+  for (unsigned int i = 0; i < 48; i++)
   {
     int swFib = fib(i);
-    
+    board->write(&i, GO_ADDR, 1);
   }
 
   return 0;
