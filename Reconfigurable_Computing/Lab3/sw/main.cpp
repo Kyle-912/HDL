@@ -73,6 +73,7 @@ int main(int argc, char *argv[])
 
   for (int i = 0; i < 48; i++)
   {
+    int swFib = fib(i);
   }
 
   return 0;
