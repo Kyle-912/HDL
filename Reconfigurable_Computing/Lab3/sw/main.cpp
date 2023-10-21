@@ -82,6 +82,7 @@ int main(int argc, char *argv[])
     go = 0;
     board->write(&go, GO_ADDR, 1);
     board->waitUntilNotZero(DONE_ADDR, 2);
+    
   }
 
   return 0;
