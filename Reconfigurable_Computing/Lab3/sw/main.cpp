@@ -82,8 +82,9 @@ int main(int argc, char *argv[])
     go = 0;
     board->write(&go, GO_ADDR, 1);
     board->waitUntilNotZero(DONE_ADDR, 2);
-    unsigned int fpgaFib = 0;
-    board->read(&fpgaFib, RESULT_ADDR, 1);
+    unsigned int hwFib = 0;
+    board->read(&hwFib, RESULT_ADDR, 1);
+    cout << "0: HW = 0, SW = 0" << endl;
   }
 
   return 0;
