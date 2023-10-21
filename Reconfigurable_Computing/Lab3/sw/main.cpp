@@ -14,8 +14,12 @@
 
 using namespace std;
 
-enum mmapAddr {
-  GO_ADDR=0, N_ADDR, RESULT_ADDR, DONE_ADDR
+enum mmapAddr
+{
+  GO_ADDR = 0,
+  N_ADDR,
+  RESULT_ADDR,
+  DONE_ADDR
 };
 
 int fib(int n)
@@ -23,9 +27,11 @@ int fib(int n)
   
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[])
+{
 
-  if (argc != 2) {
+  if (argc != 2)
+  {
     cerr << "Usage: " << argv[0] << " bitfile" << endl;
     return -1;
   }
@@ -40,10 +46,12 @@ int main(int argc, char* argv[]) {
 
   // initialize board
   Board *board;
-  try {
+  try
+  {
     board = new Board(argv[1], clocks);
   }
-  catch(...) {
+  catch (...)
+  {
     exit(-1);
   }
 
@@ -62,9 +70,7 @@ int main(int argc, char* argv[]) {
 
   for (int i = 0; i < 48; i++)
   {
-
   }
-
 
   return 0;
 }
