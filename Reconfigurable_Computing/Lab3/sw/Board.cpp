@@ -66,8 +66,8 @@ void Board::waitUntilNotZero(unsigned long addr, float timeout) {
   }
   waitTime.stop();
 
-  if (value == 0)
-    throw TimeoutException();
+  // if (value == 0)
+  //   throw TimeoutException();
 }
 
 
