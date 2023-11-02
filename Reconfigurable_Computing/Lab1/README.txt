@@ -1,0 +1,1 @@
+I have no idea why those two tests are failing but looking at the waveform the errors don't even make sense so I have to assume it's something to do with the testbench
