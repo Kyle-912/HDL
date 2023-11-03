@@ -74,6 +74,7 @@
         "WREADY",
         "WSTRB",
         "WVALID",
+        "dout",
         "rden",
         "textio"
     ],
