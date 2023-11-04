@@ -28,6 +28,13 @@ begin
 
     elsif rising_edge(clk) then
       rd_en_delay_r <= '1'; --TODO:
+      if en = '1' then
+        if go = '1' then
+          
+        else
+          
+        end if;
+      end if;
 
     end if;
   end process;
