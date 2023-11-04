@@ -20,15 +20,15 @@ end addr_gen;
 
 architecture bhv of addr_gen is
   type fsm_state is (IDLE, RUNNING, FINISHED);
-  signal state : fsm_state := IDLE;
-  signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
+  signal state   : fsm_state := IDLE;
+  signal counter : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
 begin
   process (clk, rst)
   begin
     if rst = '1' then
-      state <= IDLE;
-      counter   <= (others => '0');
-      done <= '0';
+      state   <= IDLE;
+      counter <= (others => '0');
+      done    <= '0';
     elsif rising_edge(clk) then
       case state is
         when IDLE =>
@@ -41,17 +41,18 @@ begin
               counter <= counter + 1;
               -- rd_en <= '1'; --FIXME: this being assigned in a process(clk) is causing a register hence a 1 cycle delay around 2835ns
             else
-              done <= '1';
+              done  <= '1';
               state <= FINISHED;
             end if;
           end if;
         when FINISHED =>
           if go = '0' then
             state <= IDLE;
-            done <= '0';
+            done  <= '0';
           end if;
       end case;
     end if;
   end process;
+  rd_en   <= en;
   rd_addr <= std_logic_vector(counter);
 end bhv;
