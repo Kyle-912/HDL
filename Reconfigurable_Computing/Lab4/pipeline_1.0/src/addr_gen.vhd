@@ -19,7 +19,16 @@ entity addr_gen is
 end addr_gen;
 
 architecture bhv of addr_gen is
-signal name : std_logic;
+  signal rd_en_delay_r : std_logic;
 begin
+process(clk, rst)
+begin
+  if rst = '1' then
+    
 
+  elsif rising_edge(clk) then
+
+
+  end if;
+end process;
 end architecture;
