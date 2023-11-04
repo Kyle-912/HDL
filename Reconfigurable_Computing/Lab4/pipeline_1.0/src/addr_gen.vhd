@@ -21,14 +21,15 @@ end addr_gen;
 architecture bhv of addr_gen is
   signal rd_en_delay_r : std_logic;
 begin
-process(clk, rst)
-begin
-  if rst = '1' then
-    
+  process (clk, rst)
+  begin
+    if rst = '1' then
+      rd_en_delay_r <= '0';
 
-  elsif rising_edge(clk) then
+    elsif rising_edge(clk) then
+      rd_en_delay_r <= '1';
 
-
-  end if;
-end process;
+    end if;
+  end process;
+  rd_en <= rd_en_delay_r;
 end architecture;
