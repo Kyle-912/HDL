@@ -24,6 +24,7 @@ architecture bhv of datapath is
   signal product0_r : std_logic_vector(15 downto 0);
   signal product1_r : std_logic_vector(15 downto 0);
   signal sum_r      : std_logic_vector(16 downto 0);
+  signal valid_delay1 : std_logic;
 begin
   CALC_PROC : process (clk, rst)
   begin
