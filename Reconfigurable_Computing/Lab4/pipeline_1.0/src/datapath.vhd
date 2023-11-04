@@ -31,8 +31,9 @@ begin
             in3 <= (others => '0');
 
         elsif rising_edge(clk) then
-            
+
 
         end if;
     end process;
 end architecture;
+
