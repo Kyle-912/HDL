@@ -17,7 +17,7 @@ entity datapath is
 end datapath;
 
 architecture bhv of datapath is
-
+signal name : std_logic;
 begin
 
 end architecture;
