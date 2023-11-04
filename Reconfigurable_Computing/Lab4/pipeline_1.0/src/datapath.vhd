@@ -12,7 +12,7 @@ entity datapath is
     valid_in  : in  std_logic;
     data_in   : in  std_logic_vector(C_MEM_IN_WIDTH - 1 downto 0);
     valid_out : out std_logic;
-    data_out  : out std_logic_vector(18 downto 0)
+    data_out  : out std_logic_vector(C_MEM_OUT_WIDTH - 1 downto 0)
   );
 end datapath;
 
@@ -23,7 +23,7 @@ architecture bhv of datapath is
   signal in3_r      : std_logic_vector(7 downto 0);
   signal product0_r : std_logic_vector(15 downto 0);
   signal product1_r : std_logic_vector(15 downto 0);
-  signal sum_r      : std_logic_vector(18 downto 0);
+  signal sum_r      : std_logic_vector(16 downto 0);
 begin
   CALC_PROC : process (clk, rst)
   begin
