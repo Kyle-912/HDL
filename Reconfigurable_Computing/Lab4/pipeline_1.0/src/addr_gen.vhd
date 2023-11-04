@@ -39,7 +39,7 @@ begin
           if en = '1' then
             if counter < unsigned(size) - 1 then
               counter <= counter + 1;
-              rd_en <= '1'; --FIXME: this being assigned in a process(clk) is causing a register hence a 1 cycle delay around 2845ns
+              rd_en <= '1'; --FIXME: this being assigned in a process(clk) is causing a register hence a 1 cycle delay around 2835ns
             else
               done <= '1';
               state <= FINISHED;
