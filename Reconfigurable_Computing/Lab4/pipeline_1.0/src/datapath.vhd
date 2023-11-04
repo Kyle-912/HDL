@@ -43,16 +43,18 @@ begin
       valid_delay3 <= '0';
 
     elsif rising_edge(clk) then
-      in0_r      <= data_in(31 downto 24);
-      in1_r      <= data_in(23 downto 16);
-      in2_r      <= data_in(15 downto 8);
-      in3_r      <= data_in(7 downto 0);
-      
+      in0_r        <= data_in(31 downto 24);
+      in1_r        <= data_in(23 downto 16);
+      in2_r        <= data_in(15 downto 8);
+      in3_r        <= data_in(7 downto 0);
+      valid_delay1 <= valid_in;
 
-      product0_r <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
-      product1_r <= std_logic_vector(unsigned(in2_r) * unsigned(in3_r));
+      product0_r   <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
+      product1_r   <= std_logic_vector(unsigned(in2_r) * unsigned(in3_r));
+      valid_delay2 <= valid_delay1;
 
-      sum_r      <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
+      sum_r        <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
+      valid_delay3 <= valid_delay2;
     end if;
   end process;
   data_out <= sum_r;
