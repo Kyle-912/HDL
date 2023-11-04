@@ -17,21 +17,21 @@ entity datapath is
 end datapath;
 
 architecture bhv of datapath is
-  signal in0 : std_logic_vector(7 downto 0);
-  signal in1 : std_logic_vector(7 downto 0);
-  signal in2 : std_logic_vector(7 downto 0);
-  signal in3 : std_logic_vector(7 downto 0);
+--   signal in0 : std_logic_vector(7 downto 0);
+--   signal in1 : std_logic_vector(7 downto 0);
+--   signal in2 : std_logic_vector(7 downto 0);
+--   signal in3 : std_logic_vector(7 downto 0);
 begin
     CALC_PROC : process(clk, rst)
     begin
         if rst = '1' then
-            in0 <= (others => '0');
-            in1 <= (others => '0');
-            in2 <= (others => '0');
-            in3 <= (others => '0');
+            -- in0 <= (others => '0');
+            -- in1 <= (others => '0');
+            -- in2 <= (others => '0');
+            -- in3 <= (others => '0');
 
         elsif rising_edge(clk) then
-
+            data_out <= std_logic_vector((unsigned(data_in(31 downto 24)) * unsigned(data_in(23 downto 16))) + (unsigned(data_in(15 downto 8)) * unsigned(data_in(7 downto 0))));
 
         end if;
     end process;
