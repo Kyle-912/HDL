@@ -17,24 +17,24 @@ entity datapath is
 end datapath;
 
 architecture bhv of datapath is
-  signal in0      : std_logic_vector(7 downto 0);
-  signal in1      : std_logic_vector(7 downto 0);
-  signal in2      : std_logic_vector(7 downto 0);
-  signal in3      : std_logic_vector(7 downto 0);
-  signal product0 : std_logic_vector(15 downto 0);
-  signal product1 : std_logic_vector(15 downto 0);
-  signal sum      : std_logic_vector(18 downto 0);
+  signal in0_r      : std_logic_vector(7 downto 0);
+  signal in1_r      : std_logic_vector(7 downto 0);
+  signal in2_r      : std_logic_vector(7 downto 0);
+  signal in3_r      : std_logic_vector(7 downto 0);
+  signal product0_r : std_logic_vector(15 downto 0);
+  signal product1_r : std_logic_vector(15 downto 0);
+  signal sum_r      : std_logic_vector(18 downto 0);
 begin
   CALC_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      in0      <= (others => '0');
-      in1      <= (others => '0');
-      in2      <= (others => '0');
-      in3      <= (others => '0');
-      product0 <= (others => '0');
-      product1 <= (others => '0');
-      sum      <= (others => '0');
+      in0_r      <= (others => '0');
+      in1_r      <= (others => '0');
+      in2_r      <= (others => '0');
+      in3_r      <= (others => '0');
+      product0_r <= (others => '0');
+      product1_r <= (others => '0');
+      sum_r      <= (others => '0');
 
     elsif rising_edge(clk) then
 
