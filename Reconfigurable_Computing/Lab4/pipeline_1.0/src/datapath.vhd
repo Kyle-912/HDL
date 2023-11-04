@@ -28,10 +28,13 @@ begin
   CALC_PROC : process (clk, rst)
   begin
     if rst = '1' then
-      in0 <= (others => '0');
-      in1 <= (others => '0');
-      in2 <= (others => '0');
-      in3 <= (others => '0');
+      in0      <= (others => '0');
+      in1      <= (others => '0');
+      in2      <= (others => '0');
+      in3      <= (others => '0');
+      product0 <= (others => '0');
+      product1 <= (others => '0');
+      sum      <= (others => '0');
 
     elsif rising_edge(clk) then
 
