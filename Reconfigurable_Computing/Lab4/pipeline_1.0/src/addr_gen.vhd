@@ -21,7 +21,6 @@ end addr_gen;
 architecture behavioral of addr_gen is
   signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0) := (others => '0');
   signal done_flag : std_logic                               := '0';
-
 begin
   process (clk, rst)
   begin
