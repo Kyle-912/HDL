@@ -40,7 +40,7 @@ begin
       in0_r <= data_in(31 downto 24);
       in0_r <= data_in(23 downto 16);
       in0_r <= data_in(15 downto 8);
-      in0_r <= data_in(31 downto 24);
+      in0_r <= data_in(7 downto 0);
 
     end if;
   end process;
