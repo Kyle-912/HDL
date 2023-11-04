@@ -60,7 +60,6 @@ begin
       rd_addr         => mmap_rd_addr,
       rd_data         => mmap_rd_data,
 
-      -- TODO: connect to appropriate logic
       go              => go,
       size            => size,
       done            => done,
