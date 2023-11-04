@@ -26,7 +26,7 @@ architecture bhv of datapath is
   signal sum_r        : std_logic_vector(16 downto 0);
   signal valid_delay1 : std_logic;
   signal valid_delay2 : std_logic;
-  signal valid_delay3 : std_logic;
+  -- signal valid_delay3 : std_logic;
 begin
   process (clk, rst)
   begin
@@ -40,7 +40,7 @@ begin
       sum_r        <= (others => '0');
       valid_delay1 <= '0';
       valid_delay2 <= '0';
-      valid_delay3 <= '0';
+      -- valid_delay3 <= '0';
 
     elsif rising_edge(clk) then
       in0_r        <= data_in(31 downto 24);
@@ -54,9 +54,9 @@ begin
       valid_delay2 <= valid_delay1;
 
       sum_r        <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
-      valid_delay3 <= valid_delay2;
+      -- valid_delay3 <= valid_delay2;
     end if;
   end process;
   data_out  <= sum_r;
-  valid_out <= valid_delay3;
+  valid_out <= valid_delay2;
 end architecture;
