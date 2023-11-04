@@ -38,8 +38,8 @@ begin
 
     elsif rising_edge(clk) then
       in0_r <= data_in(31 downto 24);
-      in0_r <= data_in(31 downto 24);
-      in0_r <= data_in(31 downto 24);
+      in0_r <= data_in(23 downto 16);
+      in0_r <= data_in(15 downto 8);
       in0_r <= data_in(31 downto 24);
 
     end if;
