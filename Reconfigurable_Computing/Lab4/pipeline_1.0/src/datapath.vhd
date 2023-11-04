@@ -22,8 +22,3 @@ begin
     data_out <= std_logic_vector(resize((unsigned(data_in(31 downto 24)) * unsigned(data_in(23 downto 16))), data_out'length) + (unsigned(data_in(15 downto 8)) * unsigned(data_in(7 downto 0))));
   end process;
 end architecture;
-
--- data_in(7 downto 0)
--- data_in(15 downto 8)
--- data_in(23 downto 16)
--- data_in(31 downto 24)
