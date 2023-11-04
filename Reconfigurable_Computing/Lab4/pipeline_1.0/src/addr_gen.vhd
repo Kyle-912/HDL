@@ -54,8 +54,5 @@ begin
       end case;
     end if;
   end process;
-
   rd_addr <= std_logic_vector(counter);
-  rd_en   <= rd_en_r;
-
 end bhv;
