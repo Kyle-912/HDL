@@ -37,4 +37,4 @@ begin
     end process;
 end architecture;
 
---data_in
+--data_in(7 downto 0)
