@@ -17,10 +17,6 @@ entity datapath is
 end datapath;
 
 architecture bhv of datapath is
---   signal in0 : std_logic_vector(7 downto 0);
---   signal in1 : std_logic_vector(7 downto 0);
---   signal in2 : std_logic_vector(7 downto 0);
---   signal in3 : std_logic_vector(7 downto 0);
 begin
     CALC_PROC : process(clk, rst)
     begin
