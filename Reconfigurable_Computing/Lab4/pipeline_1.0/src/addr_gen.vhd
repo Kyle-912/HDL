@@ -18,7 +18,7 @@ entity addr_gen is
   );
 end addr_gen;
 
-architecture behavioral of addr_gen is
+architecture bhv of addr_gen is
   signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0) := (others => '0');
   signal done_flag : std_logic                               := '0';
 begin
@@ -48,4 +48,4 @@ begin
   rd_addr <= std_logic_vector(counter);
   done    <= done_flag;
 
-end behavioral;
+end bhv;
