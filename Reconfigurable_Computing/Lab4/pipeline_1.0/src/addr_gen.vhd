@@ -39,7 +39,7 @@ begin
           if en = '1' then
             if counter < unsigned(size) - 1 then
               counter <= counter + 1;
-              rd_en <= '1';
+              rd_en <= '1'; --FIXME: this being assi
             else
               done <= '1';
               state <= FINISHED;
