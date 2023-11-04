@@ -37,7 +37,10 @@ begin
       sum_r      <= (others => '0');
 
     elsif rising_edge(clk) then
-      
+      in0_r <= data_in(31 downto 24);
+      in0_r <= data_in(31 downto 24);
+      in0_r <= data_in(31 downto 24);
+      in0_r <= data_in(31 downto 24);
 
     end if;
   end process;
