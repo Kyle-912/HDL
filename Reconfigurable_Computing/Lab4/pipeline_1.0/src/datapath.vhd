@@ -22,7 +22,7 @@ architecture bhv of datapath is
   signal in2 : std_logic_vector(7 downto 0);
   signal in3 : std_logic_vector(7 downto 0);
 begin
-    BHV_PROC : process(clk, rst)
+    CALC_PROC : process(clk, rst)
     begin
         if rst = '1' then
             
