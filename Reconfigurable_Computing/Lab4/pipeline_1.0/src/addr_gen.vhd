@@ -19,6 +19,8 @@ entity addr_gen is
 end addr_gen;
 
 architecture bhv of addr_gen is
+  type fsm_state is (IDLE, RUNNING, FINISHED);
+  signal state : fsm_state := IDLE;
   signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
   signal done_flag : std_logic;
   signal rd_en_r   : std_logic;
@@ -26,21 +28,31 @@ begin
   process (clk, rst)
   begin
     if rst = '1' then
+      state <= IDLE;
       counter   <= (others => '0');
       done_flag <= '0';
     elsif rising_edge(clk) then
-      if en = '1' then
-        if go = '1' then
-          if counter < unsigned(size) - 1 then
-            counter <= counter + 1;
-            rd_en_r <= '1';
-          else
-            done_flag <= '1';
+      case state is
+        when IDLE =>
+          if go = '1' then
+            state <= RUNNING;
           end if;
-        else
-          done_flag <= '0';
-        end if;
-      end if;
+        when RUNNING =>
+          if en = '1' then
+            if counter < unsigned(size) - 1 then
+              counter <= counter + 1;
+              rd_en_r <= '1';
+            else
+              done_flag <= '1';
+              state <= FINISHED;
+            end if;
+          end if;
+        when FINISHED =>
+          if go = '0' then
+            state <= IDLE;
+            done_flag <= '0';
+          end if;
+      end case;
     end if;
   end process;
 
