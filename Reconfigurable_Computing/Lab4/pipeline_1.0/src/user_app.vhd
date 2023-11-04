@@ -143,5 +143,4 @@ begin
       valid_out => valid_out,
       data_out  => mem_out_wr_data
     );
-
 end default_arch;
