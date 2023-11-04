@@ -39,8 +39,6 @@ begin
         else
           done_flag <= '0';
         end if;
-      else
-        done_flag <= '0';
       end if;
     end if;
   end process;
