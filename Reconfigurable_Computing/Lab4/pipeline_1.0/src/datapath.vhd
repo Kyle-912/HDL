@@ -38,6 +38,6 @@ begin
 end architecture;
 
 --data_in(7 downto 0)
---data_in(14 downto 7)
---data_in(7 downto 0)
+--data_in(15 downto 8)
+--data_in(21 downto 0)
 --data_in(7 downto 0)
