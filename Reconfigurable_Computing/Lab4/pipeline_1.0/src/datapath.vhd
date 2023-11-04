@@ -28,7 +28,7 @@ architecture bhv of datapath is
   signal valid_delay2 : std_logic;
   signal valid_delay3 : std_logic;
 begin
-  CALC_PROC : process (clk, rst)
+  process (clk, rst)
   begin
     if rst = '1' then
       in0_r        <= (others => '0');
