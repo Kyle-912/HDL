@@ -18,23 +18,35 @@ entity addr_gen is
   );
 end addr_gen;
 
-architecture bhv of addr_gen is
-  signal rd_en_delay_r : std_logic;
+architecture behavioral of addr_gen is
+  signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0) := (others => '0');
+  signal done_flag : std_logic                               := '0';
+
 begin
   process (clk, rst)
   begin
     if rst = '1' then
-      rd_en_delay_r <= '0';
-
+      counter   <= (others => '0');
+      done_flag <= '0';
     elsif rising_edge(clk) then
-      rd_en_delay_r <= '1'; --TODO:
       if en = '1' then
         if go = '1' then
-          
+          if counter < unsigned(size) - 1 then
+            counter <= counter + 1;
+            rd_en   <= '0';
+          else
+            done_flag <= '1';
+          end if;
+        else
+          done_flag <= '0';
         end if;
+      else
+        done_flag <= '0';
       end if;
-
     end if;
   end process;
-  rd_en <= rd_en_delay_r;
-end architecture;
+
+  rd_addr <= std_logic_vector(counter);
+  done    <= done_flag;
+
+end behavioral;
