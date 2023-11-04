@@ -37,13 +37,13 @@ begin
       sum_r      <= (others => '0');
 
     elsif rising_edge(clk) then
-      in0_r <= data_in(31 downto 24);
-      in1_r <= data_in(23 downto 16);
-      in2_r <= data_in(15 downto 8);
-      in3_r <= data_in(7 downto 0);
+      in0_r      <= data_in(31 downto 24);
+      in1_r      <= data_in(23 downto 16);
+      in2_r      <= data_in(15 downto 8);
+      in3_r      <= data_in(7 downto 0);
 
       product0_r <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
-      product0_r <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
+      product1_r <= std_logic_vector(unsigned(in2_r) * unsigned(in3_r));
 
     end if;
   end process;
