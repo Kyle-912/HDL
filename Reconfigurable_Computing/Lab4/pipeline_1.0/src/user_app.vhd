@@ -111,9 +111,6 @@ begin
       raddr => mem_out_rd_addr,
       rdata => mem_out_rd_data);
   ------------------------------------------------------------------------------
-
-  -- TODO: instantiate controller datapath/pipeline, address generators,
-  -- and any other necessary logic
   U_ADDR_GEN_IN : entity work.addr_gen
     port map(
       clk     => clk,
