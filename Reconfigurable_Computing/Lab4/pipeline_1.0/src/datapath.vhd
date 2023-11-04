@@ -57,7 +57,8 @@ begin
       valid_delay3 <= valid_delay2;
     end if;
   end process;
-  data_out <= sum_r;
+  data_out  <= sum_r;
+  valid_out <= valid_delay3;
 end architecture;
 
 -- data_in(7 downto 0)
