@@ -42,6 +42,9 @@ begin
       in2_r <= data_in(15 downto 8);
       in3_r <= data_in(7 downto 0);
 
+      product0_r <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
+      product0_r <= std_logic_vector(unsigned(in0_r) * unsigned(in1_r));
+
     end if;
   end process;
 end architecture;
