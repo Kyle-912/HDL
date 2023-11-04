@@ -137,6 +137,7 @@ begin
   U_DATAPATH : entity work.datapath
     port map(
       clk       => clk,
+      rst       => rst,
       valid_in  => rd_en,
       data_in   => mem_in_rd_data,
       valid_out => valid_out,
