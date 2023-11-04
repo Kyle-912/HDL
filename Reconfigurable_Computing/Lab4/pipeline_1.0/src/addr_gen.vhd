@@ -19,7 +19,7 @@ entity addr_gen is
 end addr_gen;
 
 architecture bhv of addr_gen is
-
+signal name : std_logic;
 begin
 
 end architecture;
