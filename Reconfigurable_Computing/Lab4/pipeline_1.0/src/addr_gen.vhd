@@ -21,7 +21,7 @@ end addr_gen;
 architecture bhv of addr_gen is
   signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
   signal done_flag : std_logic;
-  signal rd_en_r : std_logic;
+  signal rd_en_r   : std_logic;
 begin
   process (clk, rst)
   begin
@@ -33,7 +33,7 @@ begin
         if go = '1' then
           if counter < unsigned(size) - 1 then
             counter <= counter + 1;
-            rd_en_r   <= '1';
+            rd_en_r <= '1';
           else
             done_flag <= '1';
           end if;
@@ -46,5 +46,6 @@ begin
 
   rd_addr <= std_logic_vector(counter);
   done    <= done_flag;
+  rd_en   <= rd_en_r;
 
 end bhv;
