@@ -31,8 +31,6 @@ begin
       if en = '1' then
         if go = '1' then
           
-        else
-          
         end if;
       end if;
 
