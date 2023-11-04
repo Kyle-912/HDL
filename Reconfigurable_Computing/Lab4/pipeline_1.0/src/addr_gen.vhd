@@ -30,7 +30,7 @@ begin
     if rst = '1' then
       state <= IDLE;
       counter   <= (others => '0');
-      done_flag <= '0';
+      done <= '0';
     elsif rising_edge(clk) then
       case state is
         when IDLE =>
@@ -43,14 +43,14 @@ begin
               counter <= counter + 1;
               rd_en_r <= '1';
             else
-              done_flag <= '1';
+              done <= '1';
               state <= FINISHED;
             end if;
           end if;
         when FINISHED =>
           if go = '0' then
             state <= IDLE;
-            done_flag <= '0';
+            done <= '0';
           end if;
       end case;
     end if;
