@@ -22,7 +22,6 @@ architecture bhv of addr_gen is
   type fsm_state is (IDLE, RUNNING, FINISHED);
   signal state : fsm_state := IDLE;
   signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
-  signal done_flag : std_logic;
   signal rd_en_r   : std_logic;
 begin
   process (clk, rst)
@@ -57,7 +56,6 @@ begin
   end process;
 
   rd_addr <= std_logic_vector(counter);
-  -- done    <= done_flag;
   rd_en   <= rd_en_r;
 
 end bhv;
