@@ -46,7 +46,6 @@ begin
       product1_r <= std_logic_vector(unsigned(in2_r) * unsigned(in3_r));
 
       sum_r <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
-
     end if;
   end process;
 end architecture;
