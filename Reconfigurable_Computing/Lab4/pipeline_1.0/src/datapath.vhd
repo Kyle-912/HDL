@@ -37,7 +37,7 @@ begin
     end process;
 end architecture;
 
---data_in(7 downto 0)
---data_in(15 downto 8)
---data_in(23 downto 16)
---data_in(31 downto 24)
+-- data_in(7 downto 0)
+-- data_in(15 downto 8)
+-- data_in(23 downto 16)
+-- data_in(31 downto 24)
