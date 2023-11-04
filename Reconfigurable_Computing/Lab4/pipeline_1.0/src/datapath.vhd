@@ -56,8 +56,10 @@ begin
 
       sum_r        <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
       valid_delay3 <= valid_delay2;
+
+      valid_delay4 <= valid_delay3;
     end if;
   end process;
   data_out  <= sum_r;
-  valid_out <= valid_delay3;
+  valid_out <= valid_delay4;
 end architecture;
