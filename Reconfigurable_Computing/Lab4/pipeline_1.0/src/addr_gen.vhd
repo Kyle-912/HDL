@@ -57,7 +57,7 @@ begin
   end process;
 
   rd_addr <= std_logic_vector(counter);
-  done    <= done_flag;
+  -- done    <= done_flag;
   rd_en   <= rd_en_r;
 
 end bhv;
