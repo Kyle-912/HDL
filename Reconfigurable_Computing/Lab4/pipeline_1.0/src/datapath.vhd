@@ -38,6 +38,9 @@ begin
       product0_r <= (others => '0');
       product1_r <= (others => '0');
       sum_r      <= (others => '0');
+      valid_delay1 <= '0';
+      valid_delay1 <= '0';
+      valid_delay1 <= '0';
 
     elsif rising_edge(clk) then
       in0_r      <= data_in(31 downto 24);
