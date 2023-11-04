@@ -12,7 +12,7 @@ entity datapath is
     valid_in  : in  std_logic;
     data_in   : in  std_logic_vector(C_MEM_IN_WIDTH - 1 downto 0);
     valid_out : out std_logic;
-    data_out  : out std_logic_vector(C_MEM_OUT_WIDTH - 1 downto 0)
+    data_out  : out std_logic_vector(18 downto 0)
   );
 end datapath;
 
@@ -48,6 +48,7 @@ begin
       sum_r <= std_logic_vector(resize(unsigned(product0_r), sum_r'length) + unsigned(product1_r));
     end if;
   end process;
+  data_out <= sum_r;
 end architecture;
 
 -- data_in(7 downto 0)
