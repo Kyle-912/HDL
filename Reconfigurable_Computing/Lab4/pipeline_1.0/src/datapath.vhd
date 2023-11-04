@@ -27,6 +27,7 @@ architecture bhv of datapath is
   signal valid_delay1 : std_logic;
   signal valid_delay2 : std_logic;
   signal valid_delay3 : std_logic;
+  signal valid_delay4 : std_logic;
 begin
   process (clk, rst)
   begin
