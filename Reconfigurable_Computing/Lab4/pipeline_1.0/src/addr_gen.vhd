@@ -19,8 +19,8 @@ entity addr_gen is
 end addr_gen;
 
 architecture bhv of addr_gen is
-  signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0) := (others => '0');
-  signal done_flag : std_logic                               := '0';
+  signal counter   : unsigned(C_MEM_ADDR_WIDTH - 1 downto 0);
+  signal done_flag : std_logic;
 begin
   process (clk, rst)
   begin
