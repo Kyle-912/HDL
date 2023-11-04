@@ -21,8 +21,8 @@ entity user_app is
         mmap_rd_data : out std_logic_vector(MMAP_DATA_RANGE)
         );
 end user_app;
-
-architecture default of user_app is
+--TODO: change default_arch to default
+architecture default_arch of user_app is
 
     signal go   : std_logic;
     signal size : std_logic_vector(C_MEM_ADDR_WIDTH downto 0);
@@ -56,12 +56,12 @@ begin
             rd_en   => mmap_rd_en,
             rd_addr => mmap_rd_addr,
             rd_data => mmap_rd_data,
-		
+
 			-- TODO: connect to appropriate logic
-            go              => go,         
-            size            => size,       
-            done            => done,       
-			
+            go              => go,
+            size            => size,
+            done            => done,
+
 			-- already connected to block RAMs
 			-- the memory map functionality writes to the input ram
 			-- and reads from the output ram
@@ -73,7 +73,7 @@ begin
             );
 	------------------------------------------------------------------------------
 
-	
+
 	------------------------------------------------------------------------------
     -- input memory
     -- written to by memory map
@@ -92,7 +92,7 @@ begin
             rdata => mem_in_rd_data); -- TODO: connect to pipeline input
 	------------------------------------------------------------------------------
 
-	
+
 	------------------------------------------------------------------------------
     -- output memory
     -- written to by controller+datapath
@@ -110,9 +110,9 @@ begin
             raddr => mem_out_rd_addr,
             rdata => mem_out_rd_data);
 	------------------------------------------------------------------------------
-	
-	
-	-- TODO: instatiate controllerm datapath/pipeline, address generators, 
+
+
+	-- TODO: instantiate controller datapath/pipeline, address generators,
 	-- and any other necessary logic
-			
-end default;
+
+end default_arch;

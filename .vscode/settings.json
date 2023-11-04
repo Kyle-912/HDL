@@ -75,8 +75,10 @@
         "WSTRB",
         "WVALID",
         "dout",
+        "raddr",
         "rden",
-        "textio"
+        "textio",
+        "waddr"
     ],
     "gitdoc.enabled": true,
     "files.exclude": {
