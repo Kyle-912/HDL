@@ -27,7 +27,7 @@ begin
       rd_en_delay_r <= '0';
 
     elsif rising_edge(clk) then
-      rd_en_delay_r <= '1';
+      rd_en_delay_r <= '1'; --TODO:
 
     end if;
   end process;
