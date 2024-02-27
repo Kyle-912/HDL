@@ -21,7 +21,7 @@ entity user_app is
     mmap_rd_data : out std_logic_vector(MMAP_DATA_RANGE)
   );
 end user_app;
---TODO: change default_arch to default
+
 architecture default_arch of user_app is
 
   signal go                    : std_logic;
@@ -110,12 +110,22 @@ begin
       raddr => mem_out_rd_addr,
       rdata => mem_out_rd_data);
   ------------------------------------------------------------------------------
+  U_DATAPATH : entity work.datapath
+    port map(
+      clk       => clk,
+      rst       => rst,
+      valid_in  => rd_en,
+      data_in   => mem_in_rd_data,
+      valid_out => valid_out,
+      data_out  => mem_out_wr_data
+    );
+
   U_ADDR_GEN_IN : entity work.addr_gen
     port map(
       clk     => clk,
       rst     => rst,
       go      => go,
-      en      => '1',
+      en      => open,
       size    => size,
       rd_addr => mem_in_rd_addr,
       rd_en   => rd_en,
@@ -134,13 +144,4 @@ begin
       done    => done
     );
 
-  U_DATAPATH : entity work.datapath
-    port map(
-      clk       => clk,
-      rst       => rst,
-      valid_in  => rd_en,
-      data_in   => mem_in_rd_data,
-      valid_out => valid_out,
-      data_out  => mem_out_wr_data
-    );
 end default_arch;

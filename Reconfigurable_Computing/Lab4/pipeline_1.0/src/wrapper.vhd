@@ -18,7 +18,7 @@ entity wrapper is
         mmap_wr_data : in  std_logic_vector(MMAP_DATA_RANGE);
         mmap_rd_en   : in  std_logic;
         mmap_rd_addr : in  std_logic_vector(MMAP_ADDR_RANGE);
-        mmap_rd_data : out std_logic_vector(MMAP_DATA_RANGE)              
+        mmap_rd_data : out std_logic_vector(MMAP_DATA_RANGE)
         );
 end wrapper;
 
