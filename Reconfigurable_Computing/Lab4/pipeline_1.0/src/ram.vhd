@@ -9,12 +9,12 @@
 -- reads from the read address every cycle.
 --
 -- The entity contains several different architectures that implement different
--- ram behaviors. e.g. synchronous reads, asynchronous reads, synchronoous
+-- ram behaviors. e.g. synchronous reads, asynchronous reads, synchronous
 -- reads during writes.
 --
 
 -- Notes:
--- Asychronous reads are not supported by all FPGAs.
+-- Asynchronous reads are not supported by all FPGAs.
 --
 
 -------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ architecture ASYNC_READ of ram is
 
     type memory_type is array (natural range <>) of std_logic_vector(word_width-1 downto 0);
     signal memory : memory_type(num_words-1 downto 0) := (others => (others => '0'));
-    
+
 begin
 
     process(clk)
@@ -92,7 +92,7 @@ architecture SYNC_READ_DURING_WRITE of ram is
     type memory_type is array (natural range <>) of std_logic_vector(word_width-1 downto 0);
     signal memory    : memory_type(num_words-1 downto 0) := (others => (others => '0'));
     signal raddr_reg : std_logic_vector(addr_width-1 downto 0);
-    
+
 begin
 
     process(clk)
@@ -118,7 +118,7 @@ architecture SYNC_READ of ram is
 
     type memory_type is array (natural range <>) of std_logic_vector(word_width-1 downto 0);
     signal memory : memory_type(num_words-1 downto 0) := (others => (others => '0'));
-    
+
 begin
 
     process(clk)

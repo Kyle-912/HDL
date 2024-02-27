@@ -2,7 +2,7 @@
 // University of Florida
 // main.cpp
 //
-// Description: This file is the software portion of the simple pipeline 
+// Description: This file is the software portion of the simple pipeline
 // application implemented on the FPGA.
 
 #include <iostream>
@@ -28,7 +28,7 @@ using namespace std;
 
 // software implementation of the code implemented on the FPGA
 void sw(unsigned *input, unsigned *output, unsigned size) {
-  
+
   unsigned i;
 
   for (i=0; i < size; i++) {
@@ -45,7 +45,7 @@ void sw(unsigned *input, unsigned *output, unsigned size) {
 
 
 int main(int argc, char* argv[]) {
-  
+
   if (argc != 2) {
     cerr << "Usage: " << argv[0] << " bitfile" << endl;
     return -1;
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
   clocks[1] = 0.0;
   clocks[2] = 0.0;
   clocks[3] = 0.0;
-  
+
   // initialize board
   Board *board;
   try {
@@ -101,11 +101,11 @@ int main(int argc, char* argv[]) {
   board->write(&size, SIZE_ADDR, 1);
   writeTime.stop();
 
-  // assert go. Note that the memory map automatically sets go back to 1 to 
+  // assert go. Note that the memory map automatically sets go back to 1 to
   // avoid an additional transfer.
   go = 1;
   board->write(&go, GO_ADDR, 1);
-    
+
   // wait for the board to assert done
   waitTime.start();
   board->waitUntilNotZero(DONE_ADDR, 2.0);

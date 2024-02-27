@@ -19,7 +19,7 @@ end user_app_tb;
 
 architecture behavior of user_app_tb is
 
-  constant TEST_SIZE  : integer                           := 256;
+  constant TEST_SIZE  : integer                           := 32768;
   constant MAX_CYCLES : integer                           := TEST_SIZE * 4;
 
   signal clk          : std_logic                         := '0';
@@ -54,7 +54,7 @@ begin
 
   -- process to test different inputs
   process
-
+variable delay_count : integer := 0;
     -- function to check if the outputs is correct
     function checkOutput(
       i : integer)
@@ -133,6 +133,7 @@ begin
       wait until clk'event and clk = '1';
       done  := mmap_rd_data(0);
       count := count + 1;
+      wait for 10 ns;
     end loop;
 
     if (done /= '1') then

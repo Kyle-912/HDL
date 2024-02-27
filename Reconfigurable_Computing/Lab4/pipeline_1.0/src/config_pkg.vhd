@@ -12,5 +12,5 @@ package config_pkg is
 
     subtype MMAP_ADDR_RANGE is natural range C_MMAP_ADDR_WIDTH-1 downto 0;
     subtype MMAP_DATA_RANGE is natural range C_MMAP_DATA_WIDTH-1 downto 0;
-    
+
 end config_pkg;
